@@ -1,0 +1,17 @@
+{
+  "name": "susyTest1",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "eksana <ser.vajnrub@yandex.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/eksana/firstSusy",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

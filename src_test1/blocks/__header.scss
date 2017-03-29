@@ -1,0 +1,147 @@
+.wrapper_for_all{
+
+	@include container;
+}
+body{
+	padding: 20px;
+	background:url('../img/wild-flowers.jpg') no-repeat ;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.main_header{
+	
+	padding: 40px 0;
+	background:url('../img/bg1.jpg') no-repeat ;
+	-webkit-background-size: cover;
+	background-size: cover;
+	
+	@include span(12);
+	/*@include pre (5 of 12);*/	
+}
+.white{
+	
+	color: #fff;
+}
+.black{
+	
+	color: #222;
+}
+.gray{
+	
+	color: grey;
+}
+.header_descr{
+	display: inline-block;
+margin-left: 40px;
+	/*@include span(4);*/
+}
+.underHeader{
+	
+	@include span(12);
+	padding: 20px 0;
+	background-color: rgba(244,237,198, .7);
+}
+.flower3{
+	
+	@include span(4 of 12);
+	background: url('../img/bg2.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+}
+.flower4{
+	
+	@include span(4 of 12);
+	background: url('../img/bg3.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+}
+.flower5{
+	
+	@include span(4 of 12 last);
+	background: url('../img/bg4.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	
+}
+.wrap-3{
+	@include span(12);
+	background-color: green;
+}
+.k1{
+	@include span(4 of 12);
+	background: url('../img/bg4.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.k1-1{
+	@include span(4 of 12 last);
+}
+.wrap_for-6{
+	@include span(12);
+	background-color: magenta;
+}
+.flower3-1{
+	@include span(2 of 12);
+	background: url('../img/bg4.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	/*@include:clearfix;*/
+}
+.flower3-2{
+	@include span(2 of 12 );
+	background: url('../img/bg4.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.flower3-3{
+	@include span(2 of 12);
+	background: url('../img/bg4.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.flower3-4{
+	@include span(2 of 12 );
+	background: url('../img/bg4.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.flower3-5{
+	@include span(2 of 12 );
+	background: url('../img/bg4.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.flower3-6{
+	@include span(2 of 12 last);
+	background: url('../img/bg4.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.romance_bouquet{
+	@include span(12 of 12);
+	background:url('../img/bg5.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;;
+}
+
+@media(max-width:900px){
+	/* @include breakpoint( 50 ){*/
+.flower3{
+	@include span(6 of 12);
+	@include push(3);
+}
+.flower4{
+	@include span(6 of 12);
+	@include push(3);
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.flower5{
+	@include span(6 of 12);
+	@include push(3);
+}
+}

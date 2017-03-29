@@ -1,0 +1,45 @@
+@import "susy";
+@import "__variables";
+
+@import "bower_components/susy/sass/_susy.scss";
+@import "bower_components/breakpoint/breakpoint/_breakpoint.scss";
+
+/*@import "reset";*/
+/*@import "variables";*/
+@import "../blocks/__header.scss";
+
+// Susy
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  container: 60em,
+  math: fluid,
+ gutter-position: inside,
+    global-box-sizing:  border-box,
+
+   /* debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),*/
+);
+/*html,body{
+  font-family: $font-family-default;
+  font-size:$font-size-default;
+  line-height:$line-height;
+  color:$color-text;
+  background-color: $color-background;
+  margin:0;
+  padding:0;*/
+  /*overflow-x:hidden;*/
+/*}*/
+a{
+  text-decoration: none;
+}
+
+ @import"../blocks/__body.scss";
+@import"../blocks/__nav.scss";
+
+/*https://webref.ru/dev/automate-with-gulp/responsive*/
+/*http://www.creativebloq.com/web-design/flexible-layouts-susy-and-breakpoint-121518452*/
