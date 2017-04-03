@@ -1,0 +1,20 @@
+/*header*/
+.wrapper_for_all{
+
+	@include container;
+	background-color: skyBlue;
+}
+.top{
+	@include span(12);
+}
+.top_line{
+	@include span(12);
+
+}
+.linkForLogo{
+	display: inline-block;
+	@include span(2 of 12);
+}
+.img_logo{
+	display: inline-block;
+}

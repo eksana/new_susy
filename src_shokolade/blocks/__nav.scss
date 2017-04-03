@@ -1,0 +1,11 @@
+.topNav ul li{
+
+	display: inline-block;
+}
+.topNav{
+@include span(8 of 12);
+}
+a{
+  text-decoration: none;
+  list-style-type: none;
+}

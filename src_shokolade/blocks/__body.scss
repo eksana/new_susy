@@ -1,0 +1,6 @@
+
+.general{
+@include container(80em);
+ /* font-size: 62.5%;*/
+  @include font-size(16px); 
+}
