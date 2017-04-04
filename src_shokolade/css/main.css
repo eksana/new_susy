@@ -316,9 +316,7 @@ a {
   list-style-type: none; }
 
 .prices {
-  max-width: 92em;
-  margin-left: auto;
-  margin-right: auto;
+  /*@include container(92em);*/
   width: 100%;
   float: left;
   margin-left: 0;
@@ -327,10 +325,6 @@ a {
   background-color: #E1D6BD;
   padding-top: 40px;
   padding-bottom: 200px; }
-  .prices:after {
-    content: " ";
-    display: block;
-    clear: both; }
 
 .prices_title {
   margin-top: 30px; }
@@ -408,6 +402,34 @@ a {
   color: #fff;
   font-size: 32px;
   font-size: 2rem; }
+
+.present {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  background-color: #7FD7A4;
+  padding-top: 40px;
+  padding-bottom: 200px; }
+
+.wrap_form {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%; }
+
+.wrap_form-last {
+  width: 32.20339%;
+  float: right;
+  margin-right: 0; }
+
+.for_form {
+  /*width: 100%;*/
+  padding: 10px 130px; }
+
+.for_form-last {
+  background-color: red;
+  padding: 10px 180px; }
 
 /*@import "../blocks/__nav.scss";*/
 /* Susy*/

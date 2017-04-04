@@ -1,0 +1,22 @@
+.present{
+	@include span(12);
+	position: relative;
+	background-color: #7FD7A4;
+	padding-top: 40px;
+	padding-bottom: 200px;
+}
+.wrap_form{
+	@include span(4 of 12);
+	
+}
+.wrap_form-last{
+	@include span(4 of 12 last);
+}
+.for_form{
+	/*width: 100%;*/
+	padding: 10px 130px;
+}
+.for_form-last{
+	background-color: red;
+	padding: 10px 180px;
+}
