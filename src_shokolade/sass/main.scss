@@ -2,24 +2,26 @@
 @import "__variables.scss";
 @import "__mixin.scss";
 
-@import "../blocks/__header.scss";
-@import "../blocks/__body.scss";
-@import "../blocks/__nav.scss";
+
 @import "bower_components/susy/sass/_susy.scss";
 @import "bower_components/breakpoint/breakpoint/_breakpoint.scss";
 
 /*@import "reset";*/
 
-
+@import "../blocks/__header.scss";
+@import "../blocks/__body.scss";
+@import "../blocks/__nav.scss";
+@import "../blocks/__prices.scss";
 
  
 /*@import "../blocks/__nav.scss";*/
 
-// Susy
+/* Susy*/
 $susy: (
   columns: 12,
   gutters: 1/4,
   container: 60em,
+  /*container:1024px,*/
   math: fluid,
  gutter-position: inside,
     global-box-sizing:  border-box,

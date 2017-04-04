@@ -3,6 +3,8 @@
 
 	@include container;
 	background-color: skyBlue;
+	text-align: center;
+	padding: 0 20px;
 }
 .top{
 	@include span(12);
@@ -17,4 +19,138 @@
 }
 .img_logo{
 	display: inline-block;
+}
+.wrapForFont{
+	/*@include container(1200px);*/
+	@include span(12);
+	position: relative;
+	text-align: center;
+	background-color:lightGreen;
+	padding: 40px 0;
+	border-bottom: 1px solid lightGrey;
+}
+.imgAside{
+	@include span(3 of 12);
+
+	background:url('../img/cakeManySmall.jpg') no-repeat ;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 600px;
+	
+}
+.imgAside2{
+	@include span(3 of 12 last);
+
+	background:url('../img/cakeManySmall.jpg') no-repeat ;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 600px;
+
+	
+}
+/*.titleTop, h2,.order{
+	@include span(6 of 12);
+}*/
+.titleTop{
+	margin-top: 70px;
+}
+
+.underTitleTop{
+	margin-top: 70px;
+}
+.innerWrap{
+	@include span(6 of 12);
+}
+.order{
+	display: inline-block;
+	padding: 20px 140px;
+	background-color: red;
+	border-radius: 30px;
+	margin-top: 100px;
+	color: #fff;
+	 @include font-size(32px); 
+	
+}
+.round{
+	position: absolute;
+	bottom:-35px;
+	left:50%;
+	margin-left: -35px;
+	width: 70px;
+	height: 70px;
+	border-radius:50%;
+	border: 1px solid lightGrey;
+	background-color: #fff;
+	z-index: 10;
+}
+.arrow-down.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 2px;
+  /*width: 1px;*/
+  height: 16px;
+  background-color: currentColor;
+}
+
+.arrow-down.icon:before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border-top: solid 1px black;
+  border-right: solid 1px black;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+
+@media(max-width:900px){
+	.wrapForFont{
+	/*@include container(800px);*/
+	@include span(12);
+	text-align: center;
+	background-color:lightGreen;
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+.imgAside{
+	@include span(12 of 12);
+	background:url('../img/cakeManySmall.jpg') no-repeat ;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 600px;
+}
+.imgAside2{
+	@include span(12 of 12);
+	background:url('../img/cakeManySmall.jpg') no-repeat ;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 600px;
+}
+/*.titleTop, h2,.order{
+	@include span(6 of 12);
+}*/
+.titleTop{
+	margin-top: 70px;
+}
+
+.underTitleTop{
+	margin-top: 70px;
+}
+.innerWrap{
+	@include span(12 of 12);
+}
+.order{
+	display: inline-block;
+	padding: 20px 140px;
+	background-color: red;
+	border-radius: 30px;
+	margin-top: 100px;
+	color: #fff;
+	 @include font-size(32px); 
+	
+}
 }
