@@ -28,10 +28,10 @@
 	@include span(12);
 	@include push(3);
 }
-/*.wrapForSafeItem{
+.wrapForSafeItem{
 	@include span(2 of 12);
-}*/
-.wrapForSafeItem1{
+}
+/*.wrapForSafeItem1{
 	@include span(2 of 12);
 	
 }
@@ -39,13 +39,13 @@
 	@include span(2 of 12);
 	
 }
-/*.wrapForSafeItem3{
+.wrapForSafeItem3{
 	@include span(2 of 12);
 	
 }*/
-.wrapForSafeItem-last{
+/*.wrapForSafeItem-last{
 	@include span(2 of 12);
-}
+}*/
 .safe{
 	height: 100px;
 	background: url('../img/safe1.jpg')no-repeat center;
