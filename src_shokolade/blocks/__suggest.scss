@@ -1,0 +1,54 @@
+.suggest{
+	@include span(12);
+	position: relative;
+	background-color: #EDFFDB;
+	padding-top: 40px;
+	padding-bottom: 100px;
+}
+.wrapForSuggestItem{
+	@include span(10 of 10);
+	margin-bottom: 120px;
+}
+.wrapForEach{
+	@include span(2 of 10);
+	
+	
+}
+.suggest_item{
+	height: 200px;
+
+	background: url('../img/sugg1.jpg')no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.wrapForEach-last{
+	@include span(2 of 10 last);
+}
+.wrapForSafe{
+	@include span(12);
+	@include push(3);
+}
+/*.wrapForSafeItem{
+	@include span(2 of 12);
+}*/
+.wrapForSafeItem1{
+	@include span(2 of 12);
+	
+}
+.wrapForSafeItem2{
+	@include span(2 of 12);
+	
+}
+/*.wrapForSafeItem3{
+	@include span(2 of 12);
+	
+}*/
+.wrapForSafeItem-last{
+	@include span(2 of 12);
+}
+.safe{
+	height: 100px;
+	background: url('../img/safe1.jpg')no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
