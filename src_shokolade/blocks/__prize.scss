@@ -1,0 +1,54 @@
+.wrapForPrizeAll{
+	@include span(12 of 12);
+	background-color: #fff;
+	margin-top: 50px;
+}
+.wrapForSertifik{
+	@include span(4 of 12);
+	background-color: magenta;
+	padding-bottom: 60px;
+}
+.wrapForImg{
+	@include span(8 of 12 last);
+	background-color: navy;
+}
+.sertifik_descr,.img_descr{
+	text-align: center;
+	text-align: left;
+    padding-left: 30px;
+     @include font-size(30px); 
+}
+/*.prize_item{
+	@include span(1 of 8);
+	
+	
+	
+
+}*/
+/*.prize_item-arrow{
+	@include span(1.5 of 8);
+	height: 200px;
+
+}
+.prize_item-arrow-last{
+	@include span(1.5 of 8 last);
+	height: 200px;
+
+}*/
+.prize_inner{
+	width:80%;
+	height: 200px;
+	background: url('../img/prize1.jpg')no-repeat center;
+	background-size: cover;
+	margin: 0 auto;
+	border:1px inset #222;
+}
+.sertifik_item{
+	@include span(1 of 4);
+	height: 200px;
+	background: url('../img/prize1.jpg')no-repeat center;
+	background-size: cover;
+	margin-left: 30px;
+
+
+}

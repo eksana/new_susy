@@ -1,0 +1,64 @@
+
+.upper{
+  /*font-family: 'Over the Rainbow', cursive;*/
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size:36px;
+  font-weight: bold;
+  color: chocolate;
+  
+}
+span{
+  display:block;
+}
+.start{
+  float:left;
+}
+.linkForLogo{
+	@include span(2 of 12);
+}
+.generalLogo{
+
+  display: inline-block;
+  padding: 20px;
+ /* background-color: brown;*/
+  background-color: #66442c ;
+  border-radius:50%;
+  border:3px double yellow;
+ 
+  }
+  .wrapLetters{
+    margin-left: 30%;
+  }
+  .f{
+    color: magenta;
+    animation:cYel 3s infinite;
+  }
+  .s{
+    color: yellow;
+     animation:cMag 3s infinite;
+  }
+  .th{
+    color: teal;
+     animation:cTea 3s infinite;
+  }
+  @keyframes cYel{
+   0%{ color: magenta;
+   }
+   80%{ color: yellow;
+   }
+    
+  }
+  @keyframes cMag{
+   0%{ color: yellow;
+   }
+   80%{ color: teal;
+   }
+    
+  }
+  @keyframes cTea{
+   0%{ color: teal;
+   }
+   80%{ color: magenta;
+   }
+    
+  }
