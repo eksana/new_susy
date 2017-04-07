@@ -1,0 +1,87 @@
+.makeBySelf{
+	@include span(12);
+	/*background-color: lightBlue;*/
+	margin-top: 20px;
+	text-align: center;
+}
+.makeBySelf_descr{
+	display: inline-block;
+	padding: 0 25px;
+	text-shadow:0 2px black;
+
+	color: #fff;
+	font-family: "ProximaNovaBold";
+	@include font-size(48px);
+	background: url('../img/bgForTitle.jpg') no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.makeBySelf_descr-under{
+	@include font-size(48px);
+	font-family: "ProximaNovaBold";
+	margin-top: -50px;
+
+}
+.makeBySelf-number{
+	@include font-size(48px);
+	font-family: "ProximaNovaBold";
+	color: #d80e00;
+}
+.backgroundHouse{
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background:url('../img/zamok.png')no-repeat 200px 150px,url('../img/mapHous.jpg')no-repeat center;
+	margin-top: -50px;
+}
+.plenka, .okant,.luvers{
+	position: absolute;
+	color: #fff;
+	font-family: "ProximaNovaRegular";
+	text-transform: uppercase;
+
+}
+.plenka{
+	top: 400px;
+    left: 430px;
+	transform: rotate(-90deg);
+	
+	
+}
+.okant{
+	top: 480px;
+    left: 310px;
+    transform: rotate(-7deg);
+}
+.luvers{
+	    top: 240px;
+    left: 262px;
+    background: url(../img/text1.png) no-repeat center;
+    width: 170px;
+    height: 140px;
+
+}
+.what{
+	width: 185px;
+	height: 70px;
+	position: absolute;
+	top: 140px;
+    left: 430px;
+	background: linear-gradient(to right, #7d0800,#c30e01);
+}
+.innerGrad{
+	color: #fff;
+	font-family: "ProximaNovaBold";
+	margin-top: 15px;
+    text-align: left;
+    @include font-size(18px);
+}
+.forVideo{
+	width: 190px;
+	height: 180px;
+	position: absolute;
+	background: url('../img/buttonVideo.png')no-repeat center;
+	    top: 90px;
+    left: 260px;
+    border: 3px solid transparent;
+}

@@ -1,0 +1,8 @@
+body { @include container(80em); }
+.wrapper_for_all{
+	@include span(12);
+	
+}
+span{
+	display: inline-block;
+}
