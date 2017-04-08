@@ -135,6 +135,7 @@
 	@include span(1.5 of 12 last);
 	background-color: #fff;
 	margin-top: 148px;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .qualityDescr{
 	text-align:left;
@@ -173,3 +174,32 @@
 
 }
 
+@media(max-width:1185px){
+	.quality2,.quality1{
+		display: none;
+	}
+	
+}
+
+	@media(max-width:650px){
+		.forVideo{
+			left:20%;
+
+		}
+		.how_item{
+	@include span(12 of 12);
+	margin-top: 30px;
+	}
+	.how_item-last{
+	@include span(12 of 12 last);
+	margin-top: 30px;
+}
+.makeBySelf_descr{
+	font-size: 28px
+}
+.makeBySelf_descr-under {
+    font-size: 28px;
+   
+    margin-top: 0;
+}
+}

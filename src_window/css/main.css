@@ -97,7 +97,11 @@ img {
 
 .topNav {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  display: block; }
+
+.fa-bars {
+  display: none; }
 
 .topNav ul li {
   display: inline-block;
@@ -165,6 +169,10 @@ img {
   font-family: "ProximaNovaBold";
   display: inline-block;
   margin-top: 10px; }
+  .recall:hover {
+    background: -webkit-linear-gradient(315deg, #f01707, #be1a09, #ff7727);
+    background: linear-gradient(135deg, #f01707, #be1a09, #ff7727);
+    color: #fff; }
 
 .wrapFortel1-last {
   width: 15.25424%;
@@ -191,7 +199,7 @@ img {
   font-style: normal;
   font-weight: normal; }
 
-/* font-family: "ProximaNovaBold"; */
+/*font-family: "ProximaNovaBold"; */
 @font-face {
   font-family: "ProximaNovaBold";
   src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
@@ -206,6 +214,27 @@ img {
   src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff"), url("../fonts/ProximaNovaBlack/ProximaNovaBlack.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
+
+@media (max-width: 1185px) {
+  .topNav {
+    display: none; }
+  .fa-bars {
+    display: block;
+    text-align: center;
+    font-size: 30px; } }
+
+@media (max-width: 994px) {
+  .wrapForLogo, .montaj, .wrapFortel1, .wrapFortel1-last {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px;
+    text-align: center; }
+  .for_logo {
+    float: none; }
+  .underTel {
+    font-size: 16px; } }
 
 .makeBySelf {
   width: 100%;
@@ -350,7 +379,9 @@ img {
   float: right;
   margin-right: 0;
   background-color: #fff;
-  margin-top: 148px; }
+  margin-top: 148px;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 .qualityDescr {
   text-align: left;
@@ -392,6 +423,30 @@ img {
   color: #da030e;
   font-family: "ProximaNovaBold"; }
 
+@media (max-width: 1185px) {
+  .quality2, .quality1 {
+    display: none; } }
+
+@media (max-width: 650px) {
+  .forVideo {
+    left: 20%; }
+  .how_item {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px; }
+  .how_item-last {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    margin-top: 30px; }
+  .makeBySelf_descr {
+    font-size: 28px; }
+  .makeBySelf_descr-under {
+    font-size: 28px;
+    margin-top: 0; } }
+
 .gallery {
   width: 100%;
   float: left;
@@ -403,8 +458,7 @@ img {
 .wrapForItem {
   width: 32.20339%;
   float: left;
-  margin-right: 1.69492%;
-  background-color: blue; }
+  margin-right: 1.69492%; }
 
 .wrapForItem-last {
   width: 32.20339%;
@@ -417,18 +471,25 @@ img {
 .gallery_pic1 {
   background: url("../img/gallery1.jpg") no-repeat center; }
   .gallery_pic1:before {
-    content: url("../img/spriteArrow.png");
+    content: url("../img/arrowLeft.png");
     position: absolute;
     width: 70px;
     height: 120px;
-    top: 0;
-    left: 0; }
+    top: 70px;
+    left: 20px; }
 
 .gallery_pic2 {
   background: url("../img/gallery2.jpg") no-repeat center; }
 
 .gallery_pic-last {
   background: url("../img/gallery3.jpg") no-repeat center; }
+  .gallery_pic-last:after {
+    content: url("../img/rightArrow.png");
+    position: absolute;
+    width: 70px;
+    height: 120px;
+    top: 70px;
+    right: -20px; }
 
 .gallery_pic {
   position: relative;
@@ -442,7 +503,176 @@ img {
           transform: scale(1.2);
   font-size: 12px;
   font-size: 0.75rem;
-  color: red; }
+  color: red;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  margin-bottom: 65px; }
+
+@media (max-width: 960px) {
+  .wrapForItem {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  .wrapForItem2 {
+    margin-top: 70px; }
+  .gallery_pic1:before {
+    content: '';
+    width: 0; }
+  .gallery_pic-last {
+    background: url("../img/gallery3.jpg") no-repeat center; }
+    .gallery_pic-last:after {
+      content: '';
+      width: 0; } }
+
+@media (max-width: 700px) {
+  .wrapForItem2 {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    font-size: 16px; } }
+
+.free {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center; }
+
+.free_form {
+  width: 83.05085%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-left: 8.47458%;
+  border: 18px solid transparent;
+  -webkit-border-image: -webkit-linear-gradient(315deg, #00b6ff 20%, #0fd766 70%);
+       -o-border-image: linear-gradient(135deg, #00b6ff 20%, #0fd766 70%);
+          border-image: linear-gradient(135deg, #00b6ff 20%, #0fd766 70%);
+  border-image-slice: 1;
+  display: block; }
+
+.free_descr {
+  margin-bottom: 50px;
+  margin-top: 47px; }
+
+input {
+  display: inline-block;
+  height: 59px; }
+
+input[type="submit"] {
+  margin-left: -170px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #fff;
+  font-family: "ProximaNovaBold";
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#222)), url("../img/bgSub.jpg") no-repeat center;
+  background: -webkit-linear-gradient(top, transparent, #222), url("../img/bgSub.jpg") no-repeat center;
+  background: linear-gradient(to bottom, transparent, #222), url("../img/bgSub.jpg") no-repeat center;
+  background-size: cover;
+  border: 2px solid #fff;
+  padding: 20px 70px; }
+  input[type="submit"]:hover {
+    background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#222)), url("../img/bgSub.jpg") no-repeat center;
+    background: -webkit-linear-gradient(bottom, transparent, #222), url("../img/bgSub.jpg") no-repeat center;
+    background: linear-gradient(to top, transparent, #222), url("../img/bgSub.jpg") no-repeat center;
+    background-size: cover; }
+
+input[type="tel"] {
+  height: 53px;
+  background: url("../img/tel.png") no-repeat left;
+  padding-left: 40px;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  padding-right: 170px;
+  border-top: 2px solid #b6b6b6;
+  border-bottom: 2px solid #b6b6b6; }
+
+.for_tel, .for_submit {
+  width: 38.77551%;
+  float: left;
+  margin-right: 2.04082%;
+  margin-left: 8.47458%;
+  margin-bottom: 68px; }
+
+@media (max-width: 900px) {
+  .for_tel, .for_submit {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  input[type="submit"] {
+    margin-left: 0;
+    padding: 0; } }
+
+@media (max-width: 700px) {
+  .backgroundHouse {
+    display: none; }
+  input[type="tel"] {
+    padding-right: 0; } }
+
+.garant {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 65px; }
+
+.wrapForItemGarant {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  @includ push(1); }
+
+.garant_descr {
+  width: 18.36735%;
+  float: left;
+  margin-right: 2.04082%;
+  font-family: "ProximaNovaBold";
+  display: inline-block;
+  text-align: center;
+  padding-top: 180px; }
+
+.garant_descr-last {
+  width: 18.36735%;
+  float: right;
+  margin-right: 0; }
+
+.garant_descr1 {
+  background: url("../img/1.jpg") no-repeat center top; }
+  .garant_descr1:hover {
+    background: url("../img/1.png") no-repeat center top, url("../img/1.jpg") no-repeat center top; }
+
+.garant_descr2 {
+  background: url("../img/2.jpg") no-repeat center top; }
+  .garant_descr2:hover {
+    background: url("../img/2.png") no-repeat center top, url("../img/2.jpg") no-repeat center top; }
+
+.garant_descr3 {
+  background: url("../img/3.jpg") no-repeat center top; }
+  .garant_descr3:hover {
+    background: url("../img/3.png") no-repeat center top, url("../img/3.jpg") no-repeat center top; }
+
+.garant_descr4 {
+  background: url("../img/4.jpg") no-repeat center top; }
+  .garant_descr4:hover {
+    background: url("../img/4.png") no-repeat center top, url("../img/4.jpg") no-repeat center top; }
+
+.garant_descr5 {
+  background: url("../img/5.jpg") no-repeat center top; }
+  .garant_descr5:hover {
+    background: url("../img/5.png") no-repeat center top, url("../img/5.jpg") no-repeat center top; }
+
+@media (max-width: 900px) {
+  .garant_descr {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: "ProximaNovaBold";
+    display: inline-block;
+    text-align: center;
+    padding-top: 180px; } }
 
 /*html,body{
   font-family: $font-family-default;

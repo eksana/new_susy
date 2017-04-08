@@ -5,7 +5,7 @@
 }
 .wrapForItem{
 	@include span(4 of 12);
-	background-color: blue;
+	
 }
 .wrapForItem-last{
 	@include span(4 of 12 last);
@@ -17,12 +17,12 @@
     	
     	background:url('../img/gallery1.jpg') no-repeat center;
     	&:before{
-    		content:url('../img/spriteArrow.png');
+    		content:url('../img/arrowLeft.png');
     		position: absolute;
     		width: 70px;
     		height: 120px;
-    		top:0;
-    		left: 0;
+    		top: 70px;
+    		left: 20px;
     	}
     }
     .gallery_pic2{
@@ -32,6 +32,14 @@
     .gallery_pic-last{
     	
     	background:url('../img/gallery3.jpg') no-repeat center;
+    	&:after{
+    		content:url('../img/rightArrow.png');
+    		position: absolute;
+    		width: 70px;
+    		height: 120px;
+    		top:70px;
+    		right: -20px;
+    	}
     }
     .gallery_pic{
     	position: relative;
@@ -44,4 +52,42 @@
     	transform: scale(1.2);
     	@include font-size(12px);
     	color: red;
+    	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    	margin-bottom: 65px;
     }
+
+    @media(max-width:960px){
+        .wrapForItem{
+    @include span(12 of 12);
+    
+}
+ .wrapForItem2{
+   margin-top: 70px; 
+ }
+  .gallery_pic1{
+        
+        
+        &:before{
+            content:'';
+            width:0;
+        }
+    }
+    .gallery_pic-last{
+        
+        background:url('../img/gallery3.jpg') no-repeat center;
+        &:after{
+            content:'';
+            
+            width: 0;
+        }
+    }
+
+    
+
+    }
+@media(max-width:700px){
+    .wrapForItem2{
+    transform: scale(1);
+    font-size: 16px;
+}
+}

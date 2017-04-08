@@ -1,0 +1,64 @@
+.garant{
+	@include span(12);
+	margin-top: 65px;
+}
+.wrapForItemGarant{
+@include span(12);
+@includ push(1);
+}
+.garant_descr{
+	@include span(2 of 10);
+	font-family: "ProximaNovaBold";
+	display: inline-block;
+	text-align: center;
+	padding-top: 180px;
+}
+.garant_descr-last{
+	@include span(2 of 10 last);
+}
+.garant_descr1{
+	background: url('../img/1.jpg') no-repeat center top ;
+	
+	&:hover{
+		background: url('../img/1.png') no-repeat center top,url('../img/1.jpg') no-repeat center top ;
+
+	}
+}
+.garant_descr2{
+	background: url('../img/2.jpg') no-repeat center top ;
+	&:hover{
+		background: url('../img/2.png') no-repeat center top,url('../img/2.jpg') no-repeat center top ;
+
+	}
+}
+.garant_descr3{
+	background: url('../img/3.jpg') no-repeat center  top;
+	&:hover{
+		background: url('../img/3.png') no-repeat center top,url('../img/3.jpg') no-repeat center top ;
+
+	}
+}
+.garant_descr4{
+	background: url('../img/4.jpg') no-repeat center top ;
+	&:hover{
+		background: url('../img/4.png') no-repeat center top,url('../img/4.jpg') no-repeat center top ;
+
+	}
+}
+.garant_descr5{
+	background: url('../img/5.jpg') no-repeat center top ;
+	&:hover{
+		background: url('../img/5.png') no-repeat center top,url('../img/5.jpg') no-repeat center top ;
+
+	}
+}
+@media(max-width:900px){
+	.garant_descr{
+	@include span(12 of 12);
+	font-family: "ProximaNovaBold";
+	display: inline-block;
+	text-align: center;
+	padding-top: 180px;
+}
+
+}

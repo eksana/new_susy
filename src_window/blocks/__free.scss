@@ -1,0 +1,74 @@
+.free{
+	@include span(12);
+	text-align: center;
+}
+.free_form{
+	@include span(10 of 12);
+	@include push(1);
+	 border: 18px solid transparent;
+	 border-image: linear-gradient(135deg, #00b6ff 20%, #0fd766 70%);
+  border-image-slice: 1;
+  display: block;
+
+}
+.free_descr{
+	margin-bottom: 50px;
+	margin-top: 47px;
+}
+input{
+	display: inline-block;
+	
+	height: 59px;
+}
+input[type="submit"]{
+	margin-left: -170px;
+	@include font-size(18px);
+	color: #fff; 
+	font-family: "ProximaNovaBold";
+	background: linear-gradient(to bottom, transparent,#222 ),url('../img/bgSub.jpg')no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	border:2px solid #fff;
+	padding:20px 70px;
+	&:hover{
+		background: linear-gradient(to top, transparent,#222 ),url('../img/bgSub.jpg')no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+
+	}
+}
+input[type="tel"]{
+	height: 53px;
+	background: url('../img/tel.png')no-repeat left;
+	padding-left: 40px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    padding-right: 170px;
+    border-top: 2px solid #b6b6b6;
+    border-bottom: 2px solid #b6b6b6;
+	}
+.for_tel,.for_submit{
+	@include span(4 of 10);
+	@include push(1);
+	margin-bottom: 68px;
+
+}
+@media(max-width:900px){
+	.for_tel,.for_submit{
+	@include span(12 of 12);
+
+}
+input[type="submit"]{
+	margin-left: 0;
+	padding:0;
+}
+}
+@media(max-width:700px){
+.backgroundHouse{
+	display: none;
+}
+input[type="tel"]{
+	padding-right: 0;
+}
+
+}
