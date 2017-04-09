@@ -3,8 +3,10 @@
 	margin-top: 65px;
 }
 .wrapForItemGarant{
-@include span(12);
-@includ push(1);
+/*@include span(12);
+@includ push(1);*/
+width: 100%;
+margin: 0 auto;
 }
 .garant_descr{
 	@include span(2 of 10);

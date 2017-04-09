@@ -525,7 +525,7 @@ img {
       content: '';
       width: 0; } }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .wrapForItem2 {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
@@ -540,11 +540,11 @@ img {
   text-align: center; }
 
 .free_form {
-  width: 83.05085%;
-  float: left;
-  margin-right: 1.69492%;
-  margin-left: 8.47458%;
-  border: 18px solid transparent;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 150px;
+  width: 80%;
+  border: 18px inset transparent;
   -webkit-border-image: -webkit-linear-gradient(315deg, #00b6ff 20%, #0fd766 70%);
        -o-border-image: linear-gradient(135deg, #00b6ff 20%, #0fd766 70%);
           border-image: linear-gradient(135deg, #00b6ff 20%, #0fd766 70%);
@@ -594,7 +594,7 @@ input[type="tel"] {
   margin-left: 8.47458%;
   margin-bottom: 68px; }
 
-@media (max-width: 900px) {
+@media (max-width: 902px) {
   .for_tel, .for_submit {
     width: 100%;
     float: left;
@@ -602,7 +602,9 @@ input[type="tel"] {
     margin-right: 0; }
   input[type="submit"] {
     margin-left: 0;
-    padding: 0; } }
+    padding: 0; }
+  .for_tel, .for_submit {
+    margin-bottom: 8px; } }
 
 @media (max-width: 700px) {
   .backgroundHouse {
@@ -618,11 +620,10 @@ input[type="tel"] {
   margin-top: 65px; }
 
 .wrapForItemGarant {
+  /*@include span(12);
+@includ push(1);*/
   width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  @includ push(1); }
+  margin: 0 auto; }
 
 .garant_descr {
   width: 18.36735%;
@@ -674,16 +675,16 @@ input[type="tel"] {
     text-align: center;
     padding-top: 180px; } }
 
-/*html,body{
-  font-family: $font-family-default;
+html, body {
+  /*font-family: $font-family-default;
   font-size:$font-size-default;
   line-height:$line-height;
   color:$color-text;
-  background-color: $color-background;
-  margin:0;
-  padding:0;*/
-/*overflow-x:hidden;*/
-/*}*/
+  background-color: $color-background;*/
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
 a {
   text-decoration: none;
   display: block; }

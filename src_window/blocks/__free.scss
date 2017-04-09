@@ -1,11 +1,14 @@
 .free{
 	@include span(12);
 	text-align: center;
+	
 }
 .free_form{
-	@include span(10 of 12);
-	@include push(1);
-	 border: 18px solid transparent;
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 150px;
+	width: 80%;
+	 border: 18px inset transparent;
 	 border-image: linear-gradient(135deg, #00b6ff 20%, #0fd766 70%);
   border-image-slice: 1;
   display: block;
@@ -53,7 +56,7 @@ input[type="tel"]{
 	margin-bottom: 68px;
 
 }
-@media(max-width:900px){
+@media(max-width:902px){
 	.for_tel,.for_submit{
 	@include span(12 of 12);
 
@@ -61,6 +64,10 @@ input[type="tel"]{
 input[type="submit"]{
 	margin-left: 0;
 	padding:0;
+}
+.for_tel, .for_submit {
+    
+    margin-bottom: 8px;
 }
 }
 @media(max-width:700px){
