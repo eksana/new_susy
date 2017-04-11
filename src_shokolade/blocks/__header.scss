@@ -1,22 +1,49 @@
 /*header*/
-.wrapper_for_all{
+/*.wrapper_for_all{
 
 	@include container;
 	background-color: skyBlue;
 	text-align: center;
 	padding: 0 20px;
+}*/
+.wrapper_for_header{
+	width: 100%;
+	float: left;
+	
+	background: url('../img/bgHeader2.jpg')no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
-.top{
-	@include span(12);
+.wrapInnerHeader{
+	@include container(90em);
 }
+/*.top{
+	width: 100%;
+	float: left;
+	background: url('../img/bgHeader1.jpg')no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}*/
 .top_line{
 	@include span(12);
 
 }
 .linkForLogo{
 	display: inline-block;
-	@include span(2 of 12);
+	@include span(3 of 12);
 }
+.callWrap{
+	@include span(3 of 12 last);
+	display: block;
+	margin-top: 20px;
+}
+.wrapForTel{
+	font-size: 28px;
+	color:$colorBrown;
+	font-weight: bold;
+}
+
+
 .img_logo{
 	display: inline-block;
 }
@@ -25,14 +52,15 @@
 	@include span(12);
 	position: relative;
 	text-align: center;
-	background-color:lightGreen;
-	padding: 40px 0;
+	/*background-color:lightGreen;*/
+
+	padding-bottom: 140px;
 	border-bottom: 1px solid lightGrey;
 }
 .imgAside{
 	@include span(3 of 12);
 
-	background:url('../img/cakeManySmall.jpg') no-repeat ;
+	background:url('../img/bgleft.png') no-repeat ;
 	-webkit-background-size: cover;
 	background-size: cover;
 	height: 600px;
@@ -53,6 +81,10 @@
 }*/
 .titleTop{
 	margin-top: 70px;
+	color: $colorRed;
+	font-size: 50px;
+	text-transform: uppercase;
+	
 }
 
 .underTitleTop{
@@ -60,16 +92,38 @@
 }
 .innerWrap{
 	@include span(6 of 12);
+	@include push(3);
 }
 .order{
 	display: inline-block;
+	position: relative;
 	padding: 20px 140px;
-	background-color: red;
+	background-color: $colorRed;
+	
 	border-radius: 30px;
 	margin-top: 100px;
 	color: #fff;
 	 @include font-size(32px); 
 	
+}
+.berry{
+	position: absolute;
+	top: 80px;
+right: -30px;
+	display: block;
+}
+.wrapForBerry{
+	position: relative;
+}
+.call{
+	padding: 4px 30px;
+	background-color:#fff;
+	border-radius: 30px;
+	color: #f13526;
+	font-size: 18px;
+	display: block;
+	margin-top: -20px;
+	font-weight: bold;
 }
 .round{
 	position: absolute;
@@ -79,8 +133,8 @@
 	width: 70px;
 	height: 70px;
 	border-radius:50%;
-	border: 1px solid lightGrey;
-	background-color: #fff;
+	border: 14px solid #fff;
+	background-color: #d3bfb6;
 	z-index: 10;
 }
 .arrow-down.icon {

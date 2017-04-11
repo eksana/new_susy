@@ -2,42 +2,48 @@
 	/*@include container(92em);*/
 	@include span(12);
 	position: relative;
-	background-color: #E1D6BD;
+	/*background-color: #E1D6BD;*/
 	padding-top: 40px;
 	padding-bottom: 200px;
 
 }
 .prices_title{
 	margin-top: 30px;
+	color:$colorBrown;
+	text-transform: uppercase;
+	font-size: 50px;
+}
+
+.prices_img {
+    width: 100%;
+}
+.wrapInnerPrices{
+	@include container(90em);
+	background-color: #fff;
+	color:  $colorRed;
+}
+.price_descr{
+	font-size: 24px;
 }
 .prices_item{
 	position: relative;
 	padding-bottom: 40px;
 	@include span(4 of 12);
 	/*box-shadow:inset 1px 1px 1px  lightGrey ;*/
-	border-bottom: 1px solid black;
-	&:before{
-		content:'';
-		position: absolute;
-		top:0;
-		left:0;
-		width: 1px;
-		height: 100%;
-		background-color: black;
+	box-shadow:  0px 0px 3px lightgrey;
 	}
-	&:after{
-		content:'';
-		position: absolute;
-		top:0;
-		right:0;
-		width: 1px;
-		height: 100%;
-		background-color: black;
-	}
-
+	.wrapForNav {
+    width: 100%;
+    float: left;
+}
+.price_item_nav{
+	
+	float: left;
 }
 .prices_item-Middle{
-padding-bottom: 140px;
+transform: scaleY(1.1);
+box-shadow:  0px 0px 3px $colorRed;
+margin-top: 35px;
 }
 .prices_itemLast{
 @include span(4 of 12 last);
@@ -49,8 +55,16 @@ padding-bottom: 140px;
 .price{
 	@include font-size(30px);
 	font-weight: bold;
-	float:left;
-	margin-left: 60px;
+	display: inline-block;
+	margin-top: 23px;
+	color: $colorRed;
+	
+}
+.price1{
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 23px;
+	color: #fff;
 }
 .priceMiddle{
 	float:none;
@@ -59,25 +73,23 @@ padding-bottom: 140px;
 }
 .orderPrices{
 	display: inline-block;
-
-	position: absolute;
-	padding: 20px 40px;
-	background-color: red;
+text-align: center;
+	margin-top: 12px;
+	padding: 12px 60px;
+	background-color: #fff;
 	border-radius: 30px;
-	bottom:-30px;
-	right:0;
-	color: #fff;
+	border:2px inset $colorRed;
+	color: $colorRed;
 	 @include font-size(32px); 
 	
 }
 .orderPricesMiddle{
 	display: inline-block;
-	position: absolute;
-	padding: 20px 40px;
+	
+	padding: 12px 60px;
 	background-color: red;
 	border-radius: 30px;
-	bottom:-30px;
-	left:30%;
+	text-align: center;
 
 	color: #fff;
 	 @include font-size(32px); 
