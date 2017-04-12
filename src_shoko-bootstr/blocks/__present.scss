@@ -1,28 +1,31 @@
 .present{
-	/*@include container(90em);*/
-	@include span(12);
+	
 	position: relative;
 	background: url('../img/bg3.jpg') no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-
+	text-align: center;
 	/*background-color: #7FD7A4;*/
 	padding-top: 40px;
+	padding-bottom: 130px;
 	
 }
-.form_present{
-	@include span(9 of 12);
-	@include push(1.5);
-	display: block;
-	/*background-color: green;*/
 
+	.form_present {
+    display: block;
+    /*background-color: green;*/
+    width: 100%;
+    /* float: left; */
+    overflow: hidden;
 }
 .wrap_form{
-	@include span(3 of 9);
+	
+	float: left;
+	margin-left: 70px;
 	
 }
 .wrap_form-last{
-	@include span(3 of 9 last);
+	
 }
 .for_form{
 	/*width: 100%;*/
@@ -30,7 +33,7 @@
 	border: 1px solid #fff;
     background-color: transparent;
     border-radius: 30px;
-
+float: left;
 }
  input[type="text"]::placeholder { 
  	color: $colorBrown; 
@@ -57,3 +60,14 @@
 	background-color: transparent;
 	border:1px solid transparent;
 }
+@media screen and(max-width: 1200px){
+.wrap_form {
+    
+    margin-bottom: 10px;
+   
+    text-align: center;
+    display: inline-block;
+        float: none;
+    margin-left: 0;
+}
+	}

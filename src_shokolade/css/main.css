@@ -226,12 +226,12 @@ img {
   position: relative;
   padding: 20px 140px;
   background-color: #e73526;
-  -webkit-border-radius: 30px;
-          border-radius: 30px;
+  -webkit-border-radius: 70px;
+          border-radius: 70px;
   margin-top: 100px;
   color: #fff;
-  font-size: 32px;
-  font-size: 2rem; }
+  font-size: 28px;
+  font-size: 1.75rem; }
 
 .berry {
   position: absolute;
@@ -339,9 +339,11 @@ img {
     font-size: 2rem; } }
 
 html, .general {
-  /*@include container(1240px);*/
-  /*@include container(90em);*/
-  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  /*@include container(80em);*/
+  /*width:100%;*/
   /* font-size: 62.5%;*/
   background-color: skyBlue;
   text-align: center;
@@ -349,6 +351,10 @@ html, .general {
   font-size: 16px;
   font-size: 1rem;
   font-family: 'Roboto Condensed', sans-serif; }
+  html:after, .general:after {
+    content: " ";
+    display: block;
+    clear: both; }
 
 .upper {
   /*font-family: 'Over the Rainbow', cursive;*/
@@ -567,19 +573,16 @@ a {
   font-size: 2rem; }
 
 .present {
-  max-width: 90em;
-  margin-left: auto;
-  margin-right: auto;
-  /*@include span(12);*/
+  /*@include container(90em);*/
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
   position: relative;
-  background: url("../img/bg2.jpg") no-repeat;
+  background: url("../img/bg3.jpg") no-repeat;
   background-size: cover;
   /*background-color: #7FD7A4;*/
   padding-top: 40px; }
-  .present:after {
-    content: " ";
-    display: block;
-    clear: both; }
 
 .form_present {
   width: 74.57627%;
@@ -667,10 +670,25 @@ input[type="text"]::placeholder {
   float: left;
   margin-right: 2.04082%; }
 
-.suggest_item {
+.suggest_item1 {
   height: 200px;
-  background: url("../img/sugg1.jpg") no-repeat center;
-  background-size: cover; }
+  background: url("../img/strawberry.png") no-repeat center; }
+
+.suggest_item2 {
+  height: 200px;
+  background: url("../img/bow.png") no-repeat center; }
+
+.suggest_item3 {
+  height: 200px;
+  background: url("../img/marshmallow.png") no-repeat center; }
+
+.suggest_item4 {
+  height: 200px;
+  background: url("../img/bow.png") no-repeat center; }
+
+.suggest_item5 {
+  height: 200px;
+  background: url("../img/bow.png") no-repeat center; }
 
 .wrapForEach-last {
   width: 18.36735%;

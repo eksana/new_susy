@@ -14,12 +14,40 @@
 	
 	
 }
-.suggest_item{
+.suggest_item1{
 	height: 200px;
 
-	background: url('../img/sugg1.jpg')no-repeat center;
-	-webkit-background-size: cover;
-	background-size: cover;
+	background: url('../img/strawberry.png')no-repeat center;
+	
+	
+}
+.suggest_item2{
+	height: 200px;
+
+	background: url('../img/bow.png')no-repeat center;
+	
+	
+}
+.suggest_item3{
+	height: 200px;
+
+	background: url('../img/marshmallow.png')no-repeat center;
+	
+	
+}
+.suggest_item4{
+	height: 200px;
+
+	background: url('../img/bow.png')no-repeat center;
+	
+	
+}
+.suggest_item5{
+	height: 200px;
+
+	background: url('../img/bow.png')no-repeat center;
+	
+	
 }
 .wrapForEach-last{
 	@include span(2 of 10 last);

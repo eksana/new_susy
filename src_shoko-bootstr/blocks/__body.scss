@@ -1,10 +1,6 @@
-
 html,.general{
-@include container(1240px);
-/*@include container(80em);*/
-/*width:100%;*/
- /* font-size: 62.5%;*/
- background-color: skyBlue;
+
+ background-color: greenLight;
 	text-align: center;
 	padding: 0 20px;
   @include font-size(16px); 

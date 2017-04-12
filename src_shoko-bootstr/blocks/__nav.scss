@@ -1,0 +1,26 @@
+.topNavUpper ul li{
+
+	display: inline-block;
+}
+.topNavUpper ul li a{
+font-size: 16px;
+color: #6b2f23;
+font-weight: bold;
+}
+.topNavUpper ul li a.topNav-item-active{
+	color: #f13526;
+}
+
+a{
+  text-decoration: none;
+  list-style-type: none;
+}
+.topNavUpper{
+	
+	display: block;
+	margin-top: 25px;
+	
+}
+.topNav-item {
+    margin-left: 12px;
+}
