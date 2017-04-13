@@ -60,7 +60,8 @@ p {
   width: 100%;
   background: url("../img/bgHeader2.jpg") no-repeat center;
   background-size: cover;
-  padding: 20px 0 90px; }
+  padding: 20px 0 90px;
+  text-align: center; }
 
 .img_logo {
   margin-left: -70px; }
@@ -183,6 +184,55 @@ a {
 
 .topNav-item {
   margin-left: 12px; }
+
+.topNavUpperAside {
+  position: absolute;
+  top: 0;
+  right: -220px;
+  background-color: lightGreen; }
+
+.topNavUpperAside > ul > li {
+  background-color: #333;
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  padding: 0;
+  margin-left: 0;
+  padding: 10px 10px 10px 20px;
+  margin-left: -40px; }
+
+.topNavUpperAside > ul > li > a {
+  display: inline-block;
+  font-size: 24px;
+  width: 100%;
+  text-align: left; }
+
+.topNavUpperAside > ul > li > a:before {
+  float: right;
+  font-size: 1.2rem;
+  font-family: rei-icons;
+  speak: none;
+  content: '\e739'; }
+
+.fa-bars, .fa-times {
+  display: none; }
+
+#pie {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  display: none; }
+
+/*body{
+	overflow-x:hidden;
+}*/
+@media screen and (max-width: 1320px) {
+  .topNavUpper {
+    display: none; }
+  .fa-bars, .fa-times, #pie, #cross {
+    display: inline-block;
+    text-align: center;
+    font-size: 30px; } }
 
 .prices {
   position: relative;
@@ -361,12 +411,70 @@ input[type="text"]::placeholder {
     float: none;
     margin-left: 0; } }
 
+.suggest {
+  text-align: center;
+  position: relative;
+  background-color: #EDFFDB;
+  padding-top: 40px;
+  padding-bottom: 100px; }
+
+.wrapForSuggestItem {
+  margin-bottom: 120px; }
+
+.suggest_item1 {
+  height: 200px;
+  background: url("../img/strawberry.png") no-repeat center; }
+
+.suggest_item2 {
+  height: 200px;
+  background: url("../img/chocolate.png") no-repeat center; }
+
+.suggest_item3 {
+  height: 200px;
+  background: url("../img/marshmallow.png") no-repeat center; }
+
+.suggest_item4 {
+  height: 200px;
+  background: url("../img/chocolate-fountain.png") no-repeat center; }
+
+.suggest_item5 {
+  height: 200px;
+  background: url("../img/bow.png") no-repeat center; }
+
+/*.wrapForSafeItem1{
+	@include span(2 of 12);
+	
+}
+.wrapForSafeItem2{
+	@include span(2 of 12);
+	
+}
+.wrapForSafeItem3{
+	@include span(2 of 12);
+	
+}*/
+/*.wrapForSafeItem-last{
+	@include span(2 of 12);
+}*/
+.safe {
+  height: 100px;
+  background: url("../img/safe1.jpg") no-repeat center;
+  background-size: cover; }
+
+.row_suggest {
+  width: 100%;
+  overflow: hidden;
+  background-color: red; }
+
+#new_suugest .col-md-2, .col-lg-2 {
+  margin-left: 30px; }
+
 /*@import "../blocks/__body.scss";
 @import "../blocks/__logo.scss";
 
 
 
-@import "../blocks/__suggest.scss";
+
 @import "../blocks/__delivery.scss";
 @import "../blocks/__testimonial.scss";
 @import "../blocks/__prize.scss";

@@ -1,0 +1,89 @@
+.suggest{
+	text-align: center;
+	position: relative;
+	background-color: #EDFFDB;
+	padding-top: 40px;
+	padding-bottom: 100px;
+}
+.wrapForSuggestItem{
+	
+	margin-bottom: 120px;
+}
+.wrapForEach{
+	
+	
+	
+}
+.suggest_item1{
+	height: 200px;
+
+	background: url('../img/strawberry.png')no-repeat center;
+	
+	
+}
+.suggest_item2{
+	height: 200px;
+
+	background: url('../img/chocolate.png')no-repeat center;
+	
+	
+}
+.suggest_item3{
+	height: 200px;
+
+	background: url('../img/marshmallow.png')no-repeat center;
+	
+	
+}
+.suggest_item4{
+	height: 200px;
+
+	background: url('../img/chocolate-fountain.png')no-repeat center;
+	
+	
+}
+.suggest_item5{
+	height: 200px;
+
+	background: url('../img/bow.png')no-repeat center;
+	
+	
+}
+.wrapForEach-last{
+	
+}
+.wrapForSafe{
+	
+}
+.wrapForSafeItem{
+	
+}
+/*.wrapForSafeItem1{
+	@include span(2 of 12);
+	
+}
+.wrapForSafeItem2{
+	@include span(2 of 12);
+	
+}
+.wrapForSafeItem3{
+	@include span(2 of 12);
+	
+}*/
+/*.wrapForSafeItem-last{
+	@include span(2 of 12);
+}*/
+.safe{
+	height: 100px;
+	background: url('../img/safe1.jpg')no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.row_suggest{
+	width: 100%;
+	overflow: hidden;
+	background-color: red;
+}
+#new_suugest .col-md-2,  .col-lg-2{
+	margin-left: 30px;
+}
