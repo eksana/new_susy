@@ -11,7 +11,8 @@
 }
 .wrapForEach{
 	
-	
+	padding: 0 10px;
+	flex: 1;
 	
 }
 .suggest_item1{
@@ -56,8 +57,55 @@
 	
 }
 .wrapForSafeItem{
+	margin: 0 30px;
+	flex:1;
+}
+.round_suggest{
+	position: absolute;
+	
+	left:50%;
+	margin-left: -35px;
+	width: 70px;
+	height: 70px;
+	border-radius:50%;
+	border: 14px solid #fff;
+	/*background-color: #d3bfb6;*/
+	z-index: 10;
+	background:#d3bfb6 url('../img/arrowDown.png')no-repeat center;
+	bottom: -38px;
+}
+
+
+@media screen and(min-width: 1200px){
+	.wrapForSuggestItem{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+}
+
+@media screen and(min-width: 1200px){
+	.wrapForSafeAll{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
 	
 }
+@media screen and(max-width: 1200px){
+.safe {
+    height: 300px;
+    
+    width: 50%;
+    margin: 0 auto;
+}
+}
+
+
 /*.wrapForSafeItem1{
 	@include span(2 of 12);
 	
@@ -74,7 +122,7 @@
 	@include span(2 of 12);
 }*/
 .safe{
-	height: 100px;
+	height: 300px;
 	background: url('../img/safe1.jpg')no-repeat center;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -87,3 +135,62 @@
 #new_suugest .col-md-2,  .col-lg-2{
 	margin-left: 30px;
 }
+
+/*доп разметка для 5-ти колонок */
+/*.col-xs-five,
+.col-sm-five,
+.col-md-five,
+.col-lg-five {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-five {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-five {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-five {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-five {
+        width: 20%;
+        float: left;
+    }
+}*/
+/*еще вариант в 5 колонок -не проверено  */
+/*<div class="row">
+  <div class="btn-group btn-group-justified">
+    <div class="btn-group">
+      <div class="col-sm-12">Column 1</div>
+    </div>
+    <div class="btn-group">
+      <div class="col-sm-12">Column 2</div>
+    </div>
+    <div class="btn-group">
+      <div class="col-sm-12">Column 3</div>
+    </div>
+    <div class="btn-group">
+      <div class="col-sm-12">Column 4</div>
+    </div>
+    <div class="btn-group">
+      <div class="col-sm-12">Column 5</div>
+    </div>
+  </div>
+</div>
+
+Если надо на каком-то разрешении выстроить их по вертикали, нужно просто сделать display: block классу .btn-group.*/
