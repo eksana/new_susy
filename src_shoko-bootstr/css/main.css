@@ -603,7 +603,141 @@ input[type="text"]::placeholder {
 Если надо на каком-то разрешении выстроить их по вертикали, нужно просто сделать display: block классу .btn-group.*/
 .orderFont {
   text-align: center;
-  background: url("../img/bg4.jpg") no-repeat center; }
+  background: url("../img/bg4.jpg") no-repeat center;
+  background-size: cover;
+  position: relative; }
+
+.round_orderFont {
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  width: 70px;
+  height: 70px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 14px solid #fff;
+  /*background-color: #d3bfb6;*/
+  z-index: 10;
+  background: #d3bfb6 url("../img/arrowDown.png") no-repeat center;
+  bottom: -38px; }
+
+.prices_orderFont {
+  margin-top: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 50px; }
+
+.wrapForEach_orderFont {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 10px;
+  margin-left: 100px;
+  position: relative; }
+
+.order_item {
+  font-size: 50px;
+  color: #fff; }
+
+.arrowArk {
+  width: 120px;
+  height: 50px;
+  position: absolute; }
+
+.arrowArk1 {
+  top: 16px;
+  left: 170px;
+  background: url("../img/arkaTop.png") no-repeat center; }
+
+.arrowArk2 {
+  top: 160px;
+  left: 170px;
+  background: url("../img/arkaBottom.png") no-repeat center; }
+
+@media screen and (min-width: 1200px) {
+  .wrapFor_orderFontItem {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.testimonialBoot {
+  position: relative;
+  background-color: #FFFBE7;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  text-align: center; }
+
+.testimon_inner {
+  width: 80%;
+  height: 200px;
+  background-size: cover;
+  margin: 0 auto;
+  border: 1px inset #222; }
+
+.testimon_inner-img1 {
+  background: url("../img/testimon1.jpg") no-repeat center; }
+
+.testimon_inner-img2 {
+  background: url("../img/testimon2.jpg") no-repeat center; }
+
+.testimon_inner-img3 {
+  background: url("../img/testimon3.jpg") no-repeat center; }
+
+.wrapForTestimon {
+  border: 1px inset #222;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.testim_descr {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px inset #222;
+  line-height: 1.8;
+  margin-top: 40px;
+  padding: 0 30px; }
+
+.wrap_for_owl-carousel {
+  border: 1px solid blue;
+  /* flex-grow:1;*/
+  width: 40%; }
+
+.wrapForPrizeAll {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid red; }
+
+.wrapForImg {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid green; }
+
+.two {
+  width: 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.wrapAllTestimon {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.prize_item {
+  width: 100%; }
 
 /*@import "../blocks/__order.scss";
 @import "../blocks/__logo.scss";
@@ -612,7 +746,7 @@ input[type="text"]::placeholder {
 
 
 @import "../blocks/__delivery.scss";
-@import "../blocks/__testimonial.scss";
+
 @import "../blocks/__prize.scss";
 @import "../blocks/__footer.scss";*/
 /*@import "../blocks/__nav.scss";*/

@@ -1,4 +1,64 @@
 .orderFont{
 	text-align: center;
 	background: url('../img/bg4.jpg')no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+.round_orderFont{
+	position: absolute;
+	left:50%;
+	margin-left: -35px;
+	width: 70px;
+	height: 70px;
+	border-radius:50%;
+	border: 14px solid #fff;
+	/*background-color: #d3bfb6;*/
+	z-index: 10;
+	background:#d3bfb6 url('../img/arrowDown.png')no-repeat center;
+	bottom: -38px;
+}
+.prices_orderFont{
+	margin-top: 30px;
+	color:#fff;
+	text-transform: uppercase;
+	font-size: 50px;
+}
+
+
+
+.wrapForEach_orderFont{
+	flex:1;
+	padding: 0 10px;
+	margin-left: 100px;
+	position: relative;
+}
+.order_item{
+	font-size: 50px;
+	color: #fff;
+
+}
+.arrowArk{
+	width: 120px;
+	height: 50px;
+	position: absolute;
+
+	
+}
+.arrowArk1{
+	top: 16px;
+    left: 170px;
+	background: url('../img/arkaTop.png')no-repeat center;
+}
+.arrowArk2{
+	top: 160px;
+    left: 170px;
+	background: url('../img/arkaBottom.png')no-repeat center;
+}
+
+
+@media screen and(min-width: 1200px){
+	.wrapFor_orderFontItem{
+		
+		display: flex;
+	}
 }

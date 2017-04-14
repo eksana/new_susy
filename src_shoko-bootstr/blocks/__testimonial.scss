@@ -1,0 +1,74 @@
+.testimonialBoot{
+	
+	position: relative;
+	background-color: #FFFBE7;
+	padding-top: 40px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+.testimon_inner{
+width:80%;
+	height: 200px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin: 0 auto;
+	border:1px inset #222;
+	
+}
+.testimon_inner-img1{
+background: url('../img/testimon1.jpg')no-repeat center;
+
+}
+.testimon_inner-img2{
+background: url('../img/testimon2.jpg')no-repeat center;
+
+}
+.testimon_inner-img3{
+background: url('../img/testimon3.jpg')no-repeat center;
+
+}
+.wrapForTestimon{
+	border:1px inset #222;
+	flex-grow:1;
+}
+.testim_descr{
+width: 80%;
+margin: 0 auto;
+border:1px inset #222;
+line-height: 1.8;
+margin-top: 40px;
+padding: 0 30px;
+}
+
+	
+.wrap_for_owl-carousel{
+	border:1px solid blue;
+	/* flex-grow:1;*/
+	width:40%;
+}
+
+.wrapForPrizeAll{
+	 flex-grow:1;
+	border:1px solid red;
+}
+.wrapForImg{
+	 flex-grow:1;
+
+	border:1px solid green;
+	
+}
+.two{
+	width: 60%;
+	flex-direction: column;
+}
+.wrapAllTestimon{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	
+}
+.prize_item{
+	width: 100%;
+}
