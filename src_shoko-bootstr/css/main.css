@@ -202,7 +202,7 @@ a {
   margin-left: 12px; }
 
 .topNavUpperAside {
-  /*position: absolute;*/
+  position: absolute;
   top: 0;
   right: -220px;
   background-color: lightGreen; }
@@ -605,7 +605,8 @@ input[type="text"]::placeholder {
   text-align: center;
   background: url("../img/bg4.jpg") no-repeat center;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  padding-bottom: 70px; }
 
 .round_orderFont {
   position: absolute;
@@ -670,20 +671,24 @@ input[type="text"]::placeholder {
   text-align: center; }
 
 .testimon_inner {
-  width: 80%;
-  height: 200px;
   background-size: cover;
   margin: 0 auto;
   border: 1px inset #222; }
 
 .testimon_inner-img1 {
-  background: url("../img/testimon1.jpg") no-repeat center; }
+  background: url("../img/testimon1.jpg") no-repeat center;
+  width: 400px;
+  height: 300px; }
 
 .testimon_inner-img2 {
-  background: url("../img/testimon2.jpg") no-repeat center; }
+  background: url("../img/testimon2.jpg") no-repeat center;
+  width: 200px;
+  height: 150px; }
 
 .testimon_inner-img3 {
-  background: url("../img/testimon3.jpg") no-repeat center; }
+  background: url("../img/testimon3.jpg") no-repeat center;
+  width: 400px;
+  height: 300px; }
 
 .wrapForTestimon {
   border: 1px inset #222;
@@ -693,11 +698,14 @@ input[type="text"]::placeholder {
           flex-grow: 1; }
 
 .testim_descr {
-  width: 80%;
-  margin: 0 auto;
+  margin: 40px 0;
   border: 1px inset #222;
   line-height: 1.8;
-  margin-top: 40px;
+  padding: 0 30px; }
+
+.testim_descrOwl {
+  border: 1px inset #222;
+  line-height: 1.8;
   padding: 0 30px; }
 
 .wrap_for_owl-carousel {
@@ -717,7 +725,21 @@ input[type="text"]::placeholder {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  border: 1px solid green; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid green;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  display: flex;
+  /* Теперь определим, как будет распределяться пространство */
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
 
 .two {
   width: 60%;
@@ -727,17 +749,40 @@ input[type="text"]::placeholder {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.wrapAllTestimon {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .prize_item {
-  width: 100%; }
+  /*width: 100%;*/ }
+
+.roundTestim {
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  width: 70px;
+  height: 70px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 14px solid #fff;
+  /*background-color: #d3bfb6;*/
+  z-index: 10;
+  background: #d3bfb6 url("../img/arrowDown.png") no-repeat center;
+  bottom: -40px; }
+
+@media screen and (min-width: 1200px) {
+  .wrapAllTestimon {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media screen and (max-width: 1200px) {
+  .wrap_for_owl-carousel {
+    border: 1px solid blue;
+    /* flex-grow:1;*/
+    width: 100%; }
+  .two {
+    width: 100%; } }
 
 /*@import "../blocks/__order.scss";
 @import "../blocks/__logo.scss";
@@ -757,15 +802,15 @@ input[type="text"]::placeholder {
     toggle: top right,
   ),
 );*/
-/*html,body{
-  font-family: $font-family-default;
+html, body {
+  /* font-family: $font-family-default;
   font-size:$font-size-default;
   line-height:$line-height;
   color:$color-text;
   background-color: $color-background;
   margin:0;
   padding:0;*/
-/*overflow-x:hidden;*/
-/*}*/
+  overflow-x: hidden; }
+
 /*https://webref.ru/dev/automate-with-gulp/responsive*/
 /*http://www.creativebloq.com/web-design/flexible-layouts-susy-and-breakpoint-121518452*/

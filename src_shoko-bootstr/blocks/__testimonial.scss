@@ -7,36 +7,45 @@
 	text-align: center;
 }
 .testimon_inner{
-width:80%;
-	height: 200px;
+
 	-webkit-background-size: cover;
 	background-size: cover;
 	margin: 0 auto;
 	border:1px inset #222;
 	
+	
 }
 .testimon_inner-img1{
 background: url('../img/testimon1.jpg')no-repeat center;
-
+width: 400px;
+    height: 300px;
 }
 .testimon_inner-img2{
 background: url('../img/testimon2.jpg')no-repeat center;
-
+width: 200px;
+    height: 150px;
 }
 .testimon_inner-img3{
 background: url('../img/testimon3.jpg')no-repeat center;
-
+width: 400px;
+    height: 300px;
 }
 .wrapForTestimon{
 	border:1px inset #222;
 	flex-grow:1;
 }
 .testim_descr{
-width: 80%;
-margin: 0 auto;
+margin: 40px 0;
+
 border:1px inset #222;
 line-height: 1.8;
-margin-top: 40px;
+
+padding: 0 30px;
+}
+.testim_descrOwl{
+border:1px inset #222;
+line-height: 1.8;
+
 padding: 0 30px;
 }
 
@@ -53,22 +62,60 @@ padding: 0 30px;
 }
 .wrapForImg{
 	 flex-grow:1;
-
+display: flex;
 	border:1px solid green;
+	flex-flow: row wrap;
+display: flex;
+  /* Теперь определим, как будет распределяться пространство */
+  justify-content: space-around;
 	
+	
+
 }
 .two{
 	width: 60%;
 	flex-direction: column;
+	
 }
 .wrapAllTestimon{
-	display: -webkit-flex;
+	
+	
+}
+.prize_item{
+	/*width: 100%;*/
+	
+}
+.roundTestim{
+	position: absolute;
+	left:50%;
+	margin-left: -35px;
+	width: 70px;
+	height: 70px;
+	border-radius:50%;
+	border: 14px solid #fff;
+	/*background-color: #d3bfb6;*/
+	z-index: 10;
+	background:#d3bfb6 url('../img/arrowDown.png')no-repeat center;
+	bottom: -40px;
+}
+
+
+@media screen and(min-width: 1200px){
+	.wrapAllTestimon{
+		display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	
+	}
 }
-.prize_item{
-	width: 100%;
+@media screen and(max-width: 1200px){
+	.wrap_for_owl-carousel{
+	border:1px solid blue;
+	/* flex-grow:1;*/
+	width:100%;
+}
+.two {
+    width: 100%;
+    }
 }
