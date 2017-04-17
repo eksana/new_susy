@@ -338,10 +338,8 @@ img {
     font-size: 32px;
     font-size: 2rem; } }
 
-html, .general {
-  max-width: 1240px;
-  margin-left: auto;
-  margin-right: auto;
+body {
+  /*@include container(1240px);*/
   /*@include container(80em);*/
   /*width:100%;*/
   /* font-size: 62.5%;*/
@@ -351,10 +349,6 @@ html, .general {
   font-size: 16px;
   font-size: 1rem;
   font-family: 'Roboto Condensed', sans-serif; }
-  html:after, .general:after {
-    content: " ";
-    display: block;
-    clear: both; }
 
 .upper {
   /*font-family: 'Over the Rainbow', cursive;*/
@@ -483,7 +477,7 @@ a {
   width: 100%; }
 
 .wrapInnerPrices {
-  max-width: 90em;
+  max-width: 100em;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
@@ -666,9 +660,12 @@ input[type="text"]::placeholder {
   margin-bottom: 120px; }
 
 .wrapForEach {
-  width: 18.36735%;
+  width: 15.25424%;
   float: left;
-  margin-right: 2.04082%; }
+  margin-right: 1.69492%; }
+
+.wrapForEach:first-child {
+  margin-left: 8.47458%; }
 
 .suggest_item1 {
   height: 200px;
@@ -690,28 +687,27 @@ input[type="text"]::placeholder {
   height: 200px;
   background: url("../img/bow.png") no-repeat center; }
 
-.wrapForEach-last {
-  width: 18.36735%;
-  float: right;
-  margin-right: 0; }
-
+/*.wrapForEach-last{
+	@include span(2 of 12 last);
+}*/
 .wrapForSafe {
   width: 100%;
   float: left;
   margin-left: 0;
-  margin-right: 0;
-  margin-left: 25.42373%; }
+  margin-right: 0; }
 
 .wrapForSafeItem {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%; }
 
-/*.wrapForSafeItem1{
-	@include span(2 of 12);
-	
-}
-.wrapForSafeItem2{
+.wrapForSafeItem1 {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-left: 25.42373%; }
+
+/*.wrapForSafeItem2{
 	@include span(2 of 12);
 	
 }
@@ -726,6 +722,10 @@ input[type="text"]::placeholder {
   height: 100px;
   background: url("../img/safe1.jpg") no-repeat center;
   background-size: cover; }
+
+.prices_descr {
+  width: 90%;
+  margin: 0 auto; }
 
 .delivery {
   width: 100%;
@@ -742,18 +742,17 @@ input[type="text"]::placeholder {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 120px;
-  margin-left: 5.9322%; }
+  margin-bottom: 120px; }
 
-.wrapForEachDelivery {
+.wrapForEachDelivery:not(:last-child) {
   position: relative;
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%;
   -webkit-box-shadow: inset 0px 0px 1px 0px black;
           box-shadow: inset 0px 0px 1px 0px black;
-  margin-left: 4.23729%; }
-  .wrapForEachDelivery:before {
+  margin-left: 6.77966%; }
+  .wrapForEachDelivery:not(:last-child):before {
     content: '';
     right: -50px;
     top: 65px;
@@ -766,15 +765,25 @@ input[type="text"]::placeholder {
             transform: rotate(45deg);
     position: absolute; }
 
-.wrapForEachDelivery-last {
+.wrapForEachDelivery:last-child {
   position: relative;
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%;
   -webkit-box-shadow: inset 0px 0px 1px 0px black;
           box-shadow: inset 0px 0px 1px 0px black;
-  margin-left: 4.23729%; }
+  margin-left: 6.77966%; }
 
+/*.wrapForEachDelivery:first-child{
+	@include push(2);
+}*/
+/*.wrapForEachDelivery-last{
+	position: relative;
+	@include span(2 of 12);
+	box-shadow: inset 0px 0px 1px 0px black;
+	@include push(0.5);
+	
+}*/
 .delivery_item {
   height: 200px;
   background: url("../img/deliv1.png") no-repeat center;
@@ -784,13 +793,15 @@ input[type="text"]::placeholder {
   width: 100%;
   float: left;
   margin-left: 0;
-  margin-right: 0;
-  margin-left: 25.42373%; }
+  margin-right: 0; }
 
 .wrapForFestiveItem {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%; }
+
+.wrapForFestiveItem:first-child {
+  margin-left: 25.42373%; }
 
 .festive {
   height: 100px;

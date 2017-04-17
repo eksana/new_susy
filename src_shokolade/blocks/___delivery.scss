@@ -9,13 +9,13 @@
 .wrapForDelivery{
 	@include span(12 of 12);
 	margin-bottom: 120px;
-@include push(0.7);
+
 }
-.wrapForEachDelivery{
+.wrapForEachDelivery:not(:last-child){
 	position: relative;
 	@include span(2 of 12);
 	box-shadow: inset 0px 0px 1px 0px black;
-	@include push(0.5);
+	@include push(0.8);
 	&:before {
     content: '';
     right: -50px;
@@ -29,13 +29,25 @@
     position: absolute;
 }
 }
-.wrapForEachDelivery-last{
+.wrapForEachDelivery:last-child{
+	position: relative;
+	@include span(2 of 12);
+	box-shadow: inset 0px 0px 1px 0px black;
+	@include push(0.8);
+	
+}
+/*.wrapForEachDelivery:first-child{
+	@include push(2);
+}*/
+
+
+/*.wrapForEachDelivery-last{
 	position: relative;
 	@include span(2 of 12);
 	box-shadow: inset 0px 0px 1px 0px black;
 	@include push(0.5);
 	
-}
+}*/
 .delivery_item{
 	height: 200px;
 	background: url('../img/deliv1.png')no-repeat center;
@@ -44,11 +56,15 @@
 }
 .wrapForFestive{
 	@include span(12);
-	@include push(3);
+	
 }
 .wrapForFestiveItem{
 	@include span(2 of 12);
 }
+.wrapForFestiveItem:first-child{
+	@include push(3);
+}
+
 .festive{
 	height: 100px;
 	width: 100px;

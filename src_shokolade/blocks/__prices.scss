@@ -18,7 +18,7 @@
     width: 100%;
 }
 .wrapInnerPrices{
-	@include container(90em);
+	@include container(100em);
 	background-color: #fff;
 	color:  $colorRed;
 }
