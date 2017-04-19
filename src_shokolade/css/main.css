@@ -648,7 +648,7 @@ input[type="text"]::placeholder {
   margin-left: 0;
   margin-right: 0;
   position: relative;
-  background-color: #EDFFDB;
+  background-color: #fff;
   padding-top: 40px;
   padding-bottom: 100px; }
 
@@ -720,8 +720,16 @@ input[type="text"]::placeholder {
 }*/
 .safe {
   height: 100px;
-  background: url("../img/safe1.jpg") no-repeat center;
   background-size: cover; }
+
+.safe1 {
+  background: url("../img/gloves.png") no-repeat center; }
+
+.safe2 {
+  background: url("../img/open-book.png") no-repeat center; }
+
+.safe3 {
+  background: url("../img/stopwatch.png") no-repeat center; }
 
 .prices_descr {
   width: 90%;
@@ -733,7 +741,8 @@ input[type="text"]::placeholder {
   margin-left: 0;
   margin-right: 0;
   position: relative;
-  background-color: #E8F4F6;
+  background: url("../img/bg4.png") no-repeat center;
+  background-size: cover;
   padding-top: 40px;
   padding-bottom: 100px; }
 
@@ -786,7 +795,7 @@ input[type="text"]::placeholder {
 }*/
 .delivery_item {
   height: 200px;
-  background: url("../img/deliv1.png") no-repeat center;
+  /*background: url('../img/bg4.png')no-repeat center;*/
   background-size: cover; }
 
 .wrapForFestive {

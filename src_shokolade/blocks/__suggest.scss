@@ -1,7 +1,7 @@
 .suggest{
 	@include span(12);
 	position: relative;
-	background-color: #EDFFDB;
+	background-color: #fff;
 	padding-top: 40px;
 	padding-bottom: 100px;
 }
@@ -82,9 +82,18 @@
 }*/
 .safe{
 	height: 100px;
-	background: url('../img/safe1.jpg')no-repeat center;
+	
 	-webkit-background-size: cover;
 	background-size: cover;
+}
+.safe1{
+background: url('../img/gloves.png')no-repeat center;
+}
+.safe2{
+background: url('../img/open-book.png')no-repeat center;
+}
+.safe3{
+background: url('../img/stopwatch.png')no-repeat center;
 }
 .prices_descr {
     width: 90%;
