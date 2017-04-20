@@ -1,11 +1,12 @@
 .delivery{
 	@include span(12);
 	position: relative;
-	background: url('../img/bg4.png')no-repeat center;
+	background: url('../img/bg4.jpg')no-repeat center;
 	-webkit-background-size: cover;
 	background-size: cover;
 	padding-top: 40px;
 	padding-bottom: 100px;
+	color: #fff;
 
 }
 .wrapForDelivery{
@@ -13,12 +14,19 @@
 	margin-bottom: 120px;
 
 }
+.prices_titleDelivery {
+    margin-top: 130px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
 .wrapForEachDelivery:not(:last-child){
 	position: relative;
 	@include span(2 of 12);
-	box-shadow: inset 0px 0px 1px 0px black;
+	/*box-shadow: inset 0px 0px 1px 0px black;*/
 	@include push(0.8);
-	&:before {
+	/*&:before {
     content: '';
     right: -50px;
     top: 65px;
@@ -29,14 +37,18 @@
     
     transform: rotate(45deg);
     position: absolute;
-}
+}*/
 }
 .wrapForEachDelivery:last-child{
 	position: relative;
 	@include span(2 of 12);
-	box-shadow: inset 0px 0px 1px 0px black;
+	/*box-shadow: inset 0px 0px 1px 0px black;*/
 	@include push(0.8);
 	
+}
+.order_item {
+    font-size: 50px;
+    color: #fff;
 }
 /*.wrapForEachDelivery:first-child{
 	@include push(2);
@@ -51,10 +63,25 @@
 	
 }*/
 .delivery_item{
-	height: 200px;
-	/*background: url('../img/bg4.png')no-repeat center;*/
-	-webkit-background-size: cover;
-	background-size: cover;
+	
+}
+.prices_titleDelivery-Pay{
+	margin-top: 10px;
+}
+.arrowArk1 {
+    top: 16px;
+    left: 270px;
+    background: url(../img/arkaTop.png) no-repeat center;
+}
+.arrowArk2 {
+    top: 160px;
+    left: 270px;
+    background: url(../img/arkaBottom.png) no-repeat center;
+}
+.arrowArk {
+    width: 120px;
+    height: 50px;
+    position: absolute;
 }
 .wrapForFestive{
 	@include span(12);
@@ -83,11 +110,38 @@
 	@include span(3 of 12);
 }
 .payItem{
-	@include span(1.25 of 12);
+	
+	display: inline-block;
+	-webkit-background-size: cover;
+	background-size: cover;
 	box-shadow: inset 0px 0px 1px 0px black;
 	margin-top: 20px;
 }
-/*.payItem-last{
-	@include span(1.25 of 12 last);
-}*/
+.payItem.payItem1 {
+    width: 65px;
+}
+.payItem.payItem2 {
+    width: 65px;
+}
+.payItem.payItem3 {
+    width: 65px;
+}
+.payItem.payItem5 {
+    width: 150px;
+    }
+    .payItem.payItem4 {
+    width: 180px;
+}
+.payItem.payItem6 {
+    width: 180px;
+}
+.payItem.payItem7.payItem-last {
+    width: 200px;
+}
 
+.wrap_for_title{
+	@include span(6 of 12);
+}
+.wrap_for_payCard{
+	@include span(6 of 12 last);
+}

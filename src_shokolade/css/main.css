@@ -741,10 +741,11 @@ input[type="text"]::placeholder {
   margin-left: 0;
   margin-right: 0;
   position: relative;
-  background: url("../img/bg4.png") no-repeat center;
+  background: url("../img/bg4.jpg") no-repeat center;
   background-size: cover;
   padding-top: 40px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  color: #fff; }
 
 .wrapForDelivery {
   width: 100%;
@@ -753,15 +754,20 @@ input[type="text"]::placeholder {
   margin-right: 0;
   margin-bottom: 120px; }
 
+.prices_titleDelivery {
+  margin-top: 130px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 50px; }
+
 .wrapForEachDelivery:not(:last-child) {
   position: relative;
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%;
-  -webkit-box-shadow: inset 0px 0px 1px 0px black;
-          box-shadow: inset 0px 0px 1px 0px black;
-  margin-left: 6.77966%; }
-  .wrapForEachDelivery:not(:last-child):before {
+  /*box-shadow: inset 0px 0px 1px 0px black;*/
+  margin-left: 6.77966%;
+  /*&:before {
     content: '';
     right: -50px;
     top: 65px;
@@ -769,19 +775,22 @@ input[type="text"]::placeholder {
     height: 50px;
     border-top: solid 1px black;
     border-right: solid 1px black;
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-    position: absolute; }
+    
+    transform: rotate(45deg);
+    position: absolute;
+}*/ }
 
 .wrapForEachDelivery:last-child {
   position: relative;
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%;
-  -webkit-box-shadow: inset 0px 0px 1px 0px black;
-          box-shadow: inset 0px 0px 1px 0px black;
+  /*box-shadow: inset 0px 0px 1px 0px black;*/
   margin-left: 6.77966%; }
+
+.order_item {
+  font-size: 50px;
+  color: #fff; }
 
 /*.wrapForEachDelivery:first-child{
 	@include push(2);
@@ -793,10 +802,23 @@ input[type="text"]::placeholder {
 	@include push(0.5);
 	
 }*/
-.delivery_item {
-  height: 200px;
-  /*background: url('../img/bg4.png')no-repeat center;*/
-  background-size: cover; }
+.prices_titleDelivery-Pay {
+  margin-top: 10px; }
+
+.arrowArk1 {
+  top: 16px;
+  left: 270px;
+  background: url(../img/arkaTop.png) no-repeat center; }
+
+.arrowArk2 {
+  top: 160px;
+  left: 270px;
+  background: url(../img/arkaBottom.png) no-repeat center; }
+
+.arrowArk {
+  width: 120px;
+  height: 50px;
+  position: absolute; }
 
 .wrapForFestive {
   width: 100%;
@@ -832,16 +854,43 @@ input[type="text"]::placeholder {
   margin-right: 1.69492%; }
 
 .payItem {
-  width: 8.89831%;
-  float: left;
-  margin-right: 1.69492%;
+  display: inline-block;
+  background-size: cover;
   -webkit-box-shadow: inset 0px 0px 1px 0px black;
           box-shadow: inset 0px 0px 1px 0px black;
   margin-top: 20px; }
 
-/*.payItem-last{
-	@include span(1.25 of 12 last);
-}*/
+.payItem.payItem1 {
+  width: 65px; }
+
+.payItem.payItem2 {
+  width: 65px; }
+
+.payItem.payItem3 {
+  width: 65px; }
+
+.payItem.payItem5 {
+  width: 150px; }
+
+.payItem.payItem4 {
+  width: 180px; }
+
+.payItem.payItem6 {
+  width: 180px; }
+
+.payItem.payItem7.payItem-last {
+  width: 200px; }
+
+.wrap_for_title {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%; }
+
+.wrap_for_payCard {
+  width: 49.15254%;
+  float: right;
+  margin-right: 0; }
+
 .testimonial {
   width: 100%;
   float: left;
