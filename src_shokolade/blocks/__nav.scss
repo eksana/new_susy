@@ -2,6 +2,10 @@
 
 	display: inline-block;
 }
+.ulInner{
+	padding: 0;
+    margin: 0;
+}
 .topNavUpper ul li a{
 font-size: 18px;
 color: #6b2f23;
@@ -16,11 +20,20 @@ a{
   list-style-type: none;
 }
 .topNavUpper{
-	@include span(7 of 12);
+	@include span(6 of 10);
 	display: block;
-	margin-top: 25px;
+	margin-top: 45px;
 	
 }
 .topNav-item{
 	margin-left: 15px;
+}
+@media(max-width:1200px){
+.topNavUpper{
+	@include span(12 of 12);
+	margin-bottom: 30px;
+}
+.topNavUpper ul li a{
+font-size: 24px;
+}
 }

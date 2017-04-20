@@ -129,11 +129,12 @@ img {
 .wrapper_for_header {
   width: 100%;
   float: left;
+  position: relative;
   background: url("../img/bgHeader2.jpg") no-repeat center;
   background-size: cover; }
 
 .wrapInnerHeader {
-  max-width: 90em;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto; }
   .wrapInnerHeader:after {
@@ -149,23 +150,23 @@ img {
 	background-size: cover;
 }*/
 .top_line {
-  width: 100%;
+  width: 83.05085%;
   float: left;
-  margin-left: 0;
-  margin-right: 0; }
+  margin-right: 1.69492%;
+  margin-left: 8.47458%;
+  margin-top: 30px; }
 
 .linkForLogo {
   display: inline-block;
-  width: 23.72881%;
+  width: 18.36735%;
   float: left;
-  margin-right: 1.69492%; }
+  margin-right: 2.04082%; }
 
 .callWrap {
-  width: 23.72881%;
+  width: 18.36735%;
   float: right;
   margin-right: 0;
-  display: block;
-  margin-top: 20px; }
+  display: block; }
 
 .wrapForTel {
   font-size: 28px;
@@ -173,7 +174,9 @@ img {
   font-weight: bold; }
 
 .img_logo {
-  display: inline-block; }
+  display: inline-block;
+  width: 180px;
+  height: 100px; }
 
 .wrapForFont {
   /*@include container(1200px);*/
@@ -186,6 +189,12 @@ img {
   /*background-color:lightGreen;*/
   padding-bottom: 140px;
   border-bottom: 1px solid lightGrey; }
+
+.wrapForBerry {
+  width: 83.05085%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-left: 8.47458%; }
 
 .imgAside {
   width: 23.72881%;
@@ -235,12 +244,9 @@ img {
 
 .berry {
   position: absolute;
-  top: 80px;
+  top: -20px;
   right: -30px;
   display: block; }
-
-.wrapForBerry {
-  position: relative; }
 
 .call {
   padding: 4px 30px;
@@ -249,8 +255,7 @@ img {
           border-radius: 30px;
   color: #f13526;
   font-size: 18px;
-  display: block;
-  margin-top: -20px;
+  display: inline-block;
   font-weight: bold; }
 
 .round {
@@ -288,55 +293,61 @@ img {
   -ms-transform: rotate(135deg);
       transform: rotate(135deg); }
 
+.imgAside {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background: url("../img/cakeManySmall.jpg") no-repeat;
+  background-size: cover;
+  height: 600px; }
+
+.imgAside2 {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background: url("../img/cakeManySmall.jpg") no-repeat;
+  background-size: cover;
+  height: 600px; }
+
+/*.titleTop, h2,.order{
+	@include span(6 of 12);
+}*/
+.titleTop {
+  margin-top: 70px; }
+
+.underTitleTop {
+  margin-top: 70px; }
+
+@media (max-width: 1200px) {
+  .linkForLogo {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  .topLine {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center; }
+  .callWrap {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 8.47458%; } }
+
 @media (max-width: 900px) {
   .wrapForFont {
-    /*@include container(800px);*/
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
     text-align: center;
-    background-color: lightGreen;
+    /*background-color:lightGreen;*/
     padding-top: 20px;
-    padding-bottom: 60px; }
-  .imgAside {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    background: url("../img/cakeManySmall.jpg") no-repeat;
-    background-size: cover;
-    height: 600px; }
-  .imgAside2 {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    background: url("../img/cakeManySmall.jpg") no-repeat;
-    background-size: cover;
-    height: 600px; }
-  /*.titleTop, h2,.order{
-	@include span(6 of 12);
-}*/
-  .titleTop {
-    margin-top: 70px; }
-  .underTitleTop {
-    margin-top: 70px; }
-  .innerWrap {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0; }
-  .order {
-    display: inline-block;
-    padding: 20px 140px;
-    background-color: red;
-    -webkit-border-radius: 30px;
-            border-radius: 30px;
-    margin-top: 100px;
-    color: #fff;
-    font-size: 32px;
-    font-size: 2rem; } }
+    padding-bottom: 60px; } }
 
 body {
   /*@include container(1240px);*/
@@ -363,11 +374,9 @@ span {
 .start {
   float: left; }
 
-.linkForLogo {
-  width: 15.25424%;
-  float: left;
-  margin-right: 1.69492%; }
-
+/*.linkForLogo{
+	@include span(2 of 12);
+}*/
 .generalLogo {
   display: inline-block;
   padding: 20px;
@@ -434,6 +443,10 @@ span {
 .topNavUpper ul li {
   display: inline-block; }
 
+.ulInner {
+  padding: 0;
+  margin: 0; }
+
 .topNavUpper ul li a {
   font-size: 18px;
   color: #6b2f23;
@@ -447,14 +460,24 @@ a {
   list-style-type: none; }
 
 .topNavUpper {
-  width: 57.62712%;
+  width: 59.18367%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 2.04082%;
   display: block;
-  margin-top: 25px; }
+  margin-top: 45px; }
 
 .topNav-item {
   margin-left: 15px; }
+
+@media (max-width: 1200px) {
+  .topNavUpper {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px; }
+  .topNavUpper ul li a {
+    font-size: 24px; } }
 
 .prices {
   /*@include container(92em);*/

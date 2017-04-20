@@ -9,13 +9,13 @@
 .wrapper_for_header{
 	width: 100%;
 	float: left;
-	
+	position: relative;	
 	background: url('../img/bgHeader2.jpg')no-repeat center;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .wrapInnerHeader{
-	@include container(90em);
+	@include container(1600px);
 }
 /*.top{
 	width: 100%;
@@ -25,17 +25,19 @@
 	background-size: cover;
 }*/
 .top_line{
-	@include span(12);
+	@include span(10 of 12);
+	@include push(1);
+	margin-top: 30px;
 
 }
 .linkForLogo{
 	display: inline-block;
-	@include span(3 of 12);
+	@include span(2 of 10);
 }
 .callWrap{
-	@include span(3 of 12 last);
+	@include span(2 of 10 last);
 	display: block;
-	margin-top: 20px;
+	
 }
 .wrapForTel{
 	font-size: 28px;
@@ -46,6 +48,8 @@
 
 .img_logo{
 	display: inline-block;
+	width: 180px;
+    height: 100px;
 }
 .wrapForFont{
 	/*@include container(1200px);*/
@@ -56,6 +60,11 @@
 
 	padding-bottom: 140px;
 	border-bottom: 1px solid lightGrey;
+}
+.wrapForBerry{
+	@include span(10 of 12);
+	@include push(1);
+	
 }
 .imgAside{
 	@include span(3 of 12);
@@ -106,23 +115,22 @@
 	 @include font-size(28px); 
 	
 }
-.berry{
-	position: absolute;
-	top: 80px;
-right: -30px;
-	display: block;
+
+.berry {
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    display: block;
 }
-.wrapForBerry{
-	position: relative;
-}
+
 .call{
 	padding: 4px 30px;
 	background-color:#fff;
 	border-radius: 30px;
 	color: #f13526;
 	font-size: 18px;
-	display: block;
-	margin-top: -20px;
+	display:  inline-block;
+	
 	font-weight: bold;
 }
 .round{
@@ -161,15 +169,7 @@ right: -30px;
 }
 
 
-@media(max-width:900px){
-	.wrapForFont{
-	/*@include container(800px);*/
-	@include span(12);
-	text-align: center;
-	background-color:lightGreen;
-	padding-top: 20px;
-	padding-bottom: 60px;
-}
+
 .imgAside{
 	@include span(12 of 12);
 	background:url('../img/cakeManySmall.jpg') no-repeat ;
@@ -194,17 +194,34 @@ right: -30px;
 .underTitleTop{
 	margin-top: 70px;
 }
-.innerWrap{
+
+
+
+
+@media(max-width:1200px){
+	.linkForLogo{
+	
 	@include span(12 of 12);
 }
-.order{
-	display: inline-block;
-	padding: 20px 140px;
-	background-color: red;
-	border-radius: 30px;
-	margin-top: 100px;
-	color: #fff;
-	 @include font-size(32px); 
-	
+
+.topLine{
+	@include span(12 of 12);
+	text-align: center;
 }
+
+.callWrap{
+	@include span(10 of 12);
+	@include push(1)
+}
+}
+@media(max-width:900px){
+	.wrapForFont{
+	
+	@include span(12);
+	text-align: center;
+	/*background-color:lightGreen;*/
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+
 }
