@@ -12,7 +12,8 @@
 .wrapForEach{
 	
 	padding: 0 10px;
-	flex: 1;
+	float: left;
+    width: 20%;
 	
 }
 .suggest_item1{
@@ -57,9 +58,15 @@
 	
 }
 .wrapForSafeItem{
-	margin: 0 30px;
-	flex:1;
+	
+    margin: 0 45px;
+    /* flex: 1; */
+    float: left;
+    width: 25%;
+    
+    /* display: inline-block; */
 }
+
 .round_suggest{
 	position: absolute;
 	left:50%;
@@ -75,7 +82,7 @@
 }
 
 
-@media screen and(min-width: 1200px){
+/*@media screen and(min-width: 1200px){
 	.wrapForSuggestItem{
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -83,9 +90,24 @@
 		display: -o-flex;
 		display: flex;
 	}
+}*/
+@media screen and(max-width: 1200px){
+	.wrapForEach{
+		float: none;
+		width: 100%;
+	}
+	.wrapForSafeItem{
+	
+    margin: 0 auto;
+    
+    float: none;
+    width: 100%;
+    
+   
 }
+	}
 
-@media screen and(min-width: 1200px){
+/*@media screen and(min-width: 1200px){
 	.wrapForSafeAll{
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -94,7 +116,7 @@
 		display: flex;
 	}
 	
-}
+}*/
 @media screen and(max-width: 1200px){
 .safe {
     height: 300px;

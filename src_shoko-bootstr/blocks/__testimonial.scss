@@ -6,8 +6,16 @@
 	padding-bottom: 100px;
 	text-align: center;
 }
+.prices_titleTestim {
+    margin-top: 30px;
+    color: #6b2f23;
+    text-transform: uppercase;
+    font-size: 40px;
+    
+}
 .testimon_inner{
-
+width: 200px;
+    height: 145px;
 	-webkit-background-size: cover;
 	background-size: cover;
 	margin: 0 auto;
@@ -16,19 +24,40 @@
 	
 }
 .testimon_inner-img1{
-background: url('../img/testimon1.jpg')no-repeat center;
-width: 400px;
-    height: 300px;
+background: url('../img/shok1.jpg')no-repeat center;
+
 }
 .testimon_inner-img2{
-background: url('../img/testimon2.jpg')no-repeat center;
-width: 200px;
-    height: 150px;
+background: url('../img/shok2.jpg')no-repeat center;
+
 }
 .testimon_inner-img3{
-background: url('../img/testimon3.jpg')no-repeat center;
-width: 400px;
-    height: 300px;
+background: url('../img/shok3.jpg')no-repeat center;
+
+}
+.testimon_inner-img4{
+background: url('../img/shok4.jpg')no-repeat center;
+
+}
+.testimon_inner-img5{
+background: url('../img/shok5.jpg')no-repeat center;
+
+}
+.testimon_inner-img6{
+background: url('../img/shok6.jpg')no-repeat center;
+
+}
+.testimon_inner-img7{
+background: url('../img/shok7.jpg')no-repeat center;
+
+}
+.testimon_inner-img8{
+background: url('../img/shok8.jpg')no-repeat center;
+
+}
+.testimon_inner-img9{
+background: url('../img/shok9.jpg')no-repeat center;
+
 }
 .wrapForTestimon{
 	border:1px inset #222;
@@ -52,8 +81,8 @@ padding: 0 30px;
 	
 .wrap_for_owl-carousel{
 	border:1px solid blue;
-	/* flex-grow:1;*/
-	width:40%;
+	
+	/*width:40%;*/
 }
 
 .wrapForPrizeAll{
@@ -73,8 +102,8 @@ display: flex;
 
 }
 .two{
-	width: 60%;
-	flex-direction: column;
+	/*width: 60%;*/
+	
 	
 }
 .wrapAllTestimon{
@@ -98,9 +127,13 @@ display: flex;
 	background:#d3bfb6 url('../img/arrowDown.png')no-repeat center;
 	bottom: -40px;
 }
+.sertifik_item {
+    display: inline-block;
+    width: 15%;
+}
 
 
-@media screen and(min-width: 1200px){
+/*@media screen and(min-width: 1200px){
 	.wrapAllTestimon{
 		display: -webkit-flex;
 	display: -moz-flex;
@@ -110,12 +143,10 @@ display: flex;
 	}
 }
 @media screen and(max-width: 1200px){
-	.wrap_for_owl-carousel{
-	border:1px solid blue;
-	/* flex-grow:1;*/
+	
 	width:100%;
 }
 .two {
     width: 100%;
     }
-}
+}*/

@@ -78,7 +78,7 @@ text-align: center;
 	padding: 12px 60px;
 	background-color: #fff;
 	border-radius: 30px;
-	border:2px inset $colorRed;
+	border:2px solid $colorRed;
 	color: $colorRed;
 	 @include font-size(32px); 
 	
