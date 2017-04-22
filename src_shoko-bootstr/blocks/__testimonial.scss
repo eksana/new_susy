@@ -8,14 +8,25 @@
 }
 .prices_titleTestim {
     margin-top: 30px;
+    
     color: #6b2f23;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 34px;
     
 }
 .testimon_inner{
 width: 200px;
     height: 145px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin: 20px auto;
+	border:1px inset #222;
+	
+	
+}
+.testimon_innerFoto{
+/*width: 200px;*/
+    height: 300px;
 	-webkit-background-size: cover;
 	background-size: cover;
 	margin: 0 auto;
@@ -59,6 +70,49 @@ background: url('../img/shok8.jpg')no-repeat center;
 background: url('../img/shok9.jpg')no-repeat center;
 
 }
+
+.testimon_innerFoto-img1{
+background: url('../img/testim.jpg')no-repeat center;
+-webkit-background-size: cover;
+background-size: cover;
+
+}
+.testimon_innerFoto-img2{
+background: url('../img/testim.jpg')no-repeat center;
+-webkit-background-size: cover;
+background-size: cover;
+
+}
+.testimon_innerFoto-img3{
+background: url('../img/testim.jpg')no-repeat center;
+-webkit-background-size: cover;
+background-size: cover;
+
+}
+.testimon_innerFoto-img4{
+background: url('../img/testim.jpg')no-repeat center;
+-webkit-background-size: cover;
+background-size: cover;
+
+}
+.testimon_innerFoto-img5{
+background: url('../img/testim.jpg')no-repeat center;
+-webkit-background-size: cover;
+background-size: cover;
+
+}
+.testimon_innerFoto-img6{
+background: url('../img/testim.jpg')no-repeat center;
+
+-webkit-background-size: cover;
+background-size: cover;
+}
+.testimon_innerFoto-img7{
+background: url('../img/testim.jpg')no-repeat center;
+-webkit-background-size: cover;
+background-size: cover;
+
+}
 .wrapForTestimon{
 	border:1px inset #222;
 	flex-grow:1;
@@ -72,10 +126,10 @@ line-height: 1.8;
 padding: 0 30px;
 }
 .testim_descrOwl{
-border:1px inset #222;
+
 line-height: 1.8;
 
-padding: 0 30px;
+padding: 20px 30px;
 }
 
 	
@@ -130,6 +184,38 @@ display: flex;
 .sertifik_item {
     display: inline-block;
     width: 15%;
+    /*width: 115px;*/
+    height: 95px;
+}
+.sertifik_item:not(:first-child) {
+   
+    margin-left: 20px;
+    margin-right: 12px;
+    margin-bottom: 30px;
+}
+
+.sertifik_inner-img1{
+	background:#d3bfb6 url('../img/sertifik1.jpg')no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 95px;
+}
+.sertifik_inner-img2{
+	background:#d3bfb6 url('../img/sertifik2.jpg')no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 95px;
+}
+.sertifik_inner-img3{
+	background:#d3bfb6 url('../img/sertifik3.jpg')no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 95px;
+}
+.sertifik_descr{
+	color: red;
+	font-size: 25px;
+	margin: 45px 0;
 }
 
 

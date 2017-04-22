@@ -7,7 +7,7 @@ $(document).ready(function() {
                 loop:true, //Зацикливаем слайдер
                 //dots:true,
                 //margin:50, //Отступ от элемента справа в 50px
-                nav:true, //Отключение навигации
+                nav:false, //Отключение навигации
                 autoplay:true, //Автозапуск слайдера
                 smartSpeed:1000, //Время движения слайда
                 autoplayTimeout:2000, //Время смены слайда
