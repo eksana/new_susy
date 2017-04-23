@@ -573,25 +573,43 @@
 		<div class="row">
 			<div class="col-sm-12 col-md-6">
 				<adress>
+				<ul class="ul_footer">
+				<li class="item_footer item_footer--tel">+7 876 534-56-77</li>
+				<li class="item_footer item_footer--email">Mail@gmail.com</li>
+				<li class="item_footer item_footer--social">dm.sgnd.choco</li>
+				</ul>
 				</adress>
+				<p class="footer_descr">
+				Очень часто шоколадный фонтан в Санкт-Петербурге берут в аренду на свадьбу, корпоративные праздники (в том числе в офисе), на детские праздники, на выпускные вечера. И это неудивительно- ведь все мы хотим, чтобы праздник запомнился нам и нашим гостям надолго, и шоколадный фонтан в этом обязательно поможет.
+				</p>
 
 
 			</div>
 			<div class="col-sm-12 col-md-6">
-				<form action="" name="callBack" method="POST">
+				<form action="" name="callBack" method="POST" class="form_footer">
+				
 					<div class="wrap_for_input">
-						<input type="text" name="userName"/>
+					<label for="inpName">Напишите свое имя:</label>
+						<input type="text" name="userName" placeholder="Ваше имя" class="for_input" id="inpName"/>
+						
+					</div>
+
+					<div class="wrap_for_input">
+					<label for="inpEmail">Напишите свой email:</label>
+						<input type="email" name="userEmail" placeholder="Ваш телефон" class="for_input" id="inpEmail"/>
+						
 					</div>
 					<div class="wrap_for_input">
-						<input type="email" name="userEmail"/>
-					</div>
-					<div class="wrap_for_input">
-					<textarea type="text" name="userText">
+					<label for="inpMessage">Напишите сообщение:</label>
+					<textarea type="text" name="userText" placeholder="Ваше сообщение" class="for_input" id="inpMessage">
 					</textarea>
+					
 
 					</div>
+					
 					<div class="wrap_for_input">
-						<input type="submit" value="Submit" name="send"/>
+					<label for="submitMessage">Отправьте сообщение:</label>
+						<input type="submit" value="Submit" name="send" class="for_input for_form-last-footer" id="submitMessage"/>
 					</div>
 
 				</form>

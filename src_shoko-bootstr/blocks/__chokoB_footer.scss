@@ -1,0 +1,57 @@
+.chokoB_footer{
+	background: url('../img/footer.jpg') no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 70px 0;
+	text-align: center;
+}
+li{
+	list-style-type: none;
+}
+.item_footer {
+    
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+.ul_footer {
+    margin-top: 60px;
+    text-align: left;
+    color: #fff;
+}
+.item_footer--tel{
+	background: url('../img/tel.png')no-repeat top left;
+
+}
+.item_footer--email{
+	background: url('../img/email.png')no-repeat top left;
+
+}
+.item_footer--social{
+	background: url('../img/social.png')no-repeat top left;
+
+}
+.footer_descr {
+    text-align: left;
+    line-height: 1.7;
+}
+@media screen and(max-width:1200px){
+	.item_footer {
+	text-align: center;
+}
+.item_footer--tel{
+	background: url('../img/tel.png')no-repeat top ;
+
+}
+.item_footer--email{
+	background: url('../img/email.png')no-repeat top ;
+
+}
+.item_footer--social{
+	background: url('../img/social.png')no-repeat top ;
+
+}
+
+
+}
