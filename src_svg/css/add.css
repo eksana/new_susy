@@ -1,0 +1,33 @@
+#block3 {
+	position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    display: none;
+    border-radius:10px;
+    background: linear-gradient(to bottom, #fefcea, #d2ea00);
+
+   /* background-color: yellow;*/
+
+}
+.fil30{
+	fill:#D2EA00;
+	fill:green;
+
+}
+
+.cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: olive;
+    color: #fff;
+    text-align: center;
+}

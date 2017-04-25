@@ -92,8 +92,7 @@ p {
   position: relative;
   text-align: center;
   /*background-color:lightGreen;*/
-  padding-bottom: 140px;
-  border-bottom: 1px solid lightGrey; }
+  padding-bottom: 140px; }
 
 .titleTop {
   margin-top: 70px;
@@ -209,14 +208,17 @@ a {
 .topNav-item {
   margin-left: 12px; }
 
+a {
+  color: #fff; }
+
 .topNavUpperAside {
   position: absolute;
   top: 0;
-  right: -220px;
+  right: -280px;
   background-color: lightGreen; }
 
 .topNavUpperAside > ul > li {
-  background-color: #333;
+  background-color: #9eaaed;
   display: block;
   text-decoration: none;
   border-bottom: 1px solid #ccc;
@@ -239,7 +241,8 @@ a {
   content: '\e739'; }
 
 .fa-bars, .fa-times {
-  display: none; }
+  display: none;
+  color: #fff; }
 
 #pie {
   width: 50px;
@@ -617,10 +620,11 @@ input[type="text"]::placeholder {
 Если надо на каком-то разрешении выстроить их по вертикали, нужно просто сделать display: block классу .btn-group.*/
 .orderFont {
   text-align: center;
-  background: url("../img/bg4.jpg") no-repeat center;
-  background-size: cover;
+  /*background: url('../img/bg4.jpg')no-repeat center;
+	background-size: cover;*/
   position: relative;
-  padding-bottom: 70px; }
+  padding: 160px 0;
+  background-color: #9eaaed; }
 
 .round_orderFont {
   position: absolute;
@@ -670,12 +674,46 @@ input[type="text"]::placeholder {
   left: 170px;
   background: url("../img/arkaBottom.png") no-repeat center; }
 
+.payItem {
+  display: inline-block;
+  background-size: cover;
+  -webkit-box-shadow: inset 0px 0px 1px 0px black;
+          box-shadow: inset 0px 0px 1px 0px black;
+  margin-top: 20px; }
+
+.payItem.payItem1 {
+  width: 65px; }
+
+.payItem.payItem2 {
+  width: 65px; }
+
+.payItem.payItem3 {
+  width: 65px; }
+
+.payItem.payItem5 {
+  width: 150px; }
+
+.payItem.payItem4 {
+  width: 180px; }
+
+.payItem.payItem6 {
+  width: 180px; }
+
+.payItem.payItem7.payItem-last {
+  width: 200px; }
+
 @media screen and (min-width: 1200px) {
   .wrapFor_orderFontItem {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; } }
+
+@media screen and (max-width: 1200px) {
+  .arrowArk {
+    display: none; }
+  .wrapForEach_orderFont {
+    margin-left: 0; } }
 
 .testimonialBoot {
   position: relative;
@@ -688,13 +726,13 @@ input[type="text"]::placeholder {
   margin-top: 30px;
   color: #6b2f23;
   text-transform: uppercase;
-  font-size: 34px; }
+  font-size: 24px; }
 
 .testimon_inner {
   width: 200px;
   height: 145px;
   background-size: cover;
-  margin: 20px auto;
+  margin: 0 auto;
   border: 1px inset #222; }
 
 .testimon_innerFoto {
@@ -810,7 +848,8 @@ input[type="text"]::placeholder {
   /*width: 60%;*/ }
 
 .prize_item {
-  /*width: 100%;*/ }
+  /* width: 100%; */
+  margin-bottom: 45px; }
 
 .roundTestim {
   position: absolute;
@@ -970,7 +1009,7 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::pla
 
 .for_form-last-footer {
   background-color: red;
-  padding: 20px 110px;
+  padding: 20px 170px;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase; }

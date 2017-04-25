@@ -11,7 +11,7 @@
     
     color: #6b2f23;
     text-transform: uppercase;
-    font-size: 34px;
+    font-size: 24px;
     
 }
 .testimon_inner{
@@ -19,7 +19,7 @@ width: 200px;
     height: 145px;
 	-webkit-background-size: cover;
 	background-size: cover;
-	margin: 20px auto;
+	margin: 0 auto;
 	border:1px inset #222;
 	
 	
@@ -164,9 +164,10 @@ display: flex;
 	
 	
 }
-.prize_item{
-	/*width: 100%;*/
-	
+.prize_item {
+    /* width: 100%; */
+    margin-bottom: 45px;
+    
 }
 .roundTestim{
 	position: absolute;

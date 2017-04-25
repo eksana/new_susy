@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 	});
 	$('#cross').click(function(){
-		$('.topNavUpperAside').animate({right:-220});
+		$('.topNavUpperAside').animate({right:-280});
 
 	});
 });

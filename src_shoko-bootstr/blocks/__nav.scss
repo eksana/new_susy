@@ -1,6 +1,7 @@
 .topNavUpper ul li{
 
 	display: inline-block;
+	
 }
 .topNavUpper ul li a{
 font-size: 16px;
@@ -23,18 +24,23 @@ a{
 }
 .topNav-item {
     margin-left: 12px;
+
+    
+}
+a{
+	color: #fff;
 }
 .topNavUpperAside{
 	position: absolute;
 	top:0;
-	right:-220px;
+	right:-280px;
 	background-color: lightGreen;
 	
 }
 
 
 .topNavUpperAside>ul>li{
-background-color: #333;
+background-color: #9eaaed;
     display: block;
     text-decoration: none;
     border-bottom: 1px solid #ccc;
@@ -62,6 +68,7 @@ background-color: #333;
 
 .fa-bars,.fa-times{
 	display: none;
+	color: #fff;
 
 }
 #pie{
