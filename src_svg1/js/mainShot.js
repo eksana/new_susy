@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	$('#4v4').click(function(){
+	$('path').click(function(){
 		$('#block3').fadeIn();
 });
-	$('#tspan78').click(function(){
+	$('tspan').click(function(){
 		$('#block3').fadeIn();
 });
 	
@@ -10,7 +10,7 @@ $(document).ready(function(){
 		$('#block3').fadeOut();
 		$(' #4v4').removeClass('fil4v4');
 		$('#4v4').addClass('fil4');
-		//$(' #4v4').toggleClass('fil4v4','fil4');
+		//$(' path').toggleClass('fil4v4','fil4');
 
 		$(' #tspan78').css({
     	'fill':'black',                       
@@ -20,9 +20,9 @@ $(document).ready(function(){
 	});
 /*	});*/
 
-	$('#4v4').mouseenter(function(){
-		$('#4v4').removeClass('fil4');
-		$('#4v4').addClass('fil4v4');
+	$('path').mouseenter(function(){
+		$(this).removeClass('fil4');
+		$(this).addClass('fil4v4');
 		//$(' #4v4').toggleClass('fil4','fil4v4');
 		$(' #tspan78').css({
     	'fill':'yellow',
@@ -32,10 +32,10 @@ $(document).ready(function(){
 	});
 
 
-$('#4v4').mouseout(function(){
-		$('#4v4').removeClass('fil4v4');
-		$('#4v4').addClass('fil4');
-		//$(' #4v4').toggleClass('fil4v4','fil4');
+$('path').mouseout(function(){
+		$(this).removeClass('fil4v4');
+		$(this).addClass('fil4');
+		//$(this).toggleClass('fil4v4','fil4');
 
 $(' #tspan78').css({
     	'fill':'black',
@@ -43,7 +43,7 @@ $(' #tspan78').css({
     });
 
 	});
-$(' #tspan78').mouseenter(function(){
+$(' tspan').mouseenter(function(){
 		$('#4v4').removeClass('fil4');
 		$('#4v4').addClass('fil4v4');
 		//$(' #4v4').toggleClass('fil4','fil4v4');
@@ -59,5 +59,3 @@ $(' #tspan78').mouseenter(function(){
 	
 
 });
-	
-	

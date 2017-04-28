@@ -1,0 +1,15 @@
+@import "__variables.scss";
+@import "__mixin.scss";
+
+@import "../blocks/__navigation.scss";
+
+html,body{
+ font-family: $font-default;
+  font-size:$font-size-default;
+  /*line-height:$line-height;
+  color:$color-text;
+  background-color: $color-background;*/
+  margin:0;
+  padding:0;
+  
+}

@@ -17,7 +17,7 @@ $(document).ready(function(){
     //'transition': 'all 1s'
     });
 
-	//});
+	
 	});
 
 	/*$('#test3').onmouseenter(function(){
