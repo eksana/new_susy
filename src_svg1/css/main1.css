@@ -1,3 +1,4 @@
+
 html, body{
     background-color: midnightblue;
 
@@ -5,8 +6,10 @@ html, body{
 main{
 	/*max-width:1189px;
     height: 100vh;*/
-	margin: 0 auto;
+    position: relative;
+	margin: 400px auto;
 	background-color: midnightblue;
+    text-align: center;
 
 }
 svg {
@@ -15,8 +18,108 @@ svg {
     height: auto;
     /*background-color: #fff;*/
 }
-#block3 {
+/*#block3 {
 	
+    
+    padding: 15px;
+    position: absolute;
+    top: 130px;
+    left: 0;
+   display: none;
+    border-radius:10px;
+    
+    background-color: rgba(224, 232, 0, .9);
+    left: 50%;
+    margin-left: -30%;
+    width: 600px;
+    height: 400px;
+   
+}*/
+
+.newMap{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border:1px solid red;
+
+    
+}
+.berry{
+    position: absolute;
+    top:0;
+    left:0;
+     width: 100%;;
+    
+}
+.mapScale{
+    width: 250px;
+    height: 350px;
+}
+
+.wrapForNewMap{
+    position: relative;
+    width: 30%;
+    border:1px solid green;
+    /*overflow: hidden;*/
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+ul.wrapForEach {
+    width: 30%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    }
+    .mapCross {
+    width: 30px;
+    height: 30px;
+    background-color: lightblue;
+}
+.map1{
+    background-color: yellowgreen;
+    top:0;
+    left:0;
+}
+.map2{
+    background-color: maroon;
+    top:0;
+    left:100px;
+}
+.map3{
+    background-color: navy;
+    top:0;
+    left:200px;
+}
+.descr{
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    background-color: yellow;
+    
+   
+
+}
+.descr1{
+    top:0;
+    left:0; 
+     display: none;
+}
+.descr2{
+    top:0px;
+    left:110px;
+     display: none; 
+}
+.descr3{
+    top:0;
+    left:210px; 
+     display: none;
+}
+#blockFat,#block3  {
+    
     /*width: 60%;
     height: 300px;*/
     padding: 15px;
@@ -29,7 +132,8 @@ svg {
     background-color: rgba(224, 232, 0, .9);
     left: 50%;
     margin-left: -30%;
-    width: 600px;
+    /*width: 600px;*/
+    width: 50%;
     height: 400px;
     
    /* background-color: yellow;*/
@@ -44,29 +148,54 @@ svg {
     text-align: center;
 }
 img {
-    width: 500px;
+    width: 100%;
     display: inline-block;
     
     /* float: left; */
     /* display: flex; */
     /* flex-direction: row; */
 }
+.close_right{
+    position: absolute;
+    z-index:10000;
+    top:0;
+    right:0;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
 tspan {
     cursor: pointer;
+}
+.fontBlack{
+fill:black;
+        font-size: 10px;
+}
+.fontYellow{
+    fill:yellow;
+        font-size:13px;
 }
 .fil4v4{
 	fill:#e47505;
     /*fill:green;*/
-	
-
 }
 .fil4{
-
-
 fill: #fdac5b;
 
 }
+.fil4v4Fat{
+    
+    /*fill#0af5f2;*/
+     fill:aqua;
+}
+.fil8{
+fill: #97fdfc;
+/*fill:#0eabef;*/
 
+}
+.fil8v8{
+    fill:#0fe6e4;
+}
 
 .cross {
     position: absolute;
@@ -83,4 +212,20 @@ fill: #fdac5b;
     line-height: 1.5;
     cursor: pointer;
     border: 2px solid #fff;
+}
+.blockIE{
+    display: none;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /*svg{
+        display:none;
+    }*/
+    .blockIE{
+        display: block;
+        width: 70%;
+        color: #fff;
+        margin: 70px auto;
+
+    }
 }

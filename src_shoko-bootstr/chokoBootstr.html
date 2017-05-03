@@ -1,3 +1,23 @@
+
+<?php
+$ini = parse_ini_file('./config/config.ini');
+?>
+<!--
+Теперь в необходимых местах сайта, мы можем вывести значения переменных. Наши цены из файла настроек будут выглядеть так:
+
+<?php print $ini['cena1'];?>
+<?php print $ini['cena2'];?>
+<?php print $ini['cena3'];?>
+Вместо телефонов на сайте пишем:
+
+<?php print $ini['phone'];?>
+<?php print $ini['phone2'];?>
+Вместо адреса электронной почты
+
+<?php print $ini['pochta'];?>
+Вместо физического адреса:
+
+<?php print $ini['adress'];?>-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -178,7 +198,7 @@
 
 
 					<div class="col-sm-12 col-xs-12 col-md-12  col-lg-12">
-						<div class="prices ">
+						<div class="prices">
 							<h2 class="prices_title-present">Закажите фонтан до 1-го мая и получите<br/>питьевой фонтан в подарок!</h2>
 							<h3>Закажите шоколадный фонтан до 1 мая и получите оборудование для питевого фонтана!</h3>
 							<p class="prices_descr">

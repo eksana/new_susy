@@ -1,0 +1,58 @@
+main{
+	width: 100%;
+	background-color: red;
+	position: relative;
+}
+img{
+	display: block;
+}
+.wrap {
+    position: relative;
+    /* max-width: 1600px; */
+    height: 1600px;
+    background-color: yellow;
+    margin: 0 auto;
+    width: 1000px;
+}
+#main_map{
+	width: 100%;
+	display:none;
+	
+}
+
+
+#vologda {
+    position: absolute;
+    /* top: 200px; */
+    /* left: 610px; */
+    /* width: 500px; */
+    width: 40%;
+    height: auto;
+    transform: rotate(45deg);
+    top: 10%;
+    right: 100px;
+}
+#jaroslavl {
+    position: absolute;
+    /* top: 200px; */
+    /* left: 610px; */
+    /* width: 500px; */
+    width: 15%;
+    height: auto;
+    transform: rotate(45deg);
+    /* top: 20%; */
+    right: 365px;
+    top: 238px;
+}
+#kostroma {
+    position: absolute;
+    /* top: 200px; */
+    /* left: 610px; */
+    /* width: 500px; */
+    width: 25%;
+    height: auto;
+    transform: rotate(40deg);
+    /* top: 20%; */
+    right: 160px;
+    top: 324px;
+}

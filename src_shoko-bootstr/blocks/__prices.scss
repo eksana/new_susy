@@ -7,6 +7,13 @@
 	
 
 }
+.prices_title-present{
+	margin-top: 30px;
+	color:#fff;
+	text-transform: uppercase;
+	font-size: 30px;
+
+}
 .prices_title{
 	margin-top: 30px;
 	color:$colorBrown;
@@ -111,10 +118,20 @@ text-align: center;
 .prices_itemLast{
 margin-bottom: 0;
 }	
+.prices_title-present {
+    font-size: 30px; 
+}
+
 
 }
 @media screen and(max-width: 1213px){
 .prices_img {
     width: 80%;
 }
+.prices_title {
+   
+    font-size: 30px;
+}
+
+
 	}

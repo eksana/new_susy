@@ -10,7 +10,12 @@
 	padding-bottom: 130px;
 	
 }
-
+h2.prices_title-present {
+    margin-top: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+}
 	.form_present {
     display: block;
     /*background-color: green;*/
@@ -50,17 +55,12 @@ float: left;
     text-transform: uppercase;
 	
 }
-.prices_title-present{
-	margin-top: 30px;
-	color:#fff;
-	text-transform: uppercase;
-	font-size: 50px;
 
-}
 .dsCountDown.ds-white{
 	background-color: transparent;
 	border:1px solid transparent;
 }
+
 @media screen and(max-width: 1200px){
 .wrap_form {
     
@@ -71,4 +71,18 @@ float: left;
         float: none;
     margin-left: 0;
 }
+.prices_title-present {
+   
+    font-size: 30px;
+}
+
+.ds-white .ds-element {
+    
+     margin-right: 3px; 
 	}
+	.for_form {
+   
+    padding: 20px 40px;
+}
+
+}

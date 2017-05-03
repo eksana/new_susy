@@ -68,6 +68,7 @@
 	/*background-color: #d3bfb6;*/
 	z-index: 10;
 	background:#d3bfb6 url('../img/arrowDown.png')no-repeat center;
+  display: none;
 }
 /*.arrow-down.icon {
   color: #000;
@@ -143,3 +144,28 @@
     margin-left: 0;
 }
 }
+@media screen and(max-width: 1198px){
+.titleTop {
+    font-size: 30px;
+}
+.order {
+  padding: 20px 14px;
+  margin-top: 20px;
+}
+.berry{
+  display: none;
+}
+.underTitleTop {
+    
+    margin: 0 auto;
+}
+.wrapper_for_header {
+  padding: 20px 0 30px;
+
+}
+.round {
+    
+    bottom: -59px;
+  }
+}
+
