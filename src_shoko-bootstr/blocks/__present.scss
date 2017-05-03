@@ -10,7 +10,7 @@
 	padding-bottom: 130px;
 	
 }
-h2.prices_title-present {
+.prices_title-present {
     margin-top: 30px;
     color: #fff;
     text-transform: uppercase;
@@ -71,7 +71,7 @@ float: left;
         float: none;
     margin-left: 0;
 }
-.prices_title-present {
+h2.prices_title-present {
    
     font-size: 30px;
 }
@@ -85,4 +85,14 @@ float: left;
     padding: 20px 40px;
 }
 
+
+
+}
+@media screen and(max-width: 600px){
+
+
+.present {
+    
+    padding-bottom: 40px;
+}
 }
