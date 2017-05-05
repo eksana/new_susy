@@ -1,0 +1,59 @@
+.top_nav{
+	width: 100%;
+	background-color: $color1;
+	text-align: center;
+}
+.top_nav li{
+	display: inline-block;
+
+}
+
+.top_nav li a{
+	padding: 60px 10px;
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	position: relative;
+
+
+}
+.mot{
+	position: relative;
+	&:before{
+	content:url(../img/pic1.png);
+	position: absolute;
+	top:0;
+	left:30px;
+	width: 60px;
+	height: 60px;
+	display: block;
+} 
+}
+.kat{
+	position: relative;
+	&:before{
+	content:url(../img/kat.png);
+	position: absolute;
+	top:0;
+	left:8px;
+	width: 60px;
+	height: 60px;
+	display: block;
+} 
+}
+.par{
+	position: relative;
+	&:before{
+	content:url(../img/par.png);
+	position: absolute;
+	top:0;
+	left:25px;
+	width: 60px;
+	height: 60px;
+	display: block;
+} 
+}
+.inner {
+    padding: 60px 0;
+    margin: 0;
+}

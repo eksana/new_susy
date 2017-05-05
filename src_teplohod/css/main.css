@@ -1,0 +1,134 @@
+/*tiffany*/
+/*@import "reset";*/
+li {
+  list-style-type: none;
+  text-decoration: none; }
+
+body {
+  padding-top: 50px; }
+
+.top_header {
+  width: 100%;
+  /*max-width: 780px;*/ }
+
+.top_header a[href="order.html"] {
+  /* width: 100%;*/
+  display: inline-block;
+  line-height: 3.3;
+  color: #02cdd1;
+  border: 1px solid #02cdd1;
+  padding: 0 35px; }
+
+.wrap_call {
+  text-align: right; }
+
+/*.logo{
+	width: 100%;
+}*/
+img[src="img/logo.png"] {
+  /*width: 100%;*/
+  margin-top: -10px;
+  width: 360px;
+  height: 70px; }
+
+.wrap_span_tel {
+  line-height: 2.6;
+  font-size: 18px; }
+
+.toggle_top_header {
+  width: 50px;
+  height: 50px; }
+
+.fa-bars {
+  font-size: 50px;
+  line-height: 1.0; }
+
+/*@media screen and(min-width:779px){
+	.toggle_top_header{
+		display: none;
+	}
+
+}
+@media screen and(max-width:778px){
+	.toggle_top_header{
+		display: block;
+	}
+	.wrap_call,.wrap_span_tel{
+		display: none;
+
+	}
+}*/
+/*@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+ 
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+ 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+ 
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}*/
+.top_nav {
+  width: 100%;
+  background-color: #02cdd1;
+  text-align: center; }
+
+.top_nav li {
+  display: inline-block; }
+
+.top_nav li a {
+  padding: 60px 10px;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  position: relative; }
+
+.mot {
+  position: relative; }
+  .mot:before {
+    content: url(../img/pic1.png);
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    display: block; }
+
+.kat {
+  position: relative; }
+  .kat:before {
+    content: url(../img/kat.png);
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 60px;
+    height: 60px;
+    display: block; }
+
+.par {
+  position: relative; }
+  .par:before {
+    content: url(../img/par.png);
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    display: block; }
+
+.inner {
+  padding: 60px 0;
+  margin: 0; }
