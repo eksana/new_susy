@@ -378,7 +378,8 @@ ul.oglavl span.page {
   padding: 60px 0; }
 
 h1 {
-  position: relative; }
+  position: relative;
+  text-align: center; }
 
 .foto_sotial {
   color: #02cdd1;
@@ -393,5 +394,105 @@ h1 {
   padding: 64px 0; }
 
 .else {
-  text-align: center;
   padding: 60px 0; }
+
+.name_teplohod {
+  color: #02cdd1;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 26px 0;
+  display: inline-block; }
+
+.inner_span2 {
+  background: url("../img/ik2.jpg") no-repeat left;
+  display: inline-block;
+  padding-left: 30px; }
+
+.inner_span1 {
+  background: url("../img/ik1.jpg") no-repeat left;
+  display: inline-block;
+  padding-left: 30px; }
+
+.map {
+  text-align: center; }
+
+.descr_map {
+  padding: 60px 0; }
+
+.for_map {
+  position: relative;
+  width: 100%; }
+
+.form {
+  width: 100%;
+  background-color: #02cdd1;
+  padding: 50px 0;
+  margin-top: 70px;
+  text-align: center; }
+
+.descr_form {
+  color: #fff;
+  font-weight: normal; }
+
+.form_footer {
+  display: block;
+  margin: 0 auto;
+  width: 460px;
+  border: 1px solid #fff; }
+
+.form_input {
+  padding: 24px 0 24px 24px;
+  background-color: #30d6d9;
+  border: 2px solid #30d6d9; }
+
+.form_input1 {
+  width: 100%;
+  border: 2px solid #fff; }
+
+.form_input2 {
+  float: left;
+  width: 50%;
+  border: 2px solid #fff; }
+
+.form_input3 {
+  width: 50%;
+  border: 2px solid #fff; }
+
+.textar {
+  width: 100%;
+  background-color: #30d6d9;
+  border: 2px solid #30d6d9; }
+
+::-webkit-input-placeholder {
+  color: #fff; }
+
+::-moz-placeholder {
+  color: #fff; }
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #fff; }
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #fff; }
+
+textarea::-webkit-input-placeholder {
+  color: #fff; }
+
+textarea::-moz-placeholder {
+  color: #fff; }
+
+textarea:-moz-placeholder {
+  color: #fff; }
+
+textarea:-ms-input-placeholder {
+  color: #fff; }
+
+.link_form {
+  color: #fff;
+  padding: 24px 42px 24px 80px;
+  border: 1px solid #fff;
+  margin-top: 40px;
+  background: url("../img/ancor.png") no-repeat 20px 20px;
+  display: inline-block; }
