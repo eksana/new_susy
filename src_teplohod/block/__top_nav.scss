@@ -2,6 +2,7 @@
 	width: 100%;
 	background-color: $color1;
 	text-align: center;
+	margin-top: 50px;
 }
 .top_nav li{
 	display: inline-block;
@@ -53,7 +54,68 @@
 	display: block;
 } 
 }
+
+.map{
+	position: relative;
+	&:before{
+	content:url(../img/map.png);
+	position: absolute;
+	top:-10px;
+	left:25px;
+	width: 60px;
+	height: 60px;
+	display: block;
+} 
+}
+.about{
+	position: relative;
+	&:before{
+	content:url(../img/info.png);
+	position: absolute;
+	top:-10px;
+	left:25px;
+	width: 60px;
+	height: 60px;
+	display: block;
+} 
+}
+.st{
+	position: relative;
+	&:before{
+	content:url(../img/articles.png);
+	position: absolute;
+	top:-10px;
+	left:0;
+	width: 60px;
+	height: 60px;
+	display: block;
+} 
+}
+.otz{
+	position: relative;
+	&:before{
+	content:url(../img/otz.png);
+	position: absolute;
+	top:-10px;
+	left:5px;
+	width: 60px;
+	height: 60px;
+	display: block;
+} 
+}
+.call{
+	position: relative;
+	&:before{
+	content:url(../img/call.png);
+	position: absolute;
+	top:-10px;
+	left:5px;
+	width: 60px;
+	height: 60px;
+	display: block;
+} 
+}
 .inner {
-    padding: 60px 0;
+    padding: 100px 0 60px;
     margin: 0;
 }
