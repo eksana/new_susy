@@ -1,0 +1,24 @@
+.foto{
+	text-align: center;
+	padding: 60px 0;
+}
+h1{
+	position: relative;
+}
+.foto_sotial{
+	color: $color1;
+	display: inline-block;
+    position: absolute;
+    font-size: 18px;
+    top: 9px;
+    right: 100px;
+}
+.wrap_for_foto{
+	border-bottom: 1px solid lightgrey;
+	padding: 64px 0;
+}
+.else{
+	text-align: center;
+	padding: 60px 0;
+
+}
