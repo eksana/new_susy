@@ -394,7 +394,8 @@ h1 {
   padding: 64px 0; }
 
 .else {
-  padding: 60px 0; }
+  padding: 60px 0;
+  text-align: center; }
 
 .name_teplohod {
   color: #02cdd1;
@@ -412,6 +413,13 @@ h1 {
   background: url("../img/ik1.jpg") no-repeat left;
   display: inline-block;
   padding-left: 30px; }
+
+.tepl_width {
+  max-width: 360px;
+  margin-top: 30px; }
+
+.wrap_each_teplohod {
+  display: inline-block; }
 
 .map {
   text-align: center; }
@@ -495,4 +503,61 @@ textarea:-ms-input-placeholder {
   border: 1px solid #fff;
   margin-top: 40px;
   background: url("../img/ancor.png") no-repeat 20px 20px;
-  display: inline-block; }
+  display: inline-block;
+  font-size: 21px; }
+
+.descr_under_form {
+  color: #fff;
+  margin: 40px auto;
+  width: 60%;
+  line-height: 2.2; }
+
+strong {
+  font-size: 21px; }
+
+.under_section_form {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0;
+  border-bottom: 1px solid grey;
+  margin-bottom: 50px; }
+
+.footer_tel {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 21px; }
+
+.link3 {
+  color: #02cdd1;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px; }
+
+.footer_addr {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.7; }
+
+.payItem {
+  display: inline-block;
+  background-size: cover;
+  margin-top: 20px;
+  width: 60px; }
+
+.bold_link {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px; }
+
+.for_sotial_and_launguige {
+  line-height: 5;
+  text-align: center; }
+
+.end {
+  text-align: center;
+  padding-top: 50px;
+  border-top: 1px solid lightgrey;
+  width: 40%;
+  margin: 40px auto; }
