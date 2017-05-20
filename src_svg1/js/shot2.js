@@ -33,14 +33,14 @@ $(document).ready(function(){
 	});
 
 
-	$('#tspan78,#tspan82,#tspan66,#tspan70,#tspan74,#tspan86,#tspan90,#tspan94,#tspan98,#tspan102,#tspan106,#tspan110,#tspan114').each(function(){
+	$('#tspan78,#tspan82,#tspan66,#tspan70,#tspan74,#tspan86,#tspan90,#tspan94,#tspan98,#tspan102,#tspan106,#tspan110,#tspan114,#tspan1110').each(function(){
 		
 	$(this).on('mouseenter',function(){
 		$(this).removeClass();
 		$(this).addClass('fontYellow');
 	});
 
-	$('#tspan78,#tspan82,#tspan66,#tspan70,#tspan74,#tspan86,#tspan90,#tspan94,#tspan98,#tspan102,#tspan106,#tspan110,#tspan114').on('mouseout',function(){
+	$('#tspan78,#tspan82,#tspan66,#tspan70,#tspan74,#tspan86,#tspan90,#tspan94,#tspan98,#tspan102,#tspan106,#tspan110,#tspan114,#tspan1110').on('mouseout',function(){
 		
 		$(this).removeClass();
 		$(this).addClass('fontBlack');

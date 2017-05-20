@@ -131,6 +131,17 @@ img[src="img/logo.png"] {
     height: 60px;
     display: block; }
 
+.tep {
+  position: relative; }
+  .tep:before {
+    content: url(../img/tep.png);
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    display: block; }
+
 .map {
   position: relative; }
   .map:before {

@@ -102,6 +102,7 @@
 	-webkit-background-size: cover;
 	background-size: cover;
 }
+
 .wrapForPay{
 	@include span(12);
 	margin-top: 50px;
@@ -145,3 +146,4 @@
 .wrap_for_payCard{
 	@include span(6 of 12 last);
 }
+	
