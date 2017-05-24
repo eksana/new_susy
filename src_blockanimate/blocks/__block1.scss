@@ -1,0 +1,49 @@
+.container-my{
+	width: 1800px;
+}
+.box{
+	list-style-type: none;
+	border:1px solid #f2eee9;
+	padding-top:50px;
+	padding-bottom: 48px;
+	padding-left: 130px;
+	background-color: #fff;
+	width: 70%;
+}
+.dish{
+	width: 100%;
+	/*height: 1200px;*/
+	
+	top: 0;
+    left: 0;
+    position: relative;
+    margin-left: -220px;
+}
+html{height:100%;}
+    body{height:100%;}
+    html, body{margin:0;padding:0;}
+
+    .capsAndDish{
+    	 /*position: absolute;*/
+    	margin-left:1600px;
+    }
+    .one{
+    	background: url('../img/bg.jpg')no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+    }
+    ul {
+    padding: 0;
+    margin: 0;
+}
+.active{
+	background-color: #e4d9c1;
+}
+.box-opacity{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 500px;
+	height: 960px;
+	background-color: rgba(105, 93,71,.7);
+}
