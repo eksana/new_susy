@@ -4,11 +4,21 @@
 .box{
 	list-style-type: none;
 	border:1px solid #f2eee9;
-	padding-top:50px;
+	padding-top: 45px;
 	padding-bottom: 48px;
 	padding-left: 130px;
 	background-color: #fff;
 	width: 70%;
+}
+ul{
+	position: relative;
+    z-index: 10;
+}
+.box:first-child{
+	background-color: #443e33;
+	font-size: 30px;
+	color: #fff;
+	padding-left: 0;
 }
 .dish{
 	width: 100%;
@@ -19,8 +29,37 @@
     position: relative;
     margin-left: -220px;
 }
+span{
+	display: block;
+	text-align: center;
+}
+.firstSpan{
+font-size: 42px;
+}
+.box2{
+background: #fff url('../img/ypak2.png')no-repeat 40px;
+}
+.box3{
+	background: #fff url('../img/prom2.png')no-repeat 40px;
+}
+.box4{
+	background: #fff url('../img/posuda2.png')no-repeat 40px;
+}
+.box5{
+	background: #fff url('../img/him2.png')no-repeat 40px;
+}
+.box6{
+	background: #fff url('../img/kan2.png')no-repeat 40px;
+}
+.box7{
+	background: #fff url('../img/kmm2.png')no-repeat 40px;
+}
+
+
 html{height:100%;}
-    body{height:100%;}
+    body{height:100%;
+    font-family: 'PT Sans', sans-serif;
+font-size: 16px;}
     html, body{margin:0;padding:0;}
 
     .capsAndDish{
@@ -42,8 +81,86 @@ html{height:100%;}
 .box-opacity{
 	position: absolute;
 	top:0;
-	left: 0;
+	/*left: 18px;*/
+	left: 600px;
 	width: 500px;
-	height: 960px;
-	background-color: rgba(105, 93,71,.7);
+	height: 1030px;
+	background-color: rgb(105, 93,71);
+	opacity:0;
+}
+.title{
+	text-align: center;
+	color: #fff;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 28px;
+	top:0;
+	left:0;
+}
+.titleFade{
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top:200px;
+	left:0;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 24px;
+}
+.inner_anim_left{
+	position: absolute;
+	top:90px;
+	/*left:0;*/
+	left:-700px;
+	/*background-color: green;*/
+	background-color: rgba(105, 93,71,.5);
+width: 500px;
+/*z-index:-100;*/
+	padding: 30px;
+	opacity:0;
+
+
+}
+.inner_descr{
+	text-align: center;
+	color: #fff;
+	
+
+}
+.for_input {
+    /*width: 100%; */
+    /*padding: 20px 120px;*/
+    /*border: 1px solid #fff;*/
+    background-color: #dbdbd5;
+    -webkit-border-radius: 30px;
+    border-radius: 7px;
+    /*float: left;*/
+    margin-bottom: 30px;
+    display: block;
+    padding: 10px 80px;
+}
+#submitMessage{
+	background-color: #443e33;
+	margin: 0 auto;
+	padding: 10px 80px;
+	border: 3px solid #443e33;
+	color: #fff;
+}
+/*input:first-child{
+	width: 100%;
+}*/
+
+label{
+	color: #fff;
+	margin-bottom: 15px;
+	display: block;
+}
+#inpKompany,#inpTown,#inpTel,#inpEmail{
+	width: 50%;
+	padding: 10px 103px;
+}
+#inpName{
+	width: 100%;
+}
+.wrap_for_input2,.wrap_for_input3,.wrap_for_input4,.wrap_for_input5{
+	width: 48%;
+	display: inline-block;
 }
