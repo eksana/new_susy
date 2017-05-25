@@ -56,6 +56,11 @@ p {
 /*@import "bower_components/susy/sass/_susy.scss";
 @import "bower_components/breakpoint/breakpoint/_breakpoint.scss";*/
 /*@import "reset";*/
+@font-face {
+  font-family: "Magistral";
+  /* Название загруженного шрифта. Это название будем указать в значение свойства font-family у желаемых элементов */
+  src: url("../fonts/Magistral/OMagistral/Magistral.eot?#iefix") format("embedded-opentype"), url("../fonts/Magistral/Magistral/Magistral.woff") format("woff"), url("../fonts/Magistral/Magistral/Magistral.ttf") format("truetype"); }
+
 .container-my {
   width: 1800px; }
 
@@ -70,14 +75,18 @@ p {
   cursor: pointer; }
 
 ul {
+  padding: 0;
+  margin: 0;
   position: relative;
-  z-index: 10; }
+  z-index: 10;
+  margin-left: -70px; }
 
 .box:first-child {
   background-color: #443e33;
   font-size: 30px;
   color: #fff;
-  padding-left: 0; }
+  padding-left: 0;
+  padding-top: 24px; }
 
 .dish {
   width: 100%;
@@ -85,14 +94,27 @@ ul {
   top: 0;
   left: 0;
   position: relative;
+  margin-left: -220px;
+  display: none; }
+
+.dish2 {
+  display: none;
+  /*display: block;*/
+  width: 100%;
+  /* height: 1200px; */
+  top: 0;
+  left: 0;
+  position: relative;
   margin-left: -220px; }
 
 span {
   display: block;
-  text-align: center; }
+  text-align: center;
+  font-family: "Magistral"; }
 
 .firstSpan {
-  font-size: 42px; }
+  font-size: 42px;
+  font-family: "Magistral"; }
 
 .box2 {
   background: #fff url("../img/ypak2.png") no-repeat 40px; }
@@ -110,7 +132,9 @@ span {
   background: #fff url("../img/kan2.png") no-repeat 40px; }
 
 .box7 {
-  background: #fff url("../img/kmm2.png") no-repeat 40px; }
+  background: #fff url("../img/kmm2.png") no-repeat 40px;
+  height: 192px;
+  margin-bottom: -54px; }
 
 html {
   height: 100%; }
@@ -126,28 +150,69 @@ html, body {
 
 .capsAndDish {
   /*position: absolute;*/
-  margin-left: 1600px; }
+  /*margin-left:1600px;*/
+  margin-left: 0;
+  -webkit-animation: c_d 1s ease-in;
+          animation: c_d 1s ease-in; }
 
 .one {
   background: url("../img/bg.jpg") no-repeat center;
   background-size: cover; }
 
-ul {
-  padding: 0;
-  margin: 0; }
-
 .active {
   background-color: #e4d9c1; }
+
+.wrap_for_input {
+  margin-top: -20px; }
+
+.wrap_for_input.wrap_for_input6 {
+  margin-top: 1px; }
+
+.site {
+  position: relative;
+  bottom: 50px;
+  right: -1000px;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif; }
+
+.contact {
+  font-family: 'PT SansBold', sans-serif;
+  color: #fff; }
+
+.butt {
+  width: 56px;
+  height: 56px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  /*background-color: #443e33;*/
+  position: absolute;
+  top: 40px;
+  right: -1200px;
+  background: #443e33 url("../img/pie.png") no-repeat center; }
+
+.addr {
+  color: #fff;
+  font-family: 'PT Sans', sans-serif; }
+
+.con {
+  position: absolute;
+  bottom: 0px;
+  right: -1200px;
+  text-align: right; }
 
 .box-opacity {
   position: absolute;
   top: 0;
   /*left: 18px;*/
-  left: 600px;
+  /*left: 600px;*/
   width: 500px;
-  height: 1030px;
+  height: 1064px;
   background-color: #695d47;
-  opacity: 0; }
+  /*opacity:0;*/
+  opacity: 0.9;
+  left: -2px;
+  -webkit-animation: b_o 1s;
+          animation: b_o 1s; }
 
 .title {
   text-align: center;
@@ -160,23 +225,86 @@ ul {
 .titleFade {
   text-align: center;
   color: #fff;
+  font-family: "Magistral";
   position: absolute;
-  top: 200px;
-  left: 0;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 24px; }
+  /*top:200px;*/
+  top: 0;
+  left: 90px;
+  /*font-family: 'PT Sans', sans-serif;*/
+  font-size: 28px;
+  -webkit-animation: t_f 1s;
+          animation: t_f 1s; }
 
 .inner_anim_left {
   position: absolute;
-  top: 90px;
-  /*left:0;*/
-  left: -700px;
+  top: 120px;
+  left: 0;
+  /*left:-700px;*/
   /*background-color: green;*/
-  background-color: rgba(105, 93, 71, 0.5);
+  /*background-color: rgba(105, 93,71,.5);*/
   width: 500px;
   /*z-index:-100;*/
   padding: 30px;
-  opacity: 0; }
+  /*opacity:0;*/
+  opacity: 0.9;
+  -webkit-animation: i_l 1s ease-in;
+          animation: i_l 1s ease-in; }
+
+@-webkit-keyframes b_o {
+  0% {
+    opacity: 0;
+    left: 600px; }
+  80% {
+    opacity: 0.9;
+    left: 0; } }
+
+@keyframes b_o {
+  0% {
+    opacity: 0;
+    left: 600px; }
+  80% {
+    opacity: 0.9;
+    left: 0; } }
+
+@-webkit-keyframes t_f {
+  0% {
+    top: 400px; }
+  80% {
+    top: 0; } }
+
+@keyframes t_f {
+  0% {
+    top: 400px; }
+  80% {
+    top: 0; } }
+
+@-webkit-keyframes c_d {
+  0% {
+    margin-left: 1600px; }
+  100% {
+    margin-left: 0; } }
+
+@keyframes c_d {
+  0% {
+    margin-left: 1600px; }
+  100% {
+    margin-left: 0; } }
+
+@-webkit-keyframes i_l {
+  0% {
+    left: -700px;
+    opacity: 0; }
+  100% {
+    left: 0;
+    opacity: 0.9; } }
+
+@keyframes i_l {
+  0% {
+    left: -700px;
+    opacity: 0; }
+  100% {
+    left: 0;
+    opacity: 0.9; } }
 
 .inner_descr {
   text-align: center;

@@ -42,6 +42,17 @@ gulp.task('sass_blockanimate', function(){ // Создаем таск Sass
         .pipe(gulp.dest('src_blockanimate/css')); // Выгружаем результата в папку app/css
         //.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
+gulp.task('sass_blockanimate2', function(){ // Создаем таск Sass
+    return gulp.src('src_blockanimate2/sass/**/*.scss') // Берем источник
+        //.pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
+         .pipe(sass({
+          /*outputStyle: 'compressed',*/
+          includePaths: ['node_modules/susy/sass']
+      }).on('error', sass.logError))
+       .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
+        .pipe(gulp.dest('src_blockanimate2/css')); // Выгружаем результата в папку app/css
+        //.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
+});
 
 gulp.task('sass_mebel', function(){ // Создаем таск Sass
     return gulp.src('src_mebel/scss/**/*.scss') // Берем источник
