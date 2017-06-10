@@ -61,6 +61,7 @@ text-align: center;
   outline: 1px solid green; }
 
 .bg-animal {
+  position: relative;
   padding-left: 43px;
   padding-bottom: 300px;
   padding-right: 60px;
@@ -89,9 +90,14 @@ text-align: center;
 label {
   display: block;
   margin: 20px auto;
-  text-align: center;
+  text-align: left;
   color: #fff;
-  outline: 1px solid red; }
+  outline: 1px solid red;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  /*flex-direction: column;*/ }
 
 a {
   display: inline-block;
@@ -114,6 +120,31 @@ span {
 
 p {
   color: #000; }
+
+.price {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: #1698d9;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  bottom: 10px;
+  right: 10px;
+  font-size: 22px;
+  font-family: 'Trebuchet MS'; }
+
+.inner-price {
+  width: 30px;
+  border: 1px solid red;
+  line-height: 1.2;
+  -webkit-transform: translate(25px, 5px);
+      -ms-transform: translate(25px, 5px);
+          transform: translate(25px, 5px); }
+
+.inner-price span {
+  text-align: center;
+  font-family: 'Trebuchet MS';
+  font-size: 42px; }
 
 @media screen and (max-width: 1170px) {
   .container {
