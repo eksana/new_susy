@@ -20,29 +20,107 @@ align-items: center;
   justify-content:center;
  font-family: 'Exo 2.0 Thin';
 }
-.about-catfood{
+/*.about-catfood{
 
-padding: 50px 30px 70px;	
+padding: 50px 30px 70px;
 background-color: lightgreen;
 display: flex column;
  
- 
-/*height: 100vh;*/
 color:#fff;
 text-align: center;	
 	
-}
+}*/
 .container{
-	
-	max-width:1200px ;
+	width: 1120px;
 	display: flex;
-	padding:50px;
-	
-	background-color: lightyellow;
-	/*margin:0 auto;*/
+	justify-content:space-between;
+	/*background-color: lightyellow;*/
+	color:#222;
 	border:1px solid green;
 }
-h1{
+.card{
+
+	/*background-color: lightgrey;*/
+	
+	
+	text-align: left;
+	outline:1px solid green;
+}
+.bg-animal{
+	padding-left: 43px;
+	padding-bottom: 300px;
+	padding-right: 60px;
+	margin-bottom: 20px;
+	border:3px solid #1698d9;
+	border-radius: 5px;
+	background:#fff url('../img/catBg.png')no-repeat -30px 190%;
+}
+.about-catfood h1{
+	color: #fff;
+	text-align: center;
 	 font-family: 'Exo 2.0 Thin';
-	 margin-bottom: 30px;
+	 margin-bottom: 20px;
+}
+.bg-animal h1{
+	font-size: 48px;
+	color:#222;
+	font-weight: bold;
+
+	font-family: 'Trebuchet MS' ;
+
+}
+.bg-animal h4{
+	margin-bottom: -45px;
+	color: #000;
+}
+label{
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	color: #fff;
+	outline:1px solid red;
+}
+a{
+	display: inline-block;
+	color: #1698d9;
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom:1px  dashed #1698d9; 
+}
+span{
+	display: block;
+	font-size: 24px;
+	text-align: left;
+	margin-bottom: -10px;
+}
+.bg-animal p{
+	font-size: 14px;
+	line-height: 1;
+	color: #000;
+	text-align: left;
+}
+p{
+color: #000;	
+}
+@media screen and(max-width:1170px){
+	.container{
+		width: 700px;
+		flex-direction: row;
+		flex-wrap:wrap;
+		justify-content: space-around;
+	}
+	body{
+		justify-content: flex-start;
+	}
+}
+
+@media screen and(max-width:600px){
+	.container{
+		
+		flex-direction: column;
+		align-items: center;
+	}
+	body{
+		justify-content: flex-start;
+	}
 }
