@@ -35,7 +35,8 @@ body {
 
 padding: 50px 30px 70px;
 background-color: lightgreen;
-display: flex column;
+display: flex;
+    flex-direction: column;
  
 color:#fff;
 text-align: center;	
@@ -57,6 +58,10 @@ text-align: center;
 
 .card {
   /*background-color: lightgrey;*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   text-align: left;
   outline: 1px solid green; }
 
@@ -65,11 +70,13 @@ text-align: center;
   padding-left: 43px;
   padding-bottom: 300px;
   padding-right: 60px;
-  margin-bottom: 20px;
   border: 3px solid #1698d9;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   background: #fff url("../img/catBg.png") no-repeat -30px 190%; }
+
+.label-wrap:last-child {
+  margin-bottom: 70px; }
 
 .about-catfood h1 {
   color: #fff;
@@ -87,19 +94,46 @@ text-align: center;
   margin-bottom: -45px;
   color: #000; }
 
-label {
+.label-wrap {
   display: block;
-  margin: 20px auto;
+  position: relative;
   text-align: left;
   color: #fff;
   outline: 1px solid red;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  /*flex-direction: column;*/ }
+  display: flex; }
 
-a {
+.corner {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-right: 3px solid #1698d9;
+  top: -23px;
+  left: -25px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 10; }
+  .corner:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    background: url("../img/bg.jpg")-132%;
+    /*transform: rotate(-45deg);*/
+    top: 0;
+    left: 20px; }
+
+.label-price {
+  color: #fff;
+  outline: 1px solid red;
+  display: block;
+  position: absolute;
+  top: 510px; }
+
+.link {
   display: inline-block;
   color: #1698d9;
   font-weight: bold;
@@ -133,10 +167,20 @@ p {
   font-size: 22px;
   font-family: 'Trebuchet MS'; }
 
+.part {
+  width: 50px;
+  border: 1px solid yellow;
+  line-height: 1.2;
+  text-align: center;
+  -webkit-transform: translate(-15px, 0px);
+      -ms-transform: translate(-15px, 0px);
+          transform: translate(-15px, 0px); }
+
 .inner-price {
   width: 30px;
   border: 1px solid red;
   line-height: 1.2;
+  text-align: center;
   -webkit-transform: translate(25px, 5px);
       -ms-transform: translate(25px, 5px);
           transform: translate(25px, 5px); }
@@ -145,6 +189,9 @@ p {
   text-align: center;
   font-family: 'Trebuchet MS';
   font-size: 42px; }
+
+input[type="checkbox"] {
+  display: none; }
 
 @media screen and (max-width: 1170px) {
   .container {
@@ -160,6 +207,8 @@ p {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
+  .label-wrap:last-child {
+    margin-top: 60px; }
   body {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;

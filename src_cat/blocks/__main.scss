@@ -24,7 +24,8 @@ align-items: center;
 
 padding: 50px 30px 70px;
 background-color: lightgreen;
-display: flex column;
+display: flex;
+    flex-direction: column;
  
 color:#fff;
 text-align: center;	
@@ -41,7 +42,7 @@ text-align: center;
 .card{
 
 	/*background-color: lightgrey;*/
-	
+	display: flex;
 	
 	text-align: left;
 	outline:1px solid green;
@@ -51,10 +52,13 @@ text-align: center;
 	padding-left: 43px;
 	padding-bottom: 300px;
 	padding-right: 60px;
-	margin-bottom: 20px;
+	
 	border:3px solid #1698d9;
 	border-radius: 5px;
 	background:#fff url('../img/catBg.png')no-repeat -30px 190%;
+}
+.label-wrap:last-child {
+	margin-bottom:70px;
 }
 .about-catfood h1{
 	color: #fff;
@@ -73,16 +77,46 @@ text-align: center;
 	margin-bottom: -45px;
 	color: #000;
 }
-label{
+.label-wrap{
 	display: block;
-	margin: 20px auto;
+	position: relative;
 	text-align: left;
 	color: #fff;
 	outline:1px solid red;
 	display: flex;
-    /*flex-direction: column;*/
+   
 }
-a{
+.corner{
+	position: absolute;
+	width: 50px;
+    height: 50px;
+	
+    	
+    	border-right:3px solid #1698d9;
+    	top: -23px;
+    left: -25px;
+    	transform: rotate(45deg);
+z-index:10;
+ &:before{
+    	content:"";
+    	position: absolute;
+    	width: 30px;
+    height: 50px;
+    background: url('../img/bg.jpg')-132%;
+     /*transform: rotate(-45deg);*/
+    	top: 0;
+    left: 20px;
+    }
+}
+.label-price {
+    color: #fff;
+    outline: 1px solid red;
+    
+    display: block;
+    position: absolute;
+    top: 510px;
+}
+.link{
 	display: inline-block;
 	color: #1698d9;
 	font-weight: bold;
@@ -116,10 +150,18 @@ color: #000;
 	font-family: 'Trebuchet MS' ;
 	
 }
+.part{
+	width: 50px;
+	border:1px solid yellow;
+	line-height: 1.2;
+	text-align: center;
+    transform: translate(-15px, 0px);
+}
 .inner-price{
 	width: 30px;
 	border:1px solid red;
 	line-height: 1.2;
+	text-align: center;
     transform: translate(25px ,5px);
 }
 .inner-price span{
@@ -130,12 +172,19 @@ color: #000;
 
 	
 }
+input[type="checkbox"]{
+	display: none;
+}
+
 @media screen and(max-width:1170px){
 	.container{
 		width: 700px;
 		flex-direction: row;
 		flex-wrap:wrap;
 		justify-content: space-around;
+	}
+	.label-wrap:last-child {
+margin-top: 60px;
 	}
 	body{
 		justify-content: flex-start;
