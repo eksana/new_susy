@@ -33,7 +33,7 @@ text-align: center;
 	
 }*/
 .container{
-	width: 1120px;
+	max-width: 1500px;
 
 	display: flex;
 	flex-wrap:wrap;
@@ -51,6 +51,7 @@ background-color: lightgrey;
 	
 }*/
 .bg-animal{
+	flex: 1 1 315px;
 	position: relative;
 	padding-left: 43px;
 	padding-bottom: 300px;
@@ -88,6 +89,7 @@ background-color: lightgrey;
 	text-align: left;
 	color: #fff;
 	display: flex;
+	margin: 50px;
 }
 
 /*.corner{
@@ -177,7 +179,7 @@ color: #000;
 	
 }
 input[type="checkbox"]{
-	display: block;
+	display: none;
 }
 .disable{
 	color: green;
@@ -200,7 +202,7 @@ input[type="checkbox"]{
 }
 
 }
-@media screen and(max-width:1170px){
+/*@media screen and(max-width:1170px){
 	.container{
 		width: 700px;
 		flex-direction: row;
@@ -223,7 +225,7 @@ margin-top: 60px;
 	body{
 		justify-content: flex-start;
 	}
-}
+}*/
 
 
 
