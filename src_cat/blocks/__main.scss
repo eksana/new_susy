@@ -15,6 +15,7 @@ body{
 background: url('../img/bg.jpg') repeat ;
 
 display: flex;
+
 flex-direction: column;
 align-items: center;
   justify-content:center;
@@ -33,33 +34,37 @@ text-align: center;
 }*/
 .container{
 	width: 1120px;
-	display: flex;
-	justify-content:space-between;
-	/*background-color: lightyellow;*/
-	color:#222;
-	border:1px solid green;
-}
-.card{
 
-	/*background-color: lightgrey;*/
 	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	background-color: lightyellow;
+	color:#222;
 	
-	text-align: left;
-	outline:1px solid green;
 }
+/*.card{
+background-color: lightgrey;
+	
+	display: flex;
+	 
+	text-align: left;
+	
+}*/
 .bg-animal{
 	position: relative;
 	padding-left: 43px;
 	padding-bottom: 300px;
 	padding-right: 60px;
 	
+	
 	border:3px solid #1698d9;
 	border-radius: 5px;
 	background:#fff url('../img/catBg.png')no-repeat -30px 190%;
 }
-.label-wrap:last-child {
+/*.label-wrap:last-child {
 	margin-bottom:70px;
-}
+	margin-top: 25px;
+}*/
 .about-catfood h1{
 	color: #fff;
 	text-align: center;
@@ -78,23 +83,22 @@ text-align: center;
 	color: #000;
 }
 .label-wrap{
-	display: block;
+	/*display: block;*/
 	position: relative;
 	text-align: left;
 	color: #fff;
-	outline:1px solid red;
 	display: flex;
-   
 }
-.corner{
+
+/*.corner{
 	position: absolute;
-	width: 50px;
+	width: 30px;
     height: 50px;
 	
     	
     	border-right:3px solid #1698d9;
-    	top: -23px;
-    left: -25px;
+    	top: -16px;
+    left: -8px;
     	transform: rotate(45deg);
 z-index:10;
  &:before{
@@ -103,11 +107,11 @@ z-index:10;
     	width: 30px;
     height: 50px;
     background: url('../img/bg.jpg')-132%;
-     /*transform: rotate(-45deg);*/
-    	top: 0;
-    left: 20px;
+    
+    	top: 0px;
+    left: 0;
     }
-}
+}*/
 .label-price {
     color: #fff;
     outline: 1px solid red;
@@ -173,9 +177,29 @@ color: #000;
 	
 }
 input[type="checkbox"]{
-	display: none;
+	display: block;
+}
+.disable{
+	color: green;
+}
+#hen:checked + .disable {
+	position: relative;
+	 &:before{
+    position: absolute;
+
+    content: '';
+   
+    	top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+    opacity: 0.7;
+    border: 3px solid grey;
+    z-index: 1;
 }
 
+}
 @media screen and(max-width:1170px){
 	.container{
 		width: 700px;
@@ -190,7 +214,6 @@ margin-top: 60px;
 		justify-content: flex-start;
 	}
 }
-
 @media screen and(max-width:600px){
 	.container{
 		
@@ -201,3 +224,6 @@ margin-top: 60px;
 		justify-content: flex-start;
 	}
 }
+
+
+

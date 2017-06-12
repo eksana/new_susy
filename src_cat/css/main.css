@@ -48,23 +48,23 @@ text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  /*background-color: lightyellow;*/
-  color: #222;
-  border: 1px solid green; }
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background-color: lightyellow;
+  color: #222; }
 
-.card {
-  /*background-color: lightgrey;*/
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: left;
-  outline: 1px solid green; }
-
+/*.card{
+background-color: lightgrey;
+	
+	display: flex;
+	 
+	text-align: left;
+	
+}*/
 .bg-animal {
   position: relative;
   padding-left: 43px;
@@ -75,9 +75,10 @@ text-align: center;
           border-radius: 5px;
   background: #fff url("../img/catBg.png") no-repeat -30px 190%; }
 
-.label-wrap:last-child {
-  margin-bottom: 70px; }
-
+/*.label-wrap:last-child {
+	margin-bottom:70px;
+	margin-top: 25px;
+}*/
 .about-catfood h1 {
   color: #fff;
   text-align: center;
@@ -95,37 +96,37 @@ text-align: center;
   color: #000; }
 
 .label-wrap {
-  display: block;
+  /*display: block;*/
   position: relative;
   text-align: left;
   color: #fff;
-  outline: 1px solid red;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
-.corner {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-right: 3px solid #1698d9;
-  top: -23px;
-  left: -25px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  z-index: 10; }
-  .corner:before {
-    content: "";
-    position: absolute;
-    width: 30px;
+/*.corner{
+	position: absolute;
+	width: 30px;
     height: 50px;
-    background: url("../img/bg.jpg")-132%;
-    /*transform: rotate(-45deg);*/
-    top: 0;
-    left: 20px; }
-
+	
+    	
+    	border-right:3px solid #1698d9;
+    	top: -16px;
+    left: -8px;
+    	transform: rotate(45deg);
+z-index:10;
+ &:before{
+    	content:"";
+    	position: absolute;
+    	width: 30px;
+    height: 50px;
+    background: url('../img/bg.jpg')-132%;
+    
+    	top: 0px;
+    left: 0;
+    }
+}*/
 .label-price {
   color: #fff;
   outline: 1px solid red;
@@ -191,7 +192,24 @@ p {
   font-size: 42px; }
 
 input[type="checkbox"] {
-  display: none; }
+  display: block; }
+
+.disable {
+  color: green; }
+
+#hen:checked + .disable {
+  position: relative; }
+  #hen:checked + .disable:before {
+    position: absolute;
+    content: '';
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+    opacity: 0.7;
+    border: 3px solid grey;
+    z-index: 1; }
 
 @media screen and (max-width: 1170px) {
   .container {
