@@ -14,12 +14,25 @@ body{
 	height:100%;
 background: url('../img/bg.jpg') repeat ;
 
+position: relative;
+
 display: flex;
 
 flex-direction: column;
 align-items: center;
   justify-content:center;
  font-family: 'Exo 2.0 Thin';
+ &:before{
+position: absolute;
+content:'';
+display: block;
+width: 100%;
+height: 100%;
+top:0;
+left:0;
+background:linear-gradient(to bottom,rgba(0,0,0,.3),rgba(255,255,255,.3),rgba(0,0,0,.3));
+
+ }
 }
 /*.about-catfood{
 
@@ -33,7 +46,7 @@ text-align: center;
 	
 }*/
 .container{
-	max-width: 1500px;
+	max-width: 1300px;
 
 	display: flex;
 	flex-wrap:wrap;
@@ -54,13 +67,15 @@ background-color: lightgrey;
 	flex: 1 1 315px;
 	position: relative;
 	padding-left: 43px;
+
 	padding-bottom: 300px;
 	padding-right: 60px;
 	
 	
+	
 	border:3px solid #1698d9;
 	border-radius: 5px;
-	background:#fff url('../img/catBg.png')no-repeat -30px 190%;
+	background:#f2f2f2 url('../img/catBg.png')no-repeat -30px 190%;
 }
 /*.label-wrap:last-child {
 	margin-bottom:70px;
@@ -89,9 +104,17 @@ background-color: lightgrey;
 	text-align: left;
 	color: #fff;
 	display: flex;
-	margin: 50px;
+	margin: 40px;
 }
-
+#descr-hen, #descr-fya, #descr-fish {
+    position: absolute;
+    top: 510px;
+    left: 0;
+    font-size: 13px;
+    white-space: nowrap;
+    
+    text-align: center;
+}
 /*.corner{
 	position: absolute;
 	width: 30px;
@@ -120,7 +143,7 @@ z-index:10;
     
     display: block;
     position: absolute;
-    top: 510px;
+    top: 515px;
 }
 .link{
 	display: inline-block;
