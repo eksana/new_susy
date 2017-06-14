@@ -14,6 +14,7 @@ body{
 	height:100%;
 background: url('../img/bg.jpg') repeat ;
 
+
 position: relative;
 
 display: flex;
@@ -30,7 +31,10 @@ width: 100%;
 height: 100%;
 top:0;
 left:0;
-background:linear-gradient(to bottom,rgba(0,0,0,.3),rgba(255,255,255,.3),rgba(0,0,0,.3));
+background: url('../img/grad.png') repeat ;
+
+
+/*background:linear-gradient(to bottom,rgba(0,0,0,.3),rgba(255,255,255,.3),rgba(0,0,0,.3));*/
 
  }
 }
@@ -122,7 +126,7 @@ background-color: lightgrey;
 	
     	
     	border-right:3px solid #1698d9;
-    	top: -16px;
+    	top: -18px;
     left: -8px;
     	transform: rotate(45deg);
 z-index:10;
@@ -177,6 +181,10 @@ color: #000;
 	right:10px;
 	font-size: 22px;
 	font-family: 'Trebuchet MS' ;
+	z-index: 3;
+	&:hover{
+		background-color: #2ea8e6;
+	}
 	
 }
 .part{
@@ -204,11 +212,10 @@ color: #000;
 input[type="checkbox"]{
 	display: none;
 }
-.disable{
-	color: green;
-}
+
 #hen:checked ~ .disable {
 	position: relative;
+	border:3px solid transparent;
 	 &:before{
     position: absolute;
 
@@ -221,29 +228,64 @@ input[type="checkbox"]{
     border-radius: 5px;
     background-color: lightgrey;
     opacity: 0.7;
-    border: 3px solid rgba(204, 207, 209,0.5);
+    border: 3px solid #b3b3b3;
     z-index: 1;
     
 }
 
 }
 .hen-last:checked ~.corner{
-	border-right:3px solid lightgrey;
+	border-right: 3px solid #b3b3b3;
 }
 .hen-last:checked ~#descr-hen{
 	display: block;
+	color: #d1d152;
+	transform: translateX(50%);
 }
 
-.hen-last:checked ~.label-price{
+.hen-last:checked ~.label-price,#fya:checked ~.label-price,#fish:checked ~.label-price{
 	display: none;
 }
-/*
-.descr-hen-hidden{
-	display: none;
+.hen-last:checked ~.price{
+	background-color: #b3b3b3;
+}
+#fya:checked~.price,#fish:checked~.price{
+	background-color: #d91667;
+	&:hover{
+		background-color: #e62e7a;
+	}
+}
+#fya:checked ~#descr-fya,#fish:checked~#descr-fish{
+	display: block;
+	color:#fff;
+	/*color: #d1d152;
+	transform: translateX(50%);*/
+}
+input:checked~.bg-animal{
+	position: relative;
+	border:3px solid transparent;
+	 &:before{
+    position: absolute;
+
+    content: '';
+   
+    	top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+   
+    opacity: 0.7;
+    border: 3px solid #d91667;
+    z-index: 1;
+    
 }
 
+}
+input:checked ~.corner{
+	border-right: 3px solid #d91667;
+}
 
-*/
 /*@media screen and(max-width:1170px){
 	.container{
 		width: 700px;
