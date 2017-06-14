@@ -124,40 +124,39 @@ background-color: lightgrey;
 
 #descr-hen, #descr-fya, #descr-fish {
   position: absolute;
-  top: 510px;
+  top: 500px;
   left: 0;
   font-size: 13px;
   white-space: nowrap;
-  text-align: center; }
+  text-align: center;
+  display: none; }
 
-/*.corner{
-	position: absolute;
-	width: 30px;
+.corner {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  border-right: 3px solid #1698d9;
+  top: -16px;
+  left: -8px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 10; }
+  .corner:before {
+    content: "";
+    position: absolute;
+    width: 30px;
     height: 50px;
-	
-    	
-    	border-right:3px solid #1698d9;
-    	top: -16px;
-    left: -8px;
-    	transform: rotate(45deg);
-z-index:10;
- &:before{
-    	content:"";
-    	position: absolute;
-    	width: 30px;
-    height: 50px;
-    background: url('../img/bg.jpg')-132%;
-    
-    	top: 0px;
-    left: 0;
-    }
-}*/
+    background: url("../img/bg.jpg")-132%;
+    top: 0px;
+    left: 0; }
+
 .label-price {
   color: #fff;
   outline: 1px solid red;
   display: block;
   position: absolute;
-  top: 515px; }
+  top: 510px; }
 
 .link {
   display: inline-block;
@@ -222,20 +221,38 @@ input[type="checkbox"] {
 .disable {
   color: green; }
 
-#hen:checked + .disable {
+#hen:checked ~ .disable {
   position: relative; }
-  #hen:checked + .disable:before {
+  #hen:checked ~ .disable:before {
     position: absolute;
     content: '';
     top: -3px;
     left: -3px;
     width: 100%;
     height: 100%;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
     background-color: lightgrey;
     opacity: 0.7;
-    border: 3px solid grey;
+    border: 3px solid rgba(204, 207, 209, 0.5);
     z-index: 1; }
 
+.hen-last:checked ~ .corner {
+  border-right: 3px solid lightgrey; }
+
+.hen-last:checked ~ #descr-hen {
+  display: block; }
+
+.hen-last:checked ~ .label-price {
+  display: none; }
+
+/*
+.descr-hen-hidden{
+	display: none;
+}
+
+
+*/
 /*@media screen and(max-width:1170px){
 	.container{
 		width: 700px;
