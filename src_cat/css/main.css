@@ -39,8 +39,10 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background: url("../img/grad.png") repeat;
-    /*background:linear-gradient(to bottom,rgba(0,0,0,.3),rgba(255,255,255,.3),rgba(0,0,0,.3));*/ }
+    /*background: url('../img/grad.png') repeat ;*/
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(255, 255, 255, 0.3)), to(rgba(0, 0, 0, 0.3)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)); }
 
 /*.about-catfood{
 
@@ -68,14 +70,6 @@ text-align: center;
   background-color: lightyellow;
   color: #222; }
 
-/*.card{
-background-color: lightgrey;
-	
-	display: flex;
-	 
-	text-align: left;
-	
-}*/
 .bg-animal {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 315px;
@@ -90,10 +84,6 @@ background-color: lightgrey;
           border-radius: 5px;
   background: #f2f2f2 url("../img/catBg.png") no-repeat -30px 190%; }
 
-/*.label-wrap:last-child {
-	margin-bottom:70px;
-	margin-top: 25px;
-}*/
 .about-catfood h1 {
   color: #fff;
   text-align: center;
@@ -111,7 +101,6 @@ background-color: lightgrey;
   color: #000; }
 
 .label-wrap {
-  /*display: block;*/
   position: relative;
   text-align: left;
   color: #fff;
@@ -190,7 +179,9 @@ p {
   right: 10px;
   font-size: 22px;
   font-family: 'Trebuchet MS';
-  z-index: 3; }
+  z-index: 3;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s; }
   .price:hover {
     background-color: #2ea8e6; }
 
@@ -261,10 +252,8 @@ input[type="checkbox"] {
 #fya:checked ~ #descr-fya, #fish:checked ~ #descr-fish {
   display: block;
   color: #fff;
-  /*color: #d1d152;*/
-  -webkit-transform: translateX(50%);
-      -ms-transform: translateX(50%);
-          transform: translateX(50%); }
+  /*color: #d1d152;
+	transform: translateX(50%);*/ }
 
 input:checked ~ .bg-animal {
   position: relative;
