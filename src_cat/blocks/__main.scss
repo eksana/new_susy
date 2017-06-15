@@ -7,36 +7,39 @@ html {
   height: 100%;
 }
  
+img{
+	display: inline-block;
+}
 
   
 body{
 	
 	height:100%;
-background: url('../img/bg.jpg') repeat ;
+background:linear-gradient(to bottom,rgba(0,0,0,.3),rgba(255,255,255,.3),rgba(0,0,0,.3)), url('../img/bg.jpg') repeat ;
 
 
 position: relative;
 
 display: flex;
 
-flex-direction: column;
+/*flex-direction: column;*/
 align-items: center;
   justify-content:center;
  font-family: 'Exo 2.0 Thin';
- &:before{
+ /*&:before{
 position: absolute;
 content:'';
 display: block;
 width: 100%;
 height: 100%;
 top:0;
-left:0;
+left:0;*/
 /*background: url('../img/grad.png') repeat ;*/
 
 
-background:linear-gradient(to bottom,rgba(0,0,0,.3),rgba(255,255,255,.3),rgba(0,0,0,.3));
+/*background:linear-gradient(to bottom,rgba(0,0,0,.3),rgba(255,255,255,.3),rgba(0,0,0,.3));
 
- }
+ }*/
 }
 /*.about-catfood{
 
@@ -55,7 +58,7 @@ text-align: center;
 	display: flex;
 	flex-wrap:wrap;
 	justify-content:space-around;
-	background-color: lightyellow;
+	/*background-color: lightyellow;*/
 	color:#222;
 	
 }
@@ -67,12 +70,12 @@ text-align: center;
 
 	padding-bottom: 300px;
 	padding-right: 60px;
+	/*box-shadow: inset 40px 40px 10px red;*/
 	
-	
-	
-	border:3px solid #1698d9;
+	border: 3px solid transparent;
+	/*border:3px solid #1698d9;*/
 	border-radius: 5px;
-	background:#f2f2f2 url('../img/catBg.png')no-repeat -30px 190%;
+	background:url('../img/catBg.png')no-repeat -30px 190%,linear-gradient(137deg,transparent 25px,#1698d9 5%, #f2f2f2 0);
 }
 
 .about-catfood h1{
@@ -109,7 +112,7 @@ text-align: center;
     text-align: center;
     display: none;
 }
-.corner{
+/*.corner{
 	position: absolute;
 	width: 30px;
     height: 50px;
@@ -125,12 +128,32 @@ z-index:10;
     	position: absolute;
     	width: 30px;
     height: 50px;
+    background:linear-gradient(to bottom,rgba(255,255,255,.1),rgba(255,255,255,.1),rgba(255,255,255,.1)), url('../img/bg.jpg')-132%;
+    
+    	top: 0px;
+    left: 0;
+    }
+}*/
+/*.corner{
+	position: absolute;
+	width: 30px;
+    height: 50px;
+	border-right:3px solid #1698d9;
+    	top: -18px;
+    left: -8px;
+    	transform: rotate(45deg);
+z-index:10;
+&:before{
+    	content:"";
+    	position: absolute;
+    	width: 30px;
+    height: 50px;
     background: url('../img/bg.jpg')-132%;
     
     	top: 0px;
     left: 0;
     }
-}
+}*/
 .label-price {
     color: #fff;
     outline: 1px solid red;
@@ -138,6 +161,7 @@ z-index:10;
     display: block;
     position: absolute;
     top: 510px;
+    left: 40px;
 }
 .link{
 	display: inline-block;
@@ -172,7 +196,7 @@ color: #000;
 	font-size: 22px;
 	font-family: 'Trebuchet MS' ;
 	z-index: 3;
-	transition:background-color 1s ;
+	transition:background-color 0s ;
 	&:hover{
 		background-color: #2ea8e6;
 
@@ -204,7 +228,9 @@ color: #000;
 input[type="checkbox"]{
 	display: none;
 }
-
+#descr-fya{
+	left: 35px;
+}
 #hen:checked ~ .disable {
 	position: relative;
 	border:3px solid transparent;
@@ -291,17 +317,18 @@ margin-top: 60px;
 	body{
 		justify-content: flex-start;
 	}
-}
-@media screen and(max-width:600px){
-	.container{
+}*/
+@media screen and(max-width:830px){
+	/*.container{
 		
 		flex-direction: column;
 		align-items: center;
-	}
+	}*/
 	body{
+		height: auto;
 		justify-content: flex-start;
 	}
-}*/
+}
 
 
 

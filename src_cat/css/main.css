@@ -9,19 +9,20 @@
 html {
   height: 100%; }
 
+img {
+  display: inline-block; }
+
 body {
   height: 100%;
-  background: url("../img/bg.jpg") repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(255, 255, 255, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/bg.jpg") repeat;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)), url("../img/bg.jpg") repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)), url("../img/bg.jpg") repeat;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  /*flex-direction: column;*/
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -30,19 +31,19 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: 'Exo 2.0 Thin'; }
-  body:before {
-    position: absolute;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    /*background: url('../img/grad.png') repeat ;*/
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(255, 255, 255, 0.3)), to(rgba(0, 0, 0, 0.3)));
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)); }
+  font-family: 'Exo 2.0 Thin';
+  /*&:before{
+position: absolute;
+content:'';
+display: block;
+width: 100%;
+height: 100%;
+top:0;
+left:0;*/
+  /*background: url('../img/grad.png') repeat ;*/
+  /*background:linear-gradient(to bottom,rgba(0,0,0,.3),rgba(255,255,255,.3),rgba(0,0,0,.3));
+
+ }*/ }
 
 /*.about-catfood{
 
@@ -67,7 +68,7 @@ text-align: center;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  background-color: lightyellow;
+  /*background-color: lightyellow;*/
   color: #222; }
 
 .bg-animal {
@@ -79,10 +80,14 @@ text-align: center;
   padding-left: 43px;
   padding-bottom: 300px;
   padding-right: 60px;
-  border: 3px solid #1698d9;
+  -webkit-box-shadow: inset 40px 40px 10px red;
+          box-shadow: inset 40px 40px 10px red;
+  border: 3px solid transparent;
+  /*border:3px solid #1698d9;*/
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  background: #f2f2f2 url("../img/catBg.png") no-repeat -30px 190%; }
+  background: url("../img/catBg.png") no-repeat -30px 190%, -webkit-linear-gradient(313deg, transparent 25px, #1698d9 5%, #f2f2f2 0);
+  background: url("../img/catBg.png") no-repeat -30px 190%, linear-gradient(137deg, transparent 25px, #1698d9 5%, #f2f2f2 0); }
 
 .about-catfood h1 {
   color: #fff;
@@ -119,32 +124,55 @@ text-align: center;
   text-align: center;
   display: none; }
 
-.corner {
-  position: absolute;
-  width: 30px;
-  height: 50px;
-  border-right: 3px solid #1698d9;
-  top: -18px;
-  left: -8px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  z-index: 10; }
-  .corner:before {
-    content: "";
-    position: absolute;
-    width: 30px;
+/*.corner{
+	position: absolute;
+	width: 30px;
     height: 50px;
-    background: url("../img/bg.jpg")-132%;
-    top: 0px;
-    left: 0; }
-
+	
+    	
+    	border-right:3px solid #1698d9;
+    	top: -18px;
+    left: -8px;
+    	transform: rotate(45deg);
+z-index:10;
+ &:before{
+    	content:"";
+    	position: absolute;
+    	width: 30px;
+    height: 50px;
+    background:linear-gradient(to bottom,rgba(255,255,255,.1),rgba(255,255,255,.1),rgba(255,255,255,.1)), url('../img/bg.jpg')-132%;
+    
+    	top: 0px;
+    left: 0;
+    }
+}*/
+/*.corner{
+	position: absolute;
+	width: 30px;
+    height: 50px;
+	border-right:3px solid #1698d9;
+    	top: -18px;
+    left: -8px;
+    	transform: rotate(45deg);
+z-index:10;
+&:before{
+    	content:"";
+    	position: absolute;
+    	width: 30px;
+    height: 50px;
+    background: url('../img/bg.jpg')-132%;
+    
+    	top: 0px;
+    left: 0;
+    }
+}*/
 .label-price {
   color: #fff;
   outline: 1px solid red;
   display: block;
   position: absolute;
-  top: 510px; }
+  top: 510px;
+  left: 40px; }
 
 .link {
   display: inline-block;
@@ -180,8 +208,8 @@ p {
   font-size: 22px;
   font-family: 'Trebuchet MS';
   z-index: 3;
-  -webkit-transition: background-color 1s;
-  transition: background-color 1s; }
+  -webkit-transition: background-color 0s;
+  transition: background-color 0s; }
   .price:hover {
     background-color: #2ea8e6; }
 
@@ -210,6 +238,9 @@ p {
 
 input[type="checkbox"] {
   display: none; }
+
+#descr-fya {
+  left: 35px; }
 
 #hen:checked ~ .disable {
   position: relative;
@@ -287,14 +318,16 @@ margin-top: 60px;
 	body{
 		justify-content: flex-start;
 	}
-}
-@media screen and(max-width:600px){
-	.container{
+}*/
+@media screen and (max-width: 830px) {
+  /*.container{
 		
 		flex-direction: column;
 		align-items: center;
-	}
-	body{
-		justify-content: flex-start;
-	}
-}*/
+	}*/
+  body {
+    height: auto;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
