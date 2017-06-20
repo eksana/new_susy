@@ -1,0 +1,50 @@
+.make{
+	padding: 116px 0;
+	text-align: center;
+	background-color: #f1f1f1;
+}
+.make-left{
+	text-align: center;
+}
+.make-right{
+	text-align: left;
+	padding-top: 168px;
+	padding-left: 144px;
+}
+.make-right p{
+	margin-bottom: 100px;
+}
+.apple{
+	padding:22px 54px 22px 92px;
+	display: inline-block;
+	border:1px solid #ff9526;
+	background-color: #ff8400;
+	position: relative;
+	color: #fff;
+	&:before{
+position: absolute;
+content:'';
+width:64px;
+height:  64px;
+top:0;
+left:0;
+background: #f17201 url('../img/app.png')no-repeat center;
+	}
+}
+.win{
+	padding:22px 54px 22px 92px;
+	display: inline-block;
+	border:1px solid #ff9526;
+	position: relative;
+	color:#ff9526;
+	&:before{
+position: absolute;
+content:'';
+width:64px;
+height:  64px;
+border-right:1px solid #ff9526;
+top:0;
+left:0;
+background:  url('../img/win.png')no-repeat center;
+	}
+}

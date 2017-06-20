@@ -5,13 +5,15 @@
 /*@import "reset";*/
 
 @import "../blocks/__header.scss";
-
+@import "../blocks/__about.scss";
+@import "../blocks/__make.scss";
+@import "../blocks/__work.scss";
 
 html,body{
  /* font-family: $font-family-default;*/
   font-size:$font-size-default;
   line-height:$line-height;
-  color:$color-text;
+  /*color:$color-text;*/
   background-color: $color-background;
   margin:0;
   padding:0;
