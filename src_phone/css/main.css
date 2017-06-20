@@ -1,8 +1,9 @@
 /*$font-family-default{}*/
 /*@import "reset";*/
-body {
+canvas, body {
+  padding: 0;
   margin: 0;
-  padding: 0; }
+  overflow: hidden; }
 
 .wrapper {
   display: -webkit-box;
@@ -14,7 +15,7 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 1900px; }
+  max-width: 1900px; }
 
 .main-header {
   display: -webkit-box;
@@ -29,7 +30,7 @@ body {
   background-size: cover; }
 
 .container {
-  width: 1450px;
+  /*width: 1450px;*/
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -43,17 +44,18 @@ body {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 1000px;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  height: 100vh;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid red;
-  margin: 0; }
+  margin: 0;
+  width: 75%;
+  /*padding: 0 124px 100px;*/ }
 
 /*.phone{
 	margin: 0 55px 0 55px;
@@ -72,10 +74,9 @@ body {
   color: #cfa05b;
   text-transform: uppercase;
   font-size: 22px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -100,13 +101,14 @@ img {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 360px;
       -ms-flex: 0 0 360px;
-          flex: 0 0 360px; }
+          flex: 0 0 360px;
+  margin: 20px 0; }
 
 .video {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 380px;
-      -ms-flex: 0 0 380px;
-          flex: 0 0 380px; }
+  -webkit-flex: 0 0 360px;
+      -ms-flex: 0 0 360px;
+          flex: 0 0 360px; }
 
 .wrap-forlogo {
   -webkit-box-flex: 0;
@@ -122,12 +124,314 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 295px;
+  width: 360px;
   height: 170px;
   z-index: 10;
   background-color: rgba(9, 13, 22, 0.7); }
   .video:before:hover {
     background-color: rgba(9, 13, 22, 0); }
+
+/*@import "compass/reset";*/
+/*  START modal-container with login & sign in   */
+body {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, sans-serif; }
+
+.modal-btn {
+  padding: 5vw;
+  color: #00796B;
+  font-size: 10vw;
+  font-weight: bold;
+  outline: solid #00796B 1.5vw;
+  cursor: pointer; }
+
+#modal-toggle {
+  display: none; }
+
+.modal-content,
+.modal-backdrop {
+  opacity: 0;
+  position: fixed;
+  z-index: -1;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.modal-content {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  height: 550px;
+  max-height: 98%;
+  width: 70%;
+  max-width: 600px;
+  text-align: center;
+  -webkit-transform: translateX(125%);
+      -ms-transform: translateX(125%);
+          transform: translateX(125%); }
+
+.modal-backdrop {
+  left: 0;
+  top: 0;
+  height: 100%;
+  height: 100vh;
+  width: 100%;
+  width: 100vw;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0); }
+
+#modal-toggle:checked ~ .modal-backdrop {
+  opacity: 1;
+  background-color: rgba(0, 70, 62, 0.5);
+  z-index: 998;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1); }
+
+#modal-toggle:checked ~ .modal-content {
+  opacity: 1;
+  background-color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  pointer-events: auto;
+  cursor: auto;
+  z-index: 999;
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%); }
+
+@media (max-width: 600px) {
+  #modal-toggle:checked ~ .modal-backdrop {
+    opacity: 0; }
+  .modal-content {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw; } }
+
+.modal-close-btn {
+  margin-top: 5px;
+  display: inline-block;
+  cursor: pointer; }
+  .modal-close-btn svg {
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+    .modal-close-btn svg line {
+      stroke-width: 5px;
+      stroke: #00796B; }
+  .modal-close-btn:hover svg {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
+
+/* BASIC FUNCTIONALITY .tabs */
+.tabs {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 10px 0; }
+  .tabs > .radio {
+    display: none; }
+    .tabs > .radio:checked + .table + .tabs-content {
+      display: block; }
+  .tabs > .table {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1;
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+    -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .tabs .tabs-content {
+    width: 100%;
+    display: none; }
+
+/* END BASIC FUNCTIONALITY .tabs */
+/*  THEME for .tabs with login & sign-in  */
+.tabs > .table {
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: solid #00796B 5px;
+  color: #00796B;
+  cursor: pointer; }
+  .tabs > .table span {
+    font-weight: 600; }
+  .tabs > .table:hover {
+    color: #00796B;
+    background: rgba(0, 121, 107, 0.2); }
+
+.tabs > .radio:checked + .table {
+  color: #fff;
+  background: #00796B;
+  cursor: auto; }
+  .tabs > .radio:checked + .table span {
+    display: inline-block;
+    font-weight: 500;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: 0.1s;
+    transition: 0.1s; }
+
+/*  END THEME for .tabs with login & sign-in  */
+/*  START style login & sign up  */
+.tabs > .tabs-content .login_socnet {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: no-wrap;
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+  .tabs > .tabs-content .login_socnet a {
+    margin: 20px;
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 60px;
+    text-decoration: none;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+    .tabs > .tabs-content .login_socnet a:hover {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1);
+      -webkit-filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.2));
+              filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.2)); }
+  .tabs > .tabs-content .login_socnet .fa-vk {
+    color: #7986CB; }
+  .tabs > .tabs-content .login_socnet .fa-google-plus {
+    color: #E57373; }
+  .tabs > .tabs-content .login_socnet .fa-facebook {
+    color: #5C6BC0; }
+
+.tabs > .tabs-content form {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+  .tabs > .tabs-content form input {
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    border-bottom: solid 1px #00796B;
+    font-size: 18px;
+    letter-spacing: 1px;
+    -webkit-transition: 0.1s;
+    transition: 0.1s; }
+    .tabs > .tabs-content form input:focus {
+      -webkit-transform: translateX(10px);
+          -ms-transform: translateX(10px);
+              transform: translateX(10px);
+      outline: none; }
+
+.tabs > .tabs-content input[type="submit"] {
+  padding: 15px 0;
+  width: 100%;
+  background: #00796B;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer; }
+  .tabs > .tabs-content input[type="submit"]:focus {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
+
+.tabs > .tabs-content .forgot-password label {
+  margin: 0 auto;
+  width: 50%;
+  color: #00796B;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.5; }
+  .tabs > .tabs-content .forgot-password label:hover {
+    text-decoration: underline; }
+
+/*  END style login & sign up  */
+.forgot-password #forgot-password-toggle {
+  display: none; }
+
+.forgot-password .forgot-password-content {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in; }
+  .forgot-password .forgot-password-content input[type="email"] {
+    width: 80%;
+    margin-right: 0px;
+    border-right: none; }
+  .forgot-password .forgot-password-content input[type="submit"] {
+    width: 20%;
+    margin-left: 0px; }
+
+.forgot-password #forgot-password-toggle:checked ~ .forgot-password-content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible; }
 
 html, body {
   /* font-family: $font-family-default;*/

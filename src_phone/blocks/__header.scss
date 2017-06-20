@@ -1,13 +1,13 @@
-body{
-	
-	margin: 0;
-	padding: 0;
+canvas, body{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 .wrapper{
 	display: flex;
 	
 	flex-direction: column;
-	width: 1900px;
+	max-width: 1900px;
 }
 .main-header{
 	display: flex;
@@ -17,17 +17,20 @@ body{
 	
 }
 .container{
-	width: 1450px;
+	/*width: 1450px;*/
 	display: flex;
 }
 .container-header{
 	display: flex;
 flex-wrap: wrap;
-justify-content: center;
-height: 1000px;
+justify-content: space-around;
+height: 100vh;
 	align-items:center;
 	border:1px solid red;
 margin: 0;
+width: 75%;
+/*padding: 0 124px 100px;*/
+
 }
 /*.phone{
 	margin: 0 55px 0 55px;
@@ -46,7 +49,7 @@ margin: 0;
     font-size: 22px;
     justify-content:space-around;
     align-items: center;
-    margin-left: 100px;
+   margin-left:100px;
     margin-top: 30px;
 }
 .video,.wrap-forimg,.wrap-forlogo{
@@ -61,9 +64,10 @@ img{
 }
 .wrap-forimg{
 	flex: 0 0 360px;
+	margin: 20px 0;
 }
 .video{
-	flex: 0 0 380px;
+	flex: 0 0 360px;
 }
 .wrap-forlogo{
 	flex: 0 0 360px;
@@ -77,7 +81,7 @@ img{
 	position: absolute;
 top:0;
 left: 0;
-width: 295px;
+width: 360px;
 height: 170px;
 z-index: 10;
 	background-color: rgba(9,13,22,0.7);
@@ -85,3 +89,343 @@ z-index: 10;
 		background-color: rgba(9,13,22,0);
 	}
 }
+/*@import "compass/reset";*/
+
+
+$main-color: #00796B;
+
+/*  START modal-container with login & sign in   */
+
+body {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, sans-serif;
+}
+
+.modal-btn {
+  padding: 5vw;
+  color: $main-color;
+	font-size: 10vw;
+	font-weight: bold;
+  outline: solid $main-color 1.5vw;
+  cursor: pointer;
+}
+
+
+
+// START functionality modal-window  
+#modal-toggle {
+	display: none; // input type="checkbox" hide
+}
+
+.modal-content,
+.modal-backdrop {
+	opacity: 0;
+  position: fixed;
+	z-index: -1;
+	overflow: hidden;
+	cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-content {
+	top: 0;       //|
+	bottom: 0;    //|
+	margin: auto; //||| position: fixed to center
+	left: 0;      //|
+	right: 0;     //|
+
+	height: 550px; //size window
+  max-height: 98%; 
+	width: 70%; //size window
+	max-width: 600px; 
+  
+  text-align: center;
+  
+  transform: translateX(125%); //for vizual effect, animation
+}
+
+.modal-backdrop {
+	left: 0;
+	top: 0;
+	
+  height: 100%; // for old browser
+	height: 100vh;
+  width: 100%; // for old browser
+	width: 100vw;
+	
+	transform: scale(0); //for vizual effect, animation
+}
+
+#modal-toggle:checked ~ .modal-backdrop {
+	opacity: 1;
+	background-color: rgba(darken($main-color, 10), 0.5);
+  z-index: 998;
+	transform: scale(1); //for vizual effect, animation
+}
+
+#modal-toggle:checked ~ .modal-content {
+	opacity: 1;
+	background-color: #fff;
+	overflow-y: auto;
+  overflow-x: hidden;
+	pointer-events: auto;
+	cursor: auto;
+	z-index: 999;
+	transform: translateX(0%); //for vizual effect, animation
+}
+
+@media (max-width: 600px) {  
+	#modal-toggle:checked ~ .modal-backdrop {
+		opacity: 0;
+	}
+	
+	.modal-content {
+    top: 0;
+		left: 0;
+		height: 100vh;
+    width: 100vw;
+	}
+}
+
+// START .modal-close-btn  
+.modal-close-btn {
+  margin-top: 5px;
+	display: inline-block;
+	cursor: pointer;
+	
+	svg {
+		transition: 0.2s;
+		
+		line {
+			stroke-width: 5px;
+			stroke: $main-color;
+		}
+	}
+	
+	&:hover svg {
+		transform: rotate(90deg);
+	}	
+}
+// END .modal-close-btn  
+// END functionality modal-window
+
+
+
+/* BASIC FUNCTIONALITY .tabs */
+.tabs {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+    
+  &>.radio {
+    display: none;
+    
+    &:checked + .table + .tabs-content {
+      display: block;
+    }
+  }
+  
+  &>.table {
+    order: -1;
+    flex-basis: 50%;
+    flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+    
+  .tabs-content {
+    width: 100%;
+    display: none;
+  }
+}
+/* END BASIC FUNCTIONALITY .tabs */
+
+
+
+/*  THEME for .tabs with login & sign-in  */
+.tabs > {
+  .table {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: solid $main-color 5px;
+    color: $main-color;
+    cursor: pointer;
+  
+    span {
+      font-weight: 600;
+    }
+    
+    &:hover {
+      color: $main-color;
+      background: rgba($main-color, 0.2);
+    }
+  }
+    
+  .radio:checked + .table {
+    color: #fff;
+    background: $main-color;
+    cursor: auto;
+    
+    span {
+      display: inline-block;
+      font-weight: 500;
+      transform: scale(1.2);
+      transition: 0.1s;
+    }
+  } 
+} 
+/*  END THEME for .tabs with login & sign-in  */
+
+
+
+/*  START style login & sign up  */
+.tabs > .tabs-content {
+  .login_socnet {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    
+    a {
+      margin: 20px;
+      margin-bottom: 0;
+      width: 100%;
+      font-size: 60px;
+      text-decoration: none;
+      transition: 0.2s;
+      
+      &:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(1px 3px 2px rgba(0,0,0, 0.2));
+      }
+    }
+    
+    .fa-vk {
+      color: #7986CB;
+    }
+    .fa-google-plus {
+      color: #E57373;
+    }
+    .fa-facebook {
+      color: #5C6BC0;
+    }
+  } 
+  
+  form {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    
+    input {
+      padding: 10px;
+      margin: 15px 0;
+      border: none;
+      border-bottom: solid 1px $main-color;
+      font-size: 18px;
+      letter-spacing: 1px;
+      transition: 0.1s;
+    
+      &:focus {
+        transform: translateX(10px);
+        outline: none;
+      }
+    }
+  }
+    
+  input[type="submit"] {
+    padding: 15px 0;
+    width: 100%;
+    background: $main-color;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  
+    &:focus {
+      transform: none;
+    }
+  }
+    
+  .forgot-password label {
+    margin: 0 auto;
+    width: 50%;
+    color: $main-color;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.5;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+} 
+/*  END style login & sign up  */
+
+
+
+// START forgot-password 
+.forgot-password {
+  #forgot-password-toggle {
+    display: none;
+  }
+  
+  .forgot-password-content {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in;
+    
+    input[type="email"] {
+      width: 80%;
+      margin-right: 0px;
+      border-right: none;
+    }
+    
+    input[type="submit"] {
+      width: 20%;
+      margin-left: 0px;
+    }
+  }
+  
+  #forgot-password-toggle:checked ~ .forgot-password-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    pointer-events: auto;
+    cursor: auto;
+    visibility: visible;
+  }
+}
+// END forgot-password
