@@ -21,6 +21,9 @@ header{
 }
 a,img{
 	display: inline-block;
+	&:hover{
+		text-decoration:none;
+	}
 }
 
 nav>ul{

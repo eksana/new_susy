@@ -34,6 +34,8 @@ header {
 
 a, img {
   display: inline-block; }
+  a:hover, img:hover {
+    text-decoration: none; }
 
 nav > ul {
   padding: 0;
@@ -138,6 +140,34 @@ nav > ul > li > a {
 .work {
   background-color: #f8f9f9;
   padding: 100px 0 80px; }
+
+.work ul {
+  margin-left: -40px; }
+
+.work-list li {
+  display: inline-block;
+  margin-right: 40px; }
+
+.work-list li a:hover {
+  color: #ff8400; }
+
+.work p {
+  line-height: 45px; }
+
+.w-active {
+  color: #ff8400;
+  position: relative; }
+  .w-active:after {
+    position: absolute;
+    content: '';
+    width: 64px;
+    height: 3px;
+    top: 20px;
+    left: -5px;
+    background: #ff8400; }
+
+.work-make-left {
+  text-align: center; }
 
 html, body {
   /* font-family: $font-family-default;*/

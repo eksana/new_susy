@@ -3,3 +3,38 @@
 	padding: 100px 0 80px;
 
 }
+.work ul{
+	margin-left: -40px;
+}
+.work-list li{
+	display: inline-block;
+	margin-right:40px;
+	
+}
+.work-list li a{
+&:hover{
+		color:#ff8400;
+
+	}
+	}
+.work p {
+    line-height: 45px;
+}
+
+.w-active{
+	color:#ff8400;
+	position: relative;
+	&:after{
+		position: absolute;
+content:'';
+width:64px;
+height:  3px;
+top:20px;
+left:-5px;
+background:#ff8400;
+	}
+
+}
+.work-make-left {
+    text-align: center;
+}
