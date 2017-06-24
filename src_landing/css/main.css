@@ -6,6 +6,9 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+img {
+  width: 100%; }
+
 header {
   background: url("../img/bg.jpg") no-repeat;
   background-size: cover; }
@@ -30,12 +33,16 @@ header {
   margin: 100px 0; }
 
 .center-one {
-  padding-top: 230px; }
+  width: 500px;
+  margin: auto; }
 
 a, img {
   display: inline-block; }
   a:hover, img:hover {
     text-decoration: none; }
+
+a {
+  text-decoration: none; }
 
 nav > ul {
   padding: 0;
@@ -74,9 +81,44 @@ nav > ul > li > a {
     -webkit-transition: all 1s;
     transition: all 1s; }
 
+.row-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid red;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: auto; }
+
+.container-my-header {
+  width: 70%;
+  margin: 0 auto; }
+
 .about {
   padding: 100px 0;
-  text-align: center; }
+  text-align: center;
+  /*display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;*/
+  margin: 0 auto;
+  width: 70%; }
+
+.container-my-about {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
 
 .about h3 {
   font-size: 18px;
@@ -89,27 +131,77 @@ nav > ul > li > a {
 .about > p {
   padding-top: 120px; }
 
+.wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: lightred;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.container-my-menu {
+  /* width: 100%; */
+  border: 1px solid green;
+  width: 70%;
+  margin: auto;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.wrap-logo-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.row {
+  /* width: 400px; */
+  -webkit-flex-basis: 400px;
+      -ms-flex-preferred-size: 400px;
+          flex-basis: 400px; }
+
 .make {
   padding: 116px 0;
   text-align: center;
-  background-color: #f1f1f1; }
+  background-color: #f1f1f1;
+  width: 70%;
+  margin: 0 auto; }
 
 .make-left {
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
 
 .make-right {
   text-align: left;
-  padding-top: 168px;
-  padding-left: 144px; }
-
-.make-right p {
-  margin-bottom: 100px; }
+  width: 550px;
+  margin: auto; }
 
 .apple {
   padding: 22px 54px 22px 92px;
   display: inline-block;
   border: 1px solid #ff9526;
   background-color: #ff8400;
+  float: left;
+  margin-right: 30px;
   position: relative;
   color: #fff; }
   .apple:before {
@@ -136,6 +228,16 @@ nav > ul > li > a {
     top: 0;
     left: 0;
     background: url("../img/win.png") no-repeat center; }
+
+.container-my-make {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  border: 1px solid blue; }
 
 .work {
   background-color: #f8f9f9;
@@ -168,6 +270,31 @@ nav > ul > li > a {
 
 .work-make-left {
   text-align: center; }
+
+.work {
+  width: 70%;
+  margin: 0 auto; }
+
+.container-my-workflow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 0 30px 0; }
+
+.row-workflow1 {
+  width: 500px;
+  margin: auto; }
+
+.work-make-left {
+  margin: 0 auto; }
+
+.row > img {
+  width: 147px;
+  height: auto; }
 
 html, body {
   /* font-family: $font-family-default;*/

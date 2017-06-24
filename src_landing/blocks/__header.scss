@@ -3,6 +3,9 @@ body{
 	padding: 0;
 	box-sizing:border-box;
 }
+img{
+	width: 100%;
+}
 header{
 	background: url('../img/bg.jpg')no-repeat;
 	background-size: cover;
@@ -17,13 +20,17 @@ header{
 	margin: 100px 0;
 }
 .center-one{
-	padding-top: 230px;
+	width: 500px;
+    margin: auto;
 }
 a,img{
 	display: inline-block;
 	&:hover{
 		text-decoration:none;
 	}
+}
+a{
+	text-decoration:none;
 }
 
 nav>ul{
@@ -65,4 +72,17 @@ nav>ul>li>a{
 		transition: all 1s;
 
 	}
+}
+.row-header{
+	display:flex;
+	
+	border:1px solid red;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+    margin: auto;
+}
+.container-my-header{
+	width: 70%;
+    margin: 0 auto;
 }

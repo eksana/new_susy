@@ -1,6 +1,20 @@
-.about{
-	padding: 100px 0;
-	text-align: center;
+
+	.about {
+    padding: 100px 0;
+   text-align: center;
+    /*display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;*/
+    margin: 0 auto;
+width: 70%;
+}
+.container-my-about{
+	 display: flex;
+    flex-wrap: wrap;
+
+   
+   
+    justify-content: space-around;
 }
 .about h3{
 	font-size: 18px;
@@ -12,4 +26,29 @@
 }
 .about>p{
 	padding-top: 120px;
+}
+.wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: lightred;
+
+	align-items: center;
+}
+.container-my-menu {
+    /* width: 100%; */
+    border: 1px solid green;
+   width: 70%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.wrap-logo-nav{
+	
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.row {
+    /* width: 400px; */
+    flex-basis: 400px;
 }

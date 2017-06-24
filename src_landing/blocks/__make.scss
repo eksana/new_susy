@@ -2,23 +2,26 @@
 	padding: 116px 0;
 	text-align: center;
 	background-color: #f1f1f1;
+	width: 70%;
+	margin: 0 auto;
 }
 .make-left{
 	text-align: center;
+	margin: 0 auto;
 }
 .make-right{
 	text-align: left;
-	padding-top: 168px;
-	padding-left: 144px;
+	width: 550px;
+    margin: auto;
 }
-.make-right p{
-	margin-bottom: 100px;
-}
+
 .apple{
 	padding:22px 54px 22px 92px;
 	display: inline-block;
 	border:1px solid #ff9526;
 	background-color: #ff8400;
+	float: left;
+    margin-right: 30px;
 	position: relative;
 	color: #fff;
 	&:before{
@@ -47,4 +50,11 @@ top:0;
 left:0;
 background:  url('../img/win.png')no-repeat center;
 	}
+}
+.container-my-make{
+	display:flex;
+	flex-wrap: wrap ;
+	
+	border:1px solid blue;
+
 }
