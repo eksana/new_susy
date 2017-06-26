@@ -39,14 +39,14 @@ background:#ff8400;
     text-align: center;
 }
 
-.work{
-	width: 70%;
-	margin: 0 auto;
-}
+
 .container-my-workflow{
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0 30px 0;
+	width: 70%;
+	margin: 0 auto;
+	border:1px solid red;
 }
 .row-workflow1{
 	width: 500px;
