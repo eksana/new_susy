@@ -1,0 +1,43 @@
+.contact{
+	background-color: #f1f1f1;
+	
+}
+.container-my-contacts{
+	width: 70%;
+	
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	border:1px solid red;
+	
+	
+}
+.row-contacts{
+	
+}
+.row-contacts p{
+	padding: 34px 0;
+	padding-left: 50px;
+
+	
+}
+.phone{
+background: url('../img/phone.png')no-repeat left center;;
+}
+.eml{
+background: url('../img/eml.png')no-repeat left center;;
+}
+.loc{
+	background: url('../img/loc.png')no-repeat left center;;
+}
+.container-me-send{
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	
+
+
+}
