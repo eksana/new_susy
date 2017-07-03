@@ -35,9 +35,33 @@ background: url('../img/eml.png')no-repeat left center;;
 .container-me-send{
 	width: 70%;
 	margin: 0 auto;
+	
+	border:1px solid green;
+	
+	}
+.container-me-send form{
+	margin: 0 auto;
+	display: flex;
+	border:1px solid blue;
+	flex-wrap:wrap;
+	
+	
+	
+}
+.wrap-input,.wrap-textarea{
+	outline:1px solid red;
+	width: 50%;
+}
+.wrap-input{
 	display: flex;
 	flex-direction: column;
-	
-
-
+	justify-content: center;
+}
+textarea{
+    width: 99%;
+}
+ .y-name input, .y-eml input,.y-sabj input{
+width: 90%;
+padding: 30px;
+margin-bottom: 20px;
 }

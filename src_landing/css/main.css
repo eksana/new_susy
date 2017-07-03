@@ -541,6 +541,24 @@ Edit on
 .container-me-send {
   width: 70%;
   margin: 0 auto;
+  border: 1px solid green; }
+
+.container-me-send form {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid blue;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.wrap-input, .wrap-textarea {
+  outline: 1px solid red;
+  width: 50%; }
+
+.wrap-input {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -549,7 +567,19 @@ Edit on
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+textarea {
+  width: 99%; }
+
+.y-name input, .y-eml input, .y-sabj input {
+  width: 90%;
+  padding: 30px;
+  margin-bottom: 20px; }
 
 html, body {
   /* font-family: $font-family-default;*/
