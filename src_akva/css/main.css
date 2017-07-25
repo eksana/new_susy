@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/*@import "susy";*/
+/*@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}*/
+/*p {
+  @include font-size(13);
+} */
+/*Медиа-запросы
+$breakpoints: (
+  "phone":        400px,
+  "phone-wide":   480px,
+  "phablet":      560px,
+  "tablet-small": 640px,
+  "tablet":       768px,
+  "tablet-wide":  1024px,
+  "desktop":      1248px,
+  "desktop-wide": 1440px
+);
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+   $width: map_get($breakpoints, $width);
+   @if $type == max {
+    $width: $width - 1px;
+   }
+   @media only screen and (#/*{$type}*/
+/*-width: $width) {
+    @content;
+   }
+  }
+}
+
+Используем
+.site-header {
+  padding: 2rem;
+  font-size: 1.8rem;
+  @include mq('tablet-wide') {
+   padding-top: 4rem;
+   font-size: 2.4rem;
+  }
+}*/
+/*
+Использовать можно так:
+
+p {
+  @include font-size(14px)
+}
+На выходе получим:
+
+p {
+  font-size: 14px; //перезапишется если браузер поддерживает размерность в rem
+  font-size: 0.8rem;
+}
+*/
+/*@import "bower_components/susy/sass/_susy.scss";
+@import "bower_components/breakpoint/breakpoint/_breakpoint.scss";*/
+/*@import "reset";*/
+html, body {
+  margin: 0;
+  padding: 0; }
+
+header {
+  position: absolute;
+  background: url("../img/bg-top.jpg") no-repeat;
+  background-size: cover; }
+
+.top {
+  background: url("../img/bg-akva.jpg") no-repeat;
+  background-size: cover; }
+
+/*@import "../blocks/__prices.scss";
+@import "../blocks/__present.scss";
+@import "../blocks/__suggest.scss";
+@import "../blocks/__orderFont.scss";
+@import "../blocks/__testimonial.scss";
+@import "../blocks/__chokoB_footer.scss";
+@import "../blocks/__form.scss";*/
+/*@import "../blocks/__order.scss";
+@import "../blocks/__logo.scss";
+
+
+
+
+@import "../blocks/__delivery.scss";
+
+@import "../blocks/__prize.scss";
+*/
+/*@import "../blocks/__nav.scss";*/
+/* debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+);*/
+html, body {
+  /* font-family: $font-family-default;
+  font-size:$font-size-default;
+  line-height:$line-height;
+  color:$color-text;
+  background-color: $color-background;
+  margin:0;
+  padding:0;*/
+  overflow-x: hidden; }
+
+/*https://webref.ru/dev/automate-with-gulp/responsive*/
+/*http://www.creativebloq.com/web-design/flexible-layouts-susy-and-breakpoint-121518452*/

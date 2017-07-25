@@ -556,7 +556,8 @@ Edit on
 
 .wrap-input, .wrap-textarea {
   outline: 1px solid red;
-  width: 50%; }
+  width: 600px;
+  text-align: right; }
 
 .wrap-input {
   display: -webkit-box;
@@ -577,9 +578,97 @@ textarea {
   width: 99%; }
 
 .y-name input, .y-eml input, .y-sabj input {
-  width: 90%;
+  width: 400px;
   padding: 30px;
   margin-bottom: 20px; }
+
+.y-name, .y-eml, .y-sabj {
+  text-align: center; }
+
+.wrap-textarea {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+#my-send {
+  padding: 25px 30px;
+  background-color: #ff8400;
+  color: #fff;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 100px; }
+
+.inner-footer {
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid green;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.wrap-left-itemfooter {
+  border: 1px solid red;
+  width: 630px;
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.wrap-right-itemfooter {
+  border: 1px solid blue;
+  width: 630px;
+  text-align: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.social-links__link {
+  width: 29px;
+  height: 29px;
+  position: relative; }
+
+.icon {
+  outline: 2px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 22px;
+  height: 32px;
+  /*background: url("/assets/course14/contacts.png") no-repeat 0 0;*/ }
 
 html, body {
   /* font-family: $font-family-default;*/

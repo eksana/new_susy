@@ -47,10 +47,12 @@ background: url('../img/eml.png')no-repeat left center;;
 	
 	
 	
+	
 }
 .wrap-input,.wrap-textarea{
 	outline:1px solid red;
-	width: 50%;
+	width: 600px;
+	text-align: right;
 }
 .wrap-input{
 	display: flex;
@@ -61,7 +63,27 @@ textarea{
     width: 99%;
 }
  .y-name input, .y-eml input,.y-sabj input{
-width: 90%;
+width: 400px;
 padding: 30px;
 margin-bottom: 20px;
+
 }
+.y-name,.y-eml,.y-sabj{
+text-align: center;
+}
+.wrap-textarea{
+	display: flex;
+	flex-direction: column;
+	
+	justify-content: center;
+
+}
+#my-send{
+	padding: 25px 30px;
+	background-color: #ff8400;
+	color: #fff;
+	border-radius: 5px;
+	text-transform: uppercase;
+	margin-bottom: 100px;
+}
+

@@ -1,0 +1,39 @@
+.inner-footer{
+	width: 70%;
+	margin: 0 auto;
+	border:1px solid green;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+.wrap-left-itemfooter{
+	border:1px solid red;
+	width: 630px;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.wrap-right-itemfooter{
+	border:1px solid blue;
+	width: 630px;
+	text-align: right;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.social-links__link{
+	width: 29px;
+    height: 29px;
+    position: relative;
+}
+.icon {
+    outline: 2px solid rgba(0, 0, 0, 0.1);
+     position: absolute;
+    top: 3px;
+    left: 0;
+    width: 22px;
+    height: 32px;
+    /*background: url("/assets/course14/contacts.png") no-repeat 0 0;*/
+}
