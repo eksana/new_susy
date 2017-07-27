@@ -60,15 +60,65 @@ html, body {
   margin: 0;
   padding: 0; }
 
+a {
+  display: inline-block; }
+
 header {
-  position: absolute;
-  background: url("../img/bg-top.jpg") no-repeat;
-  background-size: cover; }
-
-.top {
   background: url("../img/bg-akva.jpg") no-repeat;
+  min-height: 780px;
   background-size: cover; }
 
+nav ul li {
+  display: inline-block; }
+
+.top-header {
+  min-height: 100px;
+  /*border-bottom-width:20px ;
+	border-image: url("../img/border-bottom.png")repeat;
+	 border-image: url("../img/border-bottom.png") 30 round round;*/
+  -webkit-border-image: url("../img/border-bottom.png") 12 0 repeat; }
+
+.top-header li a {
+  color: #fff;
+  font-size: 18px;
+  line-height: 100px; }
+
+.logo {
+  margin-top: 8px; }
+
+ul {
+  padding: 0; }
+
+ul li + li {
+  margin-left: 14px; }
+
+.button {
+  color: #fff;
+  font-size: 20px;
+  line-height: 130px;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+.button-border {
+  border: 2px solid #fff;
+  -webkit-border-radius: 7px;
+  border-radius: 18px;
+  line-height: 30px;
+  margin-top: 45px;
+  padding: 0 15px; }
+
+header h1 {
+  font-size: 48px;
+  color: #fff;
+  margin-top: 260px; }
+
+/*.top{
+
+	background:url("../img/bg-akva.jpg") no-repeat;
+	min-height: 780px;
+	-webkit-background-size: cover;
+	background-size: cover;
+}*/
 /*@import "../blocks/__prices.scss";
 @import "../blocks/__present.scss";
 @import "../blocks/__suggest.scss";
