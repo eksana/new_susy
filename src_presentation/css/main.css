@@ -14,3 +14,20 @@ ul {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
+
+.container_add {
+  max-width: 1024px;
+  /*width: calc(1024px / 1600px * 100) + %;*/
+  width: 64%;
+  margin: 0 auto;
+  outline: 1px solid yellow; }
+
+.wrapper {
+  max-width: 1600px;
+  width: 100%;
+  background-color: red;
+  margin: 0 auto; }
+
+.top {
+  outline: 1px solid green;
+  width: 100%; }

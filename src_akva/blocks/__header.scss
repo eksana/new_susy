@@ -60,3 +60,28 @@ header h1{
 	color: #fff;
 	margin-top:260px;
 }
+/*
+#borderimg:after {  
+content: "";
+    border-bottom: 16px solid transparent;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    -webkit-border-image: url(http://www.panabee.com/images/dumpling/footer_list.png); 
+    -o-border-image: url(http://www.panabee.com/images/dumpling/footer_list.png); 
+    border-image: url(http://www.panabee.com/images/dumpling/footer_list.png) ;
+    border-image-slice: 8;
+    border-image-width: 8px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    }
+*/
+/*
+вариант с градиентом
+element {
+
+border-image-source: linear-gradient(10deg, #fe01f5 0%, #2e113d 100%);
+
+}
+*/
