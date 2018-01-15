@@ -1,22 +1,3 @@
-ul li{
-	list-style: none;
-
-}
-ul{
-
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	
-}
-.container_add{
-	max-width:1024px;
-	/*width: calc(1024px / 1600px * 100) + %;*/
-	width:64%;
-	margin: 0 auto;
-	outline: 1px solid yellow;
-
-}
 .wrapper{
 	max-width:1600px;
 	width: 100%;
@@ -25,7 +6,39 @@ ul{
 
 
 }
+ul li{
+	list-style: none;
+
+}
+nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: magenta;
+}
+ul{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #fff;
+	
+}
+.container_add{
+	max-width:1024px;
+	width: calc((1024/1600)*100%) ;
+	/*width: calc(100% - 20px);*/
+	/*width:64%;*/
+	margin: 0 auto;
+	outline: 1px solid yellow;
+
+}
+
 .top{
 	outline: 1px solid green;
 	width: 100%;
+	background:url('../img/kuropatochnaja-gostinaja.jpg')no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
