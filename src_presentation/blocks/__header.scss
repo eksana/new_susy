@@ -1,6 +1,14 @@
+body{
+	font-family: "Roboto","Arial",sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #323232;
+}
 .wrapper{
-	max-width:1600px;
-	width: 100%;
+	/*max-width:1600px;*/
+	min-width:300px;
+	/*width: 100%;*/
 	background-color: red;
 	margin:0 auto;
 
@@ -27,7 +35,8 @@ ul{
 }
 .container_add{
 	max-width:1024px;
-	width: calc((1024/1600)*100%) ;
+	
+	/*width: calc((1024/1600)*100%) ;*/
 	/*width: calc(100% - 20px);*/
 	/*width:64%;*/
 	margin: 0 auto;
