@@ -111,3 +111,122 @@ ul {
     -webkit-flex-grow: 0;
         -ms-flex-positive: 0;
             flex-grow: 0; } }
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: Verdana;
+  background: #f5f5f5; }
+
+h1 {
+  text-align: center; }
+
+.container {
+  background-color: lime;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+/*.wrapper_for_label{
+   display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.wrapper_for_item{
+  width: 100%;
+  background-color: #fff;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+}*/
+input[type="radio"] {
+  display: none; }
+
+label {
+  /*width:23%;*/
+  /*float:left;*/
+  -webkit-flex-basis: 23%;
+      -ms-flex-preferred-size: 23%;
+          flex-basis: 23%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  background: #ffffff;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: #222222;
+  padding: 3px;
+  margin-bottom: 30px;
+  cursor: pointer; }
+
+input[type="radio"][id="blue"]:checked + label {
+  background: #6666ff; }
+
+input[type="radio"][id="blue"]:checked ~ .red, input[type="radio"][id="blue"]:checked ~ .green {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0; }
+
+input[type="radio"][id="red"]:checked + label {
+  background: #ff4466; }
+
+input[type="radio"][id="red"]:checked ~ .blue, input[type="radio"][id="red"]:checked ~ .green {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0; }
+
+input[type="radio"][id="green"]:checked + label {
+  background: #66dd99; }
+
+input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]:checked ~ .red {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0; }
+
+.tile {
+  width: 23%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  /*height:100px;
+ float:left;*/
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  margin: 0.5%;
+  padding: 0.5%; }
+
+.green {
+  background: #66dd99; }
+
+.blue {
+  background: #6666ff; }
+
+.red {
+  background: #ff4466; }
